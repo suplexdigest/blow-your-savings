@@ -69,8 +69,8 @@ export default async function ProductPage({
             <h1 className="mt-1 text-2xl font-black leading-tight sm:text-3xl md:text-4xl">
               {product.name}
             </h1>
-            <p className="mt-2 text-2xl font-bold text-gold sm:mt-3 sm:text-3xl">
-              {product.price}
+            <p className="mt-2 text-lg font-bold text-gold sm:mt-3 sm:text-xl">
+              Check price on Amazon
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted sm:mt-4 sm:text-base">
               {product.description}
@@ -132,7 +132,7 @@ export default async function ProductPage({
                       loading="lazy"
                     />
                     <div className="absolute right-2 top-2 rounded-full bg-black/70 px-2 py-0.5 text-xs font-bold text-gold backdrop-blur">
-                      {p.price}
+                      See Price
                     </div>
                   </div>
                   <div className="p-3">
