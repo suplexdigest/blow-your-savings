@@ -7,7 +7,8 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
       <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-3 sm:h-14 sm:px-4">
-        <a href="/" onClick={() => { window.location.href = "/"; }}>
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+        <a href="/">
           <Logo />
         </a>
         <div className="flex items-center gap-3">
