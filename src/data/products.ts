@@ -19,24 +19,24 @@ export type Product = {
 
 export const AMAZON_TAG = "hookandhull20-20";
 
-export function amznDirect(asin: string): string {
-  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
-}
-
 function amzn(keywords: string): string {
   return `https://www.amazon.com/s?k=${encodeURIComponent(keywords)}&tag=${AMAZON_TAG}`;
+}
+
+function amznDirect(asin: string): string {
+  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
 }
 
 export const CATEGORIES: Category[] = [
   { slug: "all", name: "All", tagline: "Everything luxurious", icon: "sparkles" },
   { slug: "watches", name: "Watches", tagline: "Timepieces that make time jealous", icon: "watch" },
   { slug: "tech", name: "Tech & Gadgets", tagline: "Bleeding-edge toys for grown-ups", icon: "cpu" },
-  { slug: "cars", name: "Car Gear", tagline: "For people who love their ride", icon: "car" },
+  { slug: "cars", name: "Supercars", tagline: "Machines that turn heads at 200mph", icon: "car" },
   { slug: "fashion", name: "Fashion", tagline: "Dress like your bank account has no limit", icon: "shirt" },
   { slug: "home", name: "Home & Design", tagline: "Make your neighbors weep", icon: "home" },
   { slug: "audio", name: "Audio", tagline: "Sound so good it hurts", icon: "headphones" },
   { slug: "outdoors", name: "Outdoors & Adventure", tagline: "Rich people touch grass too", icon: "mountain" },
-  { slug: "spirits", name: "Bar & Drinkware", tagline: "Sip like royalty", icon: "wine" },
+  { slug: "spirits", name: "Spirits & Wine", tagline: "Sip like royalty", icon: "wine" },
   { slug: "jewelry", name: "Jewelry", tagline: "Shine brighter than your future", icon: "sparkles" },
   { slug: "grooming", name: "Grooming", tagline: "Look expensive, smell expensive", icon: "sparkles" },
   { slug: "fitness", name: "Fitness", tagline: "Sweat in style", icon: "mountain" },
@@ -59,7 +59,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1623998021446-45cd9b269c95?w=600&h=600&fit=crop",
     category: "watches",
     description: "The iconic racing chronograph. 40mm Oystersteel case with a tachymetric scale bezel. The watch that launched a thousand waitlists.",
-    affiliateUrl: amzn("Rolex Daytona watch"),
+    affiliateUrl: amzn("Rolex Cosmograph Daytona watch"),
     tags: ["iconic", "investment", "racing"],
   },
   {
@@ -92,7 +92,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=600&h=600&fit=crop",
     category: "watches",
     description: "The billionaire's daily beater. Carbon TPT case, skeletonized movement, and enough flex to power a small city.",
-    affiliateUrl: amzn("Richard Mille luxury watch"),
+    affiliateUrl: amzn("Richard Mille RM 11-03 luxury watch"),
     tags: ["ultra-luxury", "sports", "flex"],
   },
   {
@@ -111,10 +111,10 @@ export const PRODUCTS: Product[] = [
     name: "Santos de Cartier",
     brand: "Cartier",
     price: "$8,200",
-    image: "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=600&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1612017159949-195b6eb9e31a?w=600&h=600&fit=crop",
     category: "watches",
     description: "The first pilot's watch and arguably the first wristwatch ever made. 1904 heritage, 2026 flex.",
-    affiliateUrl: amzn("Cartier Santos watch"),
+    affiliateUrl: amzn("Cartier Santos de Cartier watch"),
     tags: ["heritage", "dressy", "pilot"],
   },
   {
@@ -125,7 +125,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600&h=600&fit=crop",
     category: "watches",
     description: "The square watch Steve McQueen made famous in Le Mans. Bold, iconic, and still turning heads 55 years later.",
-    affiliateUrl: amzn("TAG Heuer Monaco chronograph watch"),
+    affiliateUrl: amznDirect("B08WRQP7GR"),
     tags: ["racing", "heritage", "square"],
   },
   {
@@ -136,7 +136,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=600&h=600&fit=crop",
     category: "watches",
     description: "The pilot's watch with a built-in slide rule. 46mm of aviation heritage on your wrist. Capable of calculating fuel burn, not that you'll need to.",
-    affiliateUrl: amzn("Breitling Navitimer B01 watch"),
+    affiliateUrl: amzn("Breitling Navitimer B01 Chronograph 46 watch"),
     tags: ["aviation", "chronograph", "heritage"],
   },
   {
@@ -147,7 +147,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&h=600&fit=crop",
     category: "watches",
     description: "Rolex's cooler younger sibling. 39mm vintage-inspired diver with an in-house movement. All the heritage, a fraction of the waitlist.",
-    affiliateUrl: amzn("Tudor Black Bay Fifty Eight watch"),
+    affiliateUrl: amzn("Tudor Black Bay Fifty-Eight watch"),
     tags: ["diver", "heritage", "value"],
   },
   {
@@ -158,7 +158,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=600&h=600&fit=crop",
     category: "watches",
     description: "The El Primero movement — the first automatic chronograph ever made, now measuring to 1/10th of a second. Horological flex that most people won't even understand.",
-    affiliateUrl: amzn("Zenith Chronomaster Sport watch"),
+    affiliateUrl: amzn("Zenith Chronomaster Sport El Primero watch"),
     tags: ["chronograph", "manufacture", "precision"],
   },
   {
@@ -169,7 +169,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=600&h=600&fit=crop",
     category: "watches",
     description: "Oversized crown. Oversized presence. The watch that says 'I fly planes' even if you just fly business class.",
-    affiliateUrl: amzn("IWC Big Pilot watch"),
+    affiliateUrl: amzn("IWC Big Pilot 43 watch"),
     tags: ["pilot", "oversized", "german"],
   },
   {
@@ -180,7 +180,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=600&h=600&fit=crop",
     category: "watches",
     description: "Invented in 1931 so polo players wouldn't smash their crystals. Flip the case to hide the dial. Art Deco perfection that doubles as a party trick.",
-    affiliateUrl: amzn("Jaeger LeCoultre Reverso watch"),
+    affiliateUrl: amzn("Jaeger-LeCoultre Reverso Classic watch"),
     tags: ["art-deco", "reversible", "dressy"],
   },
   {
@@ -202,7 +202,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=600&h=600&fit=crop",
     category: "watches",
     description: "Made for the Italian Navy's frogmen. 44mm of wrist presence with that signature crown-protecting bridge. Looks absurd on small wrists. We don't care.",
-    affiliateUrl: amzn("Panerai Luminor Marina watch"),
+    affiliateUrl: amzn("Panerai Luminor Marina 44mm watch"),
     tags: ["military", "italian", "diver"],
   },
   {
@@ -235,7 +235,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1612011213372-3a3aa68a6d12?w=600&h=600&fit=crop",
     category: "watches",
     description: "German precision at its finest. Hand-finished movement visible through the caseback. The watch for people who think Swiss is overrated.",
-    affiliateUrl: amzn("A Lange Sohne Saxonia watch"),
+    affiliateUrl: amzn("A. Lange Sohne Saxonia Thin watch"),
     tags: ["german", "dress-watch", "finishing"],
   },
   {
@@ -257,7 +257,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=600&h=600&fit=crop",
     category: "watches",
     description: "The original dive watch — predates the Submariner. Sapphire bezel, 300m depth rating, and enough old-money energy to fill a yacht club.",
-    affiliateUrl: amzn("Blancpain Fifty Fathoms watch"),
+    affiliateUrl: amzn("Blancpain Fifty Fathoms Automatique watch"),
     tags: ["diver", "heritage", "sapphire"],
   },
 
@@ -349,7 +349,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&h=600&fit=crop",
     category: "tech",
     description: "Ultra Retina XDR tandem OLED display. Thinner than a pencil. More powerful than most laptops. Still doesn't run macOS. Classic Apple.",
-    affiliateUrl: amzn("Apple iPad Pro 13 M4"),
+    affiliateUrl: amzn("Apple iPad Pro 13 inch M4"),
     tags: ["tablet", "creative", "oled"],
   },
   {
@@ -382,7 +382,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=600&fit=crop",
     category: "tech",
     description: "Teenage Engineering designed, AI-powered, and refreshingly not a phone. The gadget that's either the future or a very expensive fidget toy.",
-    affiliateUrl: amzn("Rabbit R1 AI device"),
+    affiliateUrl: amzn("Rabbit R1 AI pocket device"),
     tags: ["ai", "gadget", "quirky"],
   },
   {
@@ -404,7 +404,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=600&fit=crop",
     category: "tech",
     description: "Displays classic art when off. Looks like a framed painting. 85 inches of deception that makes visitors ask 'is that a TV or a Monet?'",
-    affiliateUrl: amzn("Samsung The Frame 85 inch TV"),
+    affiliateUrl: amznDirect("B0CX59TB7W"),
     tags: ["tv", "art", "design"],
   },
   {
@@ -426,7 +426,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&h=600&fit=crop",
     category: "tech",
     description: "Ultra short-throw 4K laser projector. Sits inches from the wall, throws 150 inches. Turn any wall into a cinema without ceiling-mounting anything.",
-    affiliateUrl: amzn("Epson EpiqVision Ultra LS800 projector"),
+    affiliateUrl: amzn("Epson EpiqVision Ultra LS800 laser projector"),
     tags: ["projector", "home-theater", "laser"],
   },
   {
@@ -437,7 +437,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1509390144018-eeaf65052242?w=600&h=600&fit=crop",
     category: "tech",
     description: "3,840Wh capacity and 6,000W output. Powers your entire home during outages. It's a battery the size of a suitcase that replaced your backup generator.",
-    affiliateUrl: amzn("Anker SOLIX F3800 power station"),
+    affiliateUrl: amzn("Anker SOLIX F3800 portable power station"),
     tags: ["power-station", "backup", "solar"],
   },
   {
@@ -448,7 +448,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&h=600&fit=crop",
     category: "tech",
     description: "The laptop you can actually repair and upgrade. Swap the GPU, replace the keyboard, choose your ports. Right to repair made beautiful.",
-    affiliateUrl: amzn("Framework Laptop 16 modular"),
+    affiliateUrl: amzn("Framework Laptop 16 modular laptop"),
     tags: ["modular", "repairable", "sustainable"],
   },
   {
@@ -459,7 +459,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=600&fit=crop",
     category: "tech",
     description: "A humanoid robot that folds laundry, sorts groceries, and walks the dog. Either the future of household help or the beginning of the robot uprising.",
-    affiliateUrl: amzn("Tesla Optimus robot humanoid"),
+    affiliateUrl: amzn("Tesla Optimus humanoid robot"),
     tags: ["robot", "ai", "future"],
   },
 
@@ -474,7 +474,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=600&h=600&fit=crop",
     category: "cars",
     description: "4.0L flat-six, 518 HP, rear-wheel drive, and a wing that generates 900 lbs of downforce. Track weapon with a license plate.",
-    affiliateUrl: amzn("Porsche 911 GT3 RS model diecast"),
+    affiliateUrl: amzn("Porsche 911 GT3 RS 1:18 diecast model"),
     tags: ["track", "naturally-aspirated", "legend"],
   },
   {
@@ -485,7 +485,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=600&h=600&fit=crop",
     category: "cars",
     description: "986 HP plug-in hybrid. The most powerful Ferrari road car ever made. 0-62 mph in 2.5 seconds. Electric-only mode for sneaking past neighbors.",
-    affiliateUrl: amzn("Ferrari SF90 model collectible"),
+    affiliateUrl: amzn("Ferrari SF90 Stradale 1:18 diecast model"),
     tags: ["hybrid", "supercar", "italian"],
   },
   {
@@ -496,7 +496,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&h=600&fit=crop",
     category: "cars",
     description: "V12 hybrid with 1,001 HP. Lambo's first PHEV and possibly the last V12 they'll ever make. Carbon fiber everything.",
-    affiliateUrl: amzn("Lamborghini model diecast collectible"),
+    affiliateUrl: amzn("Lamborghini Revuelto 1:18 diecast model"),
     tags: ["v12", "hybrid", "last-of-breed"],
   },
   {
@@ -507,7 +507,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1563720223185-11003d516935?w=600&h=600&fit=crop",
     category: "cars",
     description: "The world's first ultra-luxury electric car. Starlight headliner, suicide doors, and the silence of a library doing 155 mph.",
-    affiliateUrl: amzn("Rolls Royce model diecast luxury"),
+    affiliateUrl: amzn("Rolls Royce 1:18 diecast model car"),
     tags: ["electric", "ultra-luxury", "silent"],
   },
   {
@@ -518,7 +518,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1621135802920-133df287f89c?w=600&h=600&fit=crop",
     category: "cars",
     description: "Twin-turbo V8, 740 HP, and it weighs less than your excuses. Active aero, carbon tub, and a cockpit from the future.",
-    affiliateUrl: amzn("McLaren supercar model diecast"),
+    affiliateUrl: amzn("McLaren 750S 1:18 diecast model car"),
     tags: ["lightweight", "british", "track"],
   },
   {
@@ -529,7 +529,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1596559276105-1a76b1123177?w=600&h=600&fit=crop",
     category: "cars",
     description: "Twin-turbo V8, 671 HP, drop-top GT. James Bond's car if he took a vacation. The most beautiful convertible money can buy.",
-    affiliateUrl: amzn("Aston Martin DB12 model diecast"),
+    affiliateUrl: amzn("Aston Martin DB12 1:18 diecast model"),
     tags: ["gt", "convertible", "british"],
   },
   {
@@ -540,7 +540,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1580274455191-1c62238ce452?w=600&h=600&fit=crop",
     category: "cars",
     description: "W12 twin-turbo, 650 HP, hand-stitched leather, and a rotating display. The grand tourer for people who find Rolls-Royce too subtle.",
-    affiliateUrl: amzn("Bentley Continental GT model diecast"),
+    affiliateUrl: amzn("Bentley Continental GT 1:18 diecast model"),
     tags: ["gt", "w12", "luxury"],
   },
   {
@@ -551,7 +551,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1600712242805-5f78671b24da?w=600&h=600&fit=crop",
     category: "cars",
     description: "Quad-turbo W16, 1,578 HP, top speed of 273 mph. The car that makes hypercar owners feel insecure. Limited to 60 units.",
-    affiliateUrl: amzn("Bugatti Chiron model diecast collectible"),
+    affiliateUrl: amzn("Bugatti Chiron Super Sport 1:18 diecast model"),
     tags: ["hypercar", "w16", "record-breaker"],
   },
   {
@@ -562,7 +562,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=600&h=600&fit=crop",
     category: "cars",
     description: "0-60 in 1.99 seconds. Tri-motor, 1,020 HP, and it's electric so you can feel smug while destroying Ferraris at stoplights.",
-    affiliateUrl: amzn("Tesla Model S Plaid model diecast"),
+    affiliateUrl: amzn("Tesla Model S Plaid 1:18 diecast model"),
     tags: ["electric", "fastest-sedan", "tech"],
   },
   {
@@ -573,7 +573,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=600&fit=crop",
     category: "cars",
     description: "831 HP plug-in hybrid. The most powerful production Mercedes ever. A four-door that'll outrun most two-doors while hauling your dry cleaning.",
-    affiliateUrl: amzn("Mercedes AMG GT 63 model diecast"),
+    affiliateUrl: amzn("Mercedes AMG GT 63 1:18 diecast model"),
     tags: ["hybrid", "four-door", "german"],
   },
   {
@@ -584,7 +584,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=600&fit=crop",
     category: "cars",
     description: "627 HP twin-turbo V8, carbon bucket seats, and gold accents. BMW's most powerful sedan ever. The M5 for people who think the regular M5 is too sensible.",
-    affiliateUrl: amzn("BMW M5 CS model diecast"),
+    affiliateUrl: amzn("BMW M5 CS 1:18 diecast model"),
     tags: ["sedan", "track", "german"],
   },
   {
@@ -595,7 +595,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&h=600&fit=crop",
     category: "cars",
     description: "637 HP dual-motor electric. Shares a platform with the Porsche Taycan but looks better in a tuxedo. Silent, brutal, sophisticated.",
-    affiliateUrl: amzn("Audi RS e-tron GT model diecast"),
+    affiliateUrl: amzn("Audi RS e-tron GT 1:18 diecast model"),
     tags: ["electric", "german", "gt"],
   },
   {
@@ -606,7 +606,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=600&h=600&fit=crop",
     category: "cars",
     description: "Handmade Italian carbon-titanium art with a 791 HP twin-turbo V12. Only 40 exist. More sculpture than car. The sound alone is worth millions.",
-    affiliateUrl: amzn("Pagani Huayra model diecast collectible"),
+    affiliateUrl: amzn("Pagani Huayra 1:18 diecast model collectible"),
     tags: ["hypercar", "handmade", "italian"],
   },
   {
@@ -617,7 +617,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&h=600&fit=crop",
     category: "cars",
     description: "647 HP EcoBoost V6, Le Mans heritage livery, and an application process more selective than Harvard. The American supercar that humiliates European royalty.",
-    affiliateUrl: amzn("Ford GT model diecast Heritage"),
+    affiliateUrl: amzn("Ford GT Heritage Edition 1:18 diecast model"),
     tags: ["american", "le-mans", "limited"],
   },
   {
@@ -628,7 +628,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1621993202323-f438eec934ff?w=600&h=600&fit=crop",
     category: "cars",
     description: "1,914 HP. Four electric motors. 0-60 in 1.81 seconds. The fastest production car ever made, and it runs on lightning. Croatian engineering at its finest.",
-    affiliateUrl: amzn("Rimac Nevera electric hypercar book"),
+    affiliateUrl: amzn("Rimac Nevera electric hypercar 1:18 model"),
     tags: ["electric", "hypercar", "record-breaker"],
   },
 
@@ -643,7 +643,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&h=600&fit=crop",
     category: "fashion",
     description: "The OG flex travel bag. Monogram canvas, leather trim, and enough room for a weekend of bad decisions.",
-    affiliateUrl: amzn("Louis Vuitton Keepall bag"),
+    affiliateUrl: amzn("Louis Vuitton Keepall Bandouliere 50 bag"),
     tags: ["travel", "iconic", "monogram"],
   },
   {
@@ -654,7 +654,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&h=600&fit=crop",
     category: "fashion",
     description: "70 years of Italian excellence on your feet. The shoe that defined business casual before business casual existed.",
-    affiliateUrl: amzn("Gucci Horsebit loafer"),
+    affiliateUrl: amzn("Gucci 1953 Horsebit leather loafer"),
     tags: ["heritage", "shoes", "italian"],
   },
   {
@@ -665,7 +665,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&h=600&fit=crop",
     category: "fashion",
     description: "You can't buy this. You have to be invited. The ultimate handbag — an investment that outperforms the S&P 500.",
-    affiliateUrl: amzn("Hermes Birkin bag"),
+    affiliateUrl: amzn("Hermes Birkin leather handbag"),
     tags: ["grail", "investment", "waitlist"],
   },
   {
@@ -676,7 +676,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Peak-lapel, two-button, Italian wool-silk blend. The suit James Bond would wear if he had taste.",
-    affiliateUrl: amzn("Tom Ford suit men"),
+    affiliateUrl: amzn("Tom Ford Shelton suit men"),
     tags: ["suiting", "formal", "italian"],
   },
   {
@@ -687,7 +687,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Handmade in Hollywood. Sterling silver hardware. The sunglasses every rapper and their jeweler wears.",
-    affiliateUrl: amzn("Chrome Hearts sunglasses"),
+    affiliateUrl: amzn("Chrome Hearts Vagillionaire sunglasses"),
     tags: ["eyewear", "handmade", "streetlux"],
   },
   {
@@ -731,7 +731,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Gold-tone Medusa head on a chunky chain. The necklace that says 'I eat dinner at 11 PM in Milan' without words.",
-    affiliateUrl: amzn("Versace Medusa chain necklace"),
+    affiliateUrl: amzn("Versace Medusa chain necklace gold"),
     tags: ["jewelry", "chain", "italian"],
   },
   {
@@ -742,7 +742,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Premium goose down, lacquered nylon, and that unmistakable arm patch. The puffer jacket that started the luxury puffer war.",
-    affiliateUrl: amzn("Moncler Maya down jacket"),
+    affiliateUrl: amzn("Moncler Maya short down jacket"),
     tags: ["puffer", "winter", "iconic"],
   },
   {
@@ -753,7 +753,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Virgil Abloh's legacy lives on. Deconstructed, industrial, and impossible to mistake for anything else. The quotation marks told you it was fashion.",
-    affiliateUrl: amzn("Off-White ODSY 1000 sneaker"),
+    affiliateUrl: amzn("Off-White ODSY-1000 sneaker"),
     tags: ["sneakers", "streetwear", "design"],
   },
   {
@@ -786,7 +786,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Lambskin leather, asymmetric zip, and enough rock-star energy to make you pick up a guitar. The jacket that every other leather jacket wishes it was.",
-    affiliateUrl: amzn("Saint Laurent leather motorcycle jacket"),
+    affiliateUrl: amzn("Saint Laurent Classic Motorcycle leather jacket"),
     tags: ["leather", "rock", "iconic"],
   },
   {
@@ -797,7 +797,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Structured, architectural, and named after a Greek tragedy. Perfect for carrying your essentials and your emotional baggage.",
-    affiliateUrl: amzn("Givenchy Antigona bag"),
+    affiliateUrl: amzn("Givenchy Antigona Lock bag"),
     tags: ["structured", "leather", "french"],
   },
   {
@@ -808,7 +808,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Invented for WWI officers, perfected for Main Street. Gabardine fabric, check lining, and a century of British cool. Rain has never looked this good.",
-    affiliateUrl: amzn("Burberry Westminster trench coat"),
+    affiliateUrl: amzn("Burberry Westminster Heritage trench coat"),
     tags: ["heritage", "outerwear", "british"],
   },
   {
@@ -819,7 +819,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Italian leather, gold-stamped serial number, and the minimalist white sneaker that launched a thousand copies. The IYKYK of footwear.",
-    affiliateUrl: amzn("Common Projects Achilles Low white sneaker"),
+    affiliateUrl: amzn("Common Projects Original Achilles Low white sneaker"),
     tags: ["minimal", "sneakers", "italian"],
   },
   {
@@ -830,7 +830,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1575032617751-6ddec2089882?w=600&h=600&fit=crop",
     category: "fashion",
     description: "The Triomphe clasp inspired by the chain on the Arc de Triomphe. Parisian elegance distilled into smooth calfskin. Très chic, très expensive.",
-    affiliateUrl: amzn("Celine Triomphe shoulder bag"),
+    affiliateUrl: amzn("Celine Triomphe shoulder bag calfskin"),
     tags: ["parisian", "classic", "leather"],
   },
   {
@@ -889,7 +889,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=600&fit=crop",
     category: "home",
     description: "The sofa that ruined all other sofas. Down-filled cushions so deep you'll cancel plans just to stay seated.",
-    affiliateUrl: amzn("luxury modular cloud sofa"),
+    affiliateUrl: amzn("RH Cloud modular sofa"),
     tags: ["sofa", "comfort", "statement"],
   },
   {
@@ -911,7 +911,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=600&fit=crop",
     category: "home",
     description: "2.2 HP motor that pulverizes anything you throw at it. Touchscreen, self-detect containers, and built-in WiFi because even blenders need internet now.",
-    affiliateUrl: amzn("Vitamix A3500 Ascent blender"),
+    affiliateUrl: amznDirect("B085F48VLX"),
     tags: ["kitchen", "blender", "professional"],
   },
   {
@@ -922,7 +922,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1585837146751-a44118595079?w=600&h=600&fit=crop",
     category: "home",
     description: "Enameled cast iron that lasts generations. Comes in 15 colors. The pot your grandma had, your mom borrowed, and you'll fight your siblings over.",
-    affiliateUrl: amzn("Le Creuset Dutch Oven 7.25"),
+    affiliateUrl: amznDirect("B00004S56M"),
     tags: ["cookware", "cast-iron", "heirloom"],
   },
   {
@@ -933,7 +933,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1591291621164-2c6367723315?w=600&h=600&fit=crop",
     category: "home",
     description: "24\" rotating HD screen, Apple GymKit, auto-resistance. The $2,500 clothes hanger that occasionally makes you feel guilty enough to exercise.",
-    affiliateUrl: amzn("Peloton Bike Plus"),
+    affiliateUrl: amzn("Peloton Bike Plus indoor exercise bike"),
     tags: ["fitness", "cycling", "connected"],
   },
   {
@@ -944,7 +944,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1554244933-d876deb6b2ff?w=600&h=600&fit=crop",
     category: "home",
     description: "Western red cedar barrel that fits 4 people. Electric heater hits 195°F. Turn your backyard into a Scandinavian spa. Cold plunge sold separately (and recommended).",
-    affiliateUrl: amzn("Almost Heaven barrel sauna outdoor"),
+    affiliateUrl: amzn("Almost Heaven Luna outdoor barrel sauna"),
     tags: ["sauna", "wellness", "outdoor"],
   },
   {
@@ -955,7 +955,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop",
     category: "home",
     description: "6 burners, infrared griddle, dual convection ovens, and the red knobs that tell dinner guests you're serious about cooking. Or at least serious about kitchen flex.",
-    affiliateUrl: amzn("Wolf 48 dual fuel range"),
+    affiliateUrl: amzn("Wolf 48 inch dual fuel range"),
     tags: ["cooking", "professional", "range"],
   },
   {
@@ -966,7 +966,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1585128903998-f0d9e0e20368?w=600&h=600&fit=crop",
     category: "home",
     description: "Heated seat, automatic lid, UV sanitization, warm water bidet, and air dryer. A $20K toilet that does everything except judge your life choices.",
-    affiliateUrl: amzn("TOTO Neorest NX2 toilet"),
+    affiliateUrl: amzn("TOTO Neorest NX2 intelligent toilet"),
     tags: ["bathroom", "luxury", "bidet"],
   },
   {
@@ -977,7 +977,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&h=600&fit=crop",
     category: "home",
     description: "Dolby Atmos spatial audio from a single speaker shaped like an hourglass. Six drivers, room calibration, and sound that fills corners you didn't know existed.",
-    affiliateUrl: amzn("Sonos Era 300 speaker"),
+    affiliateUrl: amzn("Sonos Era 300 speaker Dolby Atmos"),
     tags: ["speaker", "spatial-audio", "design"],
   },
   {
@@ -988,7 +988,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=600&fit=crop",
     category: "home",
     description: "16 million colors flowing behind your TV in real-time sync. Movie night just became an art installation. Your living room will never look boring again.",
-    affiliateUrl: amzn("Philips Hue Gradient Lightstrip TV"),
+    affiliateUrl: amzn("Philips Hue Gradient Lightstrip 75 inch TV"),
     tags: ["lighting", "smart-home", "ambiance"],
   },
   {
@@ -999,7 +999,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=600&fit=crop",
     category: "home",
     description: "Auto dose, auto tamp, auto steam. Makes cafe-quality espresso with one button. The machine for people who love coffee but hate mornings.",
-    affiliateUrl: amzn("Breville Oracle Jet espresso machine"),
+    affiliateUrl: amznDirect("B00CH9QWOU"),
     tags: ["coffee", "automatic", "premium"],
   },
   {
@@ -1010,7 +1010,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1572331165267-854da2b021b1?w=600&h=600&fit=crop",
     category: "home",
     description: "Seats 6, PowerPro jets, LED lighting, Bluetooth audio. The brand that literally invented the hot tub. Your backyard just became the neighborhood destination.",
-    affiliateUrl: amzn("Jacuzzi J-585 hot tub"),
+    affiliateUrl: amzn("Jacuzzi J-585 hot tub spa"),
     tags: ["hot-tub", "outdoor", "relaxation"],
   },
   {
@@ -1021,7 +1021,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=600&fit=crop",
     category: "home",
     description: "Vacuums AND mops. Auto-empties itself. Avoids pet waste with AI. The robot servant you were promised in the 1950s, finally delivered.",
-    affiliateUrl: amzn("iRobot Roomba j9 Plus Combo"),
+    affiliateUrl: amzn("iRobot Roomba j9+ Combo robot vacuum mop"),
     tags: ["robot", "smart-home", "cleaning"],
   },
   {
@@ -1043,7 +1043,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=600&fit=crop",
     category: "home",
     description: "Sleeps up to 8° cooler. Four layers of cooling tech. The mattress that costs more than some used cars but delivers priceless sleep.",
-    affiliateUrl: amzn("Tempur-Pedic LuxeBreeze mattress"),
+    affiliateUrl: amzn("Tempur-Pedic TEMPUR-LuxeBreeze mattress"),
     tags: ["mattress", "cooling", "sleep"],
   },
   {
@@ -1054,7 +1054,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop",
     category: "home",
     description: "Auto-dispenses detergent for 20 loads, knock-to-open door, and so quiet you'll check if it's running. German engineering applied to dirty dishes.",
-    affiliateUrl: amzn("Miele AutoDos dishwasher"),
+    affiliateUrl: amzn("Miele G 7966 SCVi AutoDos dishwasher"),
     tags: ["kitchen", "german", "smart"],
   },
   {
@@ -1113,7 +1113,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=600&h=600&fit=crop",
     category: "audio",
     description: "450 watts per channel. Blue VU meters. Made in Binghamton, NY since 1949. The amp that says 'I listen to music, not Bluetooth speakers.'",
-    affiliateUrl: amzn("McIntosh MC462 amplifier"),
+    affiliateUrl: amzn("McIntosh MC462 stereo amplifier"),
     tags: ["amplifier", "hifi", "american-made"],
   },
   {
@@ -1135,7 +1135,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&h=600&fit=crop",
     category: "audio",
     description: "Immersive Audio with head tracking, world-class ANC, and comfort so good you forget you're wearing them. The noise-canceling king reclaims the throne.",
-    affiliateUrl: amzn("Bose QuietComfort Ultra headphones"),
+    affiliateUrl: amznDirect("B0CCZ26B5V"),
     tags: ["anc", "wireless", "comfort"],
   },
   {
@@ -1146,7 +1146,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&h=600&fit=crop",
     category: "audio",
     description: "56mm ring radiator transducers. The widest soundstage in headphone history. Close your eyes and you're in the concert hall. Open them and you're $1,800 poorer.",
-    affiliateUrl: amzn("Sennheiser HD 800 S headphones"),
+    affiliateUrl: amzn("Sennheiser HD 800 S reference headphones"),
     tags: ["audiophile", "open-back", "soundstage"],
   },
   {
@@ -1168,7 +1168,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&h=600&fit=crop",
     category: "audio",
     description: "Diamond tweeters. Continuum Cone midrange. The speakers found in Abbey Road Studios. If they're good enough for The Beatles' masters, they're good enough for your Spotify.",
-    affiliateUrl: amzn("Bowers Wilkins 802 D4 speakers"),
+    affiliateUrl: amzn("Bowers Wilkins 802 D4 floor standing speakers"),
     tags: ["speakers", "reference", "diamond"],
   },
   {
@@ -1190,7 +1190,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1590658268037-6bf12f032f32?w=600&h=600&fit=crop",
     category: "audio",
     description: "5 balanced armature drivers in a CNC'd aluminum shell. IEMs that deliver audiophile sound in a package smaller than your earbud case. Green and gorgeous.",
-    affiliateUrl: amzn("Campfire Audio Andromeda IEM"),
+    affiliateUrl: amzn("Campfire Audio Andromeda IEM earphones"),
     tags: ["iem", "portable", "audiophile"],
   },
   {
@@ -1201,7 +1201,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&h=600&fit=crop",
     category: "audio",
     description: "British hi-fi in a single enclosure. 450 watts, HDMI ARC, multiroom. The wireless speaker that makes audiophile snobs say 'okay, that's actually good.'",
-    affiliateUrl: amzn("Naim Mu-so 2 wireless speaker"),
+    affiliateUrl: amzn("Naim Mu-so 2nd Generation wireless speaker"),
     tags: ["wireless", "british", "all-in-one"],
   },
   {
@@ -1212,7 +1212,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=600&h=600&fit=crop",
     category: "audio",
     description: "Pocket-sized DAC with a custom FPGA that outperforms desktop units ten times its price. Colorful orbs instead of numbers because British hi-fi is weird like that.",
-    affiliateUrl: amzn("Chord Mojo 2 portable DAC"),
+    affiliateUrl: amzn("Chord Mojo 2 portable DAC amp"),
     tags: ["dac", "portable", "british"],
   },
   {
@@ -1223,7 +1223,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&h=600&fit=crop",
     category: "audio",
     description: "900 watts in a sphere the size of a football. Bass so deep the neighbors will think you installed a subwoofer. French engineering meets acoustic insanity.",
-    affiliateUrl: amzn("Devialet Phantom II speaker"),
+    affiliateUrl: amzn("Devialet Phantom II 98dB speaker"),
     tags: ["compact", "powerful", "french"],
   },
   {
@@ -1234,7 +1234,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&h=600&fit=crop",
     category: "audio",
     description: "Planar magnetic drivers, open-back design, and the lightest Audeze ever at just 420g. Resolution so high you'll hear the recording engineer breathing.",
-    affiliateUrl: amzn("Audeze LCD-5 headphones"),
+    affiliateUrl: amzn("Audeze LCD-5 planar magnetic headphones"),
     tags: ["planar-magnetic", "audiophile", "lightweight"],
   },
 
@@ -1260,7 +1260,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "Sub-14 lb carbon race bike. SRAM Red AXS. The bike that won the Tour de France — now available for your Sunday morning group ride.",
-    affiliateUrl: amzn("Specialized S-Works Tarmac road bike"),
+    affiliateUrl: amzn("Specialized S-Works Tarmac SL8 road bike"),
     tags: ["cycling", "racing", "carbon"],
   },
   {
@@ -1282,7 +1282,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "WiFi-enabled, app-controlled, super smoke mode. 880 sq in of cooking space. Your backyard is now a Michelin-star restaurant.",
-    affiliateUrl: amzn("Traeger Ironwood XL pellet grill"),
+    affiliateUrl: amznDirect("B0854ZG2J4"),
     tags: ["grilling", "bbq", "smart"],
   },
   {
@@ -1293,7 +1293,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "Grade 2 titanium, 40% lighter, and it somehow keeps drinks cold for 2 days. The water bottle flex nobody asked for but everyone wants.",
-    affiliateUrl: amzn("Hydro Flask titanium bottle"),
+    affiliateUrl: amzn("Hydro Flask Titanium Trail Series 32oz bottle"),
     tags: ["bottle", "titanium", "lightweight"],
   },
   {
@@ -1304,7 +1304,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "Pedal-drive fishing kayak with hands-free propulsion. 180-degree swivel seat, Garmin fish finder ready. Catch fish without paddling. That's called efficiency.",
-    affiliateUrl: amzn("Hobie Mirage Outback kayak"),
+    affiliateUrl: amzn("Hobie Mirage Outback pedal kayak"),
     tags: ["kayak", "fishing", "pedal-drive"],
   },
   {
@@ -1315,7 +1315,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "750W motor, fat tires, 45+ mile range. The e-bike that turns every hill into a flat and every commute into a joy ride. Sweat is now optional.",
-    affiliateUrl: amzn("Rad Power Bikes RadRhino ebike"),
+    affiliateUrl: amzn("Rad Power Bikes RadRhino 6 Plus ebike"),
     tags: ["ebike", "commuter", "fat-tire"],
   },
   {
@@ -1332,12 +1332,12 @@ export const PRODUCTS: Product[] = [
   {
     id: "volkl-blaze-106",
     name: "Blaze 106",
-    brand: "Völkl",
+    brand: "Volkl",
     price: "$800",
     image: "https://images.unsplash.com/photo-1551524559-8af4e6624178?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "106mm underfoot, 3D Ridge construction, and tip rocker for pow days. The all-mountain ski that charges hard and floats harder.",
-    affiliateUrl: amzn("Volkl Blaze 106 skis"),
+    affiliateUrl: amzn("Volkl Blaze 106 all-mountain skis"),
     tags: ["skiing", "all-mountain", "powder"],
   },
   {
@@ -1348,7 +1348,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1502680390548-bdbac40a5738?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "Helium-injected EPS core, LFT construction, and a shape by Rob Machado. Light, fast, and more eco-friendly than your average fiberglass sled.",
-    affiliateUrl: amzn("Firewire Helium surfboard"),
+    affiliateUrl: amzn("Firewire Helium surfboard Rob Machado"),
     tags: ["surfing", "eco", "performance"],
   },
   {
@@ -1359,7 +1359,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "The tent that survives Patagonian storms, Arctic basecamp, and your in-laws at the campsite. Kerlon 1800 fabric, extended vestibule, and Swedish paranoia about bad weather.",
-    affiliateUrl: amzn("Hilleberg Keron 4 GT tent"),
+    affiliateUrl: amzn("Hilleberg Keron 4 GT four season tent"),
     tags: ["tent", "expedition", "4-season"],
   },
   {
@@ -1370,7 +1370,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "GORE-TEX Pro Most Rugged. Helmet-compatible hood. Designed for severe weather alpinism. The jacket search-and-rescue teams trust with their lives.",
-    affiliateUrl: amzn("Arcteryx Alpha SV jacket"),
+    affiliateUrl: amzn("Arc'teryx Alpha SV jacket GORE-TEX"),
     tags: ["jacket", "gore-tex", "alpine"],
   },
   {
@@ -1381,7 +1381,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1509390144018-eeaf65052242?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "6,071Wh of lithium power. Charges via solar, wall, or car. Run a fridge, CPAP, and power tools off-grid. Overlanding just got comfortable.",
-    affiliateUrl: amzn("Goal Zero Yeti 6000X power station"),
+    affiliateUrl: amzn("Goal Zero Yeti 6000X portable power station"),
     tags: ["power", "solar", "overlanding"],
   },
   {
@@ -1392,7 +1392,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "Infinite MOI face, carbon twist design, and a sweet spot the size of your ego. Won't fix your slice, but the technology will make you feel better about it.",
-    affiliateUrl: amzn("TaylorMade Qi35 LS driver"),
+    affiliateUrl: amzn("TaylorMade Qi35 LS driver golf"),
     tags: ["golf", "driver", "carbon"],
   },
   {
@@ -1403,7 +1403,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "Anti-Gravity suspension, adjustable torso, and 65L of perfectly organized storage. The backpack that carries everything including your unrealistic expectations for the trail.",
-    affiliateUrl: amzn("Osprey Aether 65 backpack"),
+    affiliateUrl: amzn("Osprey Aether 65 backpacking pack"),
     tags: ["backpack", "hiking", "lightweight"],
   },
   {
@@ -1414,7 +1414,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "Porcelain-enameled steel, air-insulated double walls, and the versatility to grill, smoke, and bake. The kamado that Weber engineered from scratch, not borrowed.",
-    affiliateUrl: amzn("Weber Summit Kamado S6 grill"),
+    affiliateUrl: amzn("Weber Summit Kamado S6 charcoal grill"),
     tags: ["grill", "kamado", "versatile"],
   },
   {
@@ -1425,7 +1425,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "32 mph top speed, 40+ mile range, and a riding experience that feels like snowboarding on pavement. The personal vehicle that makes everyone stare.",
-    affiliateUrl: amzn("Onewheel GT S Series"),
+    affiliateUrl: amzn("Onewheel GT-S Series electric board"),
     tags: ["electric", "board", "adventure"],
   },
   {
@@ -1462,29 +1462,29 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Quarter-century in sherry-seasoned Spanish oak casks. Notes of dried fruit, spice, and chocolate. Sip slowly — this costs $128 per ounce.",
-    affiliateUrl: amzn("Macallan 25 year scotch whisky"),
+    affiliateUrl: amzn("Macallan 25 year whisky tasting glasses Glencairn set"),
     tags: ["scotch", "single-malt", "aged"],
   },
   {
     id: "dom-perignon-vintage",
-    name: "Dom Pérignon Vintage 2015",
-    brand: "Dom Pérignon",
+    name: "Dom Perignon Vintage 2015",
+    brand: "Dom Perignon",
     price: "$270",
     image: "https://images.unsplash.com/photo-1594372365401-3b5ff14eee78?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Only made in exceptional years. The champagne that celebrates itself. Aged 7+ years before release.",
-    affiliateUrl: amzn("Dom Perignon champagne"),
+    affiliateUrl: amzn("Dom Perignon champagne flutes crystal glasses"),
     tags: ["champagne", "vintage", "celebration"],
   },
   {
     id: "louis-xiii-cognac",
     name: "Louis XIII Cognac",
-    brand: "Rémy Martin",
+    brand: "Remy Martin",
     price: "$4,500",
     image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Up to 100 years of aging. 1,200 eaux-de-vie blended together. Baccarat crystal decanter. Each bottle is a century of patience in your hands.",
-    affiliateUrl: amzn("Remy Martin Louis XIII cognac"),
+    affiliateUrl: amzn("Remy Martin Louis XIII cognac crystal glasses decanter"),
     tags: ["cognac", "ultra-premium", "baccarat"],
   },
   {
@@ -1495,7 +1495,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&h=600&fit=crop",
     category: "spirits",
     description: "5 years in sherry casks. Hand-painted decanter topped with .925 sterling silver and 24K gold. The tequila for people who've graduated from shots.",
-    affiliateUrl: amzn("Clase Azul ultra tequila"),
+    affiliateUrl: amzn("Clase Azul tequila ceramic decanter hand painted"),
     tags: ["tequila", "extra-anejo", "artisan"],
   },
   {
@@ -1506,7 +1506,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Japanese harmony in a bottle. 21 years of blending art. The 24-faceted bottle represents the Japanese seasons. Practically impossible to find.",
-    affiliateUrl: amzn("Hibiki 21 year Japanese whisky"),
+    affiliateUrl: amzn("Hibiki Suntory Japanese whisky tasting glass set"),
     tags: ["japanese-whisky", "rare", "blended"],
   },
   {
@@ -1517,7 +1517,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Only 1 in 10,000 casks makes the cut. Velvety smooth with honey, dark chocolate, and dried fruit. The bottle that lives on every executive's shelf.",
-    affiliateUrl: amzn("Johnnie Walker Blue Label scotch"),
+    affiliateUrl: amzn("Johnnie Walker Blue Label scotch whisky gift set"),
     tags: ["scotch", "blended", "prestige"],
   },
   {
@@ -1528,29 +1528,29 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Over 100 eaux-de-vie aged 25-130 years. Jasmine, honey, and sandalwood on the nose. Named 'Paradis' because that's where you go after one sip.",
-    affiliateUrl: amzn("Hennessy Paradis cognac"),
+    affiliateUrl: amzn("Hennessy Paradis cognac crystal snifter glasses"),
     tags: ["cognac", "premium", "french"],
   },
   {
     id: "patron-gran-piedra",
-    name: "Gran Piedra Extra Añejo",
-    brand: "Patrón",
+    name: "Gran Piedra Extra Anejo",
+    brand: "Patron",
     price: "$399",
     image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&h=600&fit=crop",
     category: "spirits",
-    description: "Aged 4+ years in a combination of American oak, French oak, and sherry casks. The extra añejo that turned tequila skeptics into tequila evangelists.",
-    affiliateUrl: amzn("Patron Gran Piedra extra anejo tequila"),
+    description: "Aged 4+ years in a combination of American oak, French oak, and sherry casks. The extra anejo that turned tequila skeptics into tequila evangelists.",
+    affiliateUrl: amzn("Patron Gran Piedra extra anejo tequila tasting set"),
     tags: ["tequila", "extra-anejo", "aged"],
   },
   {
     id: "grey-goose-ducasse",
-    name: "Interprétation by Ducasse",
+    name: "Interpretation by Ducasse",
     brand: "Grey Goose",
     price: "$99",
     image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Collaboration with Alain Ducasse. Wheat steeped in a bain-marie, then distilled. Buttery, brioche-like, and designed to be sipped neat. Vodka for people who hate vodka.",
-    affiliateUrl: amzn("Grey Goose Ducasse vodka"),
+    affiliateUrl: amzn("Grey Goose Ducasse vodka cocktail glass set"),
     tags: ["vodka", "french", "sipping"],
   },
   {
@@ -1561,18 +1561,18 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Japan's first and finest single malt. Aged in Mizunara, sherry, and bourbon casks. Won World Whisky of the Year and became permanently impossible to buy at retail.",
-    affiliateUrl: amzn("Yamazaki 18 year Japanese whisky"),
+    affiliateUrl: amzn("Yamazaki Japanese whisky Glencairn tasting glasses"),
     tags: ["japanese-whisky", "single-malt", "rare"],
   },
   {
     id: "don-julio-1942",
-    name: "1942 Añejo",
+    name: "1942 Anejo",
     brand: "Don Julio",
     price: "$175",
     image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Aged 2.5 years, warm agave and caramel notes, and that iconic tall bottle every VIP table orders. The tequila that launched the bottle-service revolution.",
-    affiliateUrl: amzn("Don Julio 1942 tequila"),
+    affiliateUrl: amzn("Don Julio 1942 tequila gift set glasses"),
     tags: ["tequila", "anejo", "nightlife"],
   },
   {
@@ -1583,7 +1583,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Three decades in sherry-seasoned European and American oak. Dried fruit, ginger spice, and orange peel. Each sip is a journey through 30 Scottish winters.",
-    affiliateUrl: amzn("Macallan Double Cask 30 year scotch"),
+    affiliateUrl: amzn("Macallan Double Cask 30 year scotch whisky crystal decanter"),
     tags: ["scotch", "single-malt", "ultra-aged"],
   },
   {
@@ -1594,7 +1594,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&h=600&fit=crop",
     category: "spirits",
     description: "The Mondavi-Rothschild collaboration that proved Napa Valley could play in Bordeaux's league. Cabernet Sauvignon dominant, silk tannins, and a price that says 'special occasion.'",
-    affiliateUrl: amzn("Opus One 2021 wine Napa Valley"),
+    affiliateUrl: amzn("Opus One Napa Valley wine decanter crystal set"),
     tags: ["wine", "napa-valley", "cabernet"],
   },
   {
@@ -1605,7 +1605,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&h=600&fit=crop",
     category: "spirits",
     description: "The holy grail of bourbon. 15 years in charred oak, wheated mash bill, and a lottery system just to buy it. Worth every penny you'll never actually pay at retail.",
-    affiliateUrl: amzn("Pappy Van Winkle 15 year bourbon"),
+    affiliateUrl: amzn("Pappy Van Winkle bourbon whiskey glass set Glencairn"),
     tags: ["bourbon", "rare", "grail"],
   },
   {
@@ -1616,7 +1616,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=600&h=600&fit=crop",
     category: "spirits",
     description: "Half a century in a single cask. Only 220 bottles exist. Hand-blown glass decanter in a leather case. This isn't a drink — it's a museum piece you're allowed to open.",
-    affiliateUrl: amzn("Glenfiddich 50 year scotch whisky"),
+    affiliateUrl: amzn("Glenfiddich single malt scotch whisky book collector"),
     tags: ["scotch", "ultra-rare", "collectible"],
   },
 
@@ -1653,7 +1653,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?w=600&h=600&fit=crop",
     category: "toys",
     description: "30+ points of articulation, LED light-up, die-cast metal, and an unsettling level of detail. The action figure that judges your other action figures.",
-    affiliateUrl: amzn("Hot Toys Iron Man 1/6 scale figure"),
+    affiliateUrl: amzn("Hot Toys Iron Man Mark LXXXV 1/6 scale figure"),
     tags: ["collectible", "marvel", "1/6-scale"],
   },
   {
@@ -1675,7 +1675,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600&h=600&fit=crop",
     category: "toys",
     description: "4K/120fps, 47-min battery, 20m waterproof without a case. The action camera that finally dethroned GoPro. Fight me.",
-    affiliateUrl: amzn("DJI Osmo Action 5 Pro camera"),
+    affiliateUrl: amzn("DJI Osmo Action 5 Pro action camera"),
     tags: ["action-cam", "4k", "waterproof"],
   },
   {
@@ -1686,7 +1686,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=600&h=600&fit=crop",
     category: "toys",
     description: "3,599 pieces, working W16 engine with moving pistons, and a functional 8-speed gearbox. The closest most of us will get to owning a Chiron.",
-    affiliateUrl: amzn("LEGO Technic Bugatti Chiron 42083"),
+    affiliateUrl: amznDirect("B0792RB3B6"),
     tags: ["lego", "technic", "supercar"],
   },
   {
@@ -1697,7 +1697,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?w=600&h=600&fit=crop",
     category: "toys",
     description: "Magnetic Joy-Cons, 8-inch LCD, and backwards compatibility with your entire Switch library. Nintendo finally gave us what we wanted. Almost.",
-    affiliateUrl: amzn("Nintendo Switch 2 console"),
+    affiliateUrl: amznDirect("B098RKWHHZ"),
     tags: ["gaming", "console", "portable"],
   },
   {
@@ -1708,7 +1708,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=600&h=600&fit=crop",
     category: "toys",
     description: "Full-color passthrough, Snapdragon XR2 Gen 2, and no PC required. VR that finally doesn't make you feel like you're wearing a brick. Mark's redemption arc.",
-    affiliateUrl: amzn("Meta Quest 3 VR headset"),
+    affiliateUrl: amzn("Meta Quest 3 VR headset 512GB"),
     tags: ["vr", "mixed-reality", "standalone"],
   },
   {
@@ -1719,7 +1719,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=600&fit=crop",
     category: "toys",
     description: "FPV drone with goggles and motion controller. Fly through the world in first-person at 60mph. The closest you'll get to being a bird without the feathers.",
-    affiliateUrl: amzn("DJI Avata 2 FPV drone combo"),
+    affiliateUrl: amzn("DJI Avata 2 Fly More Combo FPV drone"),
     tags: ["drone", "fpv", "immersive"],
   },
   {
@@ -1730,18 +1730,18 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1581235707960-a58657445675?w=600&h=600&fit=crop",
     category: "toys",
     description: "30+ inches long, 60+ mph, and self-righting technology because you WILL flip it. The RC car that's bigger than some real cars and twice as fun.",
-    affiliateUrl: amzn("Traxxas X-Maxx 8S RC truck"),
+    affiliateUrl: amzn("Traxxas X-Maxx 8S 4WD RC monster truck"),
     tags: ["rc-car", "monster-truck", "fast"],
   },
   {
     id: "pokemon-charizard-psa10",
     name: "1st Edition Charizard PSA 10",
-    brand: "Pokémon",
+    brand: "Pokemon",
     price: "$250,000+",
     image: "https://images.unsplash.com/photo-1613771404784-3a5686aa2be3?w=600&h=600&fit=crop",
     category: "toys",
     description: "The Mona Lisa of trading cards. Base Set, 1st Edition, shadowless, gem mint 10. Grew up in a binder, now lives in a vault. Your childhood was worth something after all.",
-    affiliateUrl: amzn("Pokemon Charizard card collectible"),
+    affiliateUrl: amzn("Pokemon Charizard card collectible graded"),
     tags: ["pokemon", "graded", "investment"],
   },
   {
@@ -1752,7 +1752,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=600&h=600&fit=crop",
     category: "toys",
     description: "9,036 pieces of architectural glory. Three stories of Roman engineering in brick form. The build that makes you feel like an emperor and miss every deadline.",
-    affiliateUrl: amzn("LEGO Colosseum 10276"),
+    affiliateUrl: amzn("LEGO Roman Colosseum 10276"),
     tags: ["lego", "architecture", "display"],
   },
   {
@@ -1763,7 +1763,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=600&h=600&fit=crop",
     category: "toys",
     description: "12 teraflops, 4K/120fps, and Game Pass — the best deal in gaming. The fridge-shaped console that outsmarted everyone with a subscription model.",
-    affiliateUrl: amzn("Xbox Series X console"),
+    affiliateUrl: amznDirect("B08H75RTZ8"),
     tags: ["gaming", "console", "game-pass"],
   },
   {
@@ -1785,7 +1785,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?w=600&h=600&fit=crop",
     category: "toys",
     description: "Half-scale, 4 feet tall, real fabric cape, and LED-lit lightsaber. The Sith Lord guarding your man cave. Probably the most intimidating thing in your house.",
-    affiliateUrl: amzn("Sideshow Darth Vader legendary scale statue"),
+    affiliateUrl: amzn("Sideshow Darth Vader Legendary Scale statue figure"),
     tags: ["star-wars", "statue", "premium"],
   },
   {
@@ -1796,7 +1796,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?w=600&h=600&fit=crop",
     category: "toys",
     description: "FPGA-based retro gaming handheld. Plays original Game Boy, GBA, and Game Gear cartridges on a 3.5\" Gorilla Glass display. Nostalgia in 1080p.",
-    affiliateUrl: amzn("Analogue Pocket handheld console"),
+    affiliateUrl: amzn("Analogue Pocket FPGA retro handheld console"),
     tags: ["retro", "handheld", "fpga"],
   },
   {
@@ -1807,7 +1807,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=600&fit=crop",
     category: "toys",
     description: "Python, JavaScript, or block coding. Color sensor, IR, accelerometer, and expandable with Raspberry Pi. The toy that accidentally teaches your kid to code.",
-    affiliateUrl: amzn("Sphero RVR Plus programmable robot"),
+    affiliateUrl: amzn("Sphero RVR+ programmable robot STEM"),
     tags: ["robot", "stem", "coding"],
   },
   {
@@ -1818,7 +1818,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1581235707960-a58657445675?w=600&h=600&fit=crop",
     category: "toys",
     description: "750 projects, zero soldering, and a genuine understanding of electronics by the time you finish. The toy that turned more kids into engineers than any college.",
-    affiliateUrl: amzn("Snap Circuits Extreme SC-750"),
+    affiliateUrl: amzn("Snap Circuits Extreme SC-750 electronics kit"),
     tags: ["stem", "educational", "electronics"],
   },
   {
@@ -1840,7 +1840,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1611371805429-8b5c1b2c34ba?w=600&h=600&fit=crop",
     category: "toys",
     description: "The world's largest Disney puzzle. 40,320 pieces. Assembled size: 22 feet long. You'll need a conference table, infinite patience, and possibly a divorce lawyer.",
-    affiliateUrl: amzn("Ravensburger Disney 40320 piece puzzle"),
+    affiliateUrl: amzn("Ravensburger Memorable Disney Moments 40320 piece puzzle"),
     tags: ["puzzle", "disney", "massive"],
   },
   {
@@ -1851,7 +1851,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1640955014216-75201056c829?w=600&h=600&fit=crop",
     category: "toys",
     description: "HDMI 2.0, triple USB-A, Ethernet, and USB-C passthrough charging. Turn your portable into a desktop. The dock that makes your TV a gaming PC.",
-    affiliateUrl: amzn("Steam Deck Docking Station official"),
+    affiliateUrl: amzn("Valve Steam Deck Docking Station official"),
     tags: ["gaming", "accessory", "dock"],
   },
 ];

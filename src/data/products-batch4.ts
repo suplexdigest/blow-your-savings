@@ -5,6 +5,10 @@ function amzn(keywords: string): string {
   return `https://www.amazon.com/s?k=${encodeURIComponent(keywords)}&tag=${AMAZON_TAG}`;
 }
 
+function amznDirect(asin: string): string {
+  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
+}
+
 export const PRODUCTS_BATCH4: Product[] = [
   // ============================================================
   // JEWELRY (30)
@@ -17,7 +21,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "The twisted cable that started an empire. Sterling silver and 18K gold because you can't pick just one metal.",
-    affiliateUrl: amzn("David Yurman Cable Classics bracelet gold"),
+    affiliateUrl: amzn("David Yurman Cable Classics Bracelet Sterling Silver 18K Gold"),
     tags: ["bracelet", "iconic", "gifting"],
   },
   {
@@ -28,7 +32,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "That little blue box everyone recognizes. Sterling silver heart tag on a bead chain — instant classic.",
-    affiliateUrl: amzn("Tiffany Return to Tiffany heart tag necklace"),
+    affiliateUrl: amzn("Tiffany & Co Return to Tiffany Heart Tag Pendant Sterling Silver"),
     tags: ["necklace", "iconic", "gifting"],
   },
   {
@@ -39,7 +43,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "The charm bracelet that turned every life milestone into a tiny silver souvenir. Dangerously addictive.",
-    affiliateUrl: amzn("Pandora Moments snake chain bracelet sterling silver"),
+    affiliateUrl: amznDirect("B07KFHX59T"),
     tags: ["bracelet", "charms", "gifting"],
   },
   {
@@ -50,7 +54,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1515562141589-67f0d706d6e0?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Austrian crystal that sparkles so hard people will assume it's the real thing. Let them.",
-    affiliateUrl: amzn("Swarovski Constella pendant necklace"),
+    affiliateUrl: amzn("Swarovski Constella Pendant Necklace Round Cut White Rhodium Plated"),
     tags: ["necklace", "crystal", "gifting"],
   },
   {
@@ -61,7 +65,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Stacking game elevated. 18K gold vermeil links that look like quiet luxury and scream good taste.",
-    affiliateUrl: amzn("Monica Vinader Alta Capture charm bracelet"),
+    affiliateUrl: amzn("Monica Vinader Alta Capture Charm Bracelet 18K Gold Vermeil"),
     tags: ["bracelet", "stacking", "minimal"],
   },
   {
@@ -72,7 +76,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Solid 14K gold hoops that are socially acceptable for literally every occasion. Your new daily drivers.",
-    affiliateUrl: amzn("Mejuri bold hoop earrings 14K gold"),
+    affiliateUrl: amzn("Mejuri Bold Hoop Earrings 14K Solid Gold"),
     tags: ["earrings", "everyday", "gold"],
   },
   {
@@ -83,7 +87,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "The bestseller that keeps selling. Delicate frame, gorgeous stone, and a price that won't require a payment plan.",
-    affiliateUrl: amzn("Kendra Scott Elisa pendant necklace"),
+    affiliateUrl: amzn("Kendra Scott Elisa Pendant Necklace Gold"),
     tags: ["necklace", "bestseller", "gifting"],
   },
   {
@@ -94,7 +98,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Hand-woven sterling silver chain links inspired by Bali. Each one takes artisans hours to craft, so you don't have to.",
-    affiliateUrl: amzn("John Hardy Classic Chain bracelet sterling silver"),
+    affiliateUrl: amzn("John Hardy Classic Chain Link Bracelet Sterling Silver"),
     tags: ["bracelet", "artisan", "heritage"],
   },
   {
@@ -105,7 +109,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Tiny beaded sterling silver with 18K gold accents. The texture is called Caviar because everything luxury needs a food metaphor.",
-    affiliateUrl: amzn("Lagos Caviar gold beaded bracelet"),
+    affiliateUrl: amzn("Lagos Caviar Gold Beaded Bracelet Sterling Silver 18K"),
     tags: ["bracelet", "texture", "stacking"],
   },
   {
@@ -116,7 +120,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1599459183200-59c3fd67e6f7?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "18K white gold with a flower-shaped diamond cluster. Hidden ruby on the back because Roberto Coin loves a secret.",
-    affiliateUrl: amzn("Roberto Coin Princess Flower diamond pendant"),
+    affiliateUrl: amzn("Roberto Coin Princess Flower Diamond Pendant 18K White Gold"),
     tags: ["necklace", "diamonds", "luxury"],
   },
   {
@@ -127,7 +131,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "The OG cultured pearl brand. These Akoya studs are so luminous they make moonlight look lazy.",
-    affiliateUrl: amzn("Mikimoto Akoya pearl stud earrings 18K"),
+    affiliateUrl: amzn("Mikimoto Akoya Pearl Stud Earrings 18K Gold"),
     tags: ["earrings", "pearls", "classic"],
   },
   {
@@ -138,7 +142,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "A smartwatch that doesn't look like a smartwatch. Wear OS with a luxury Swiss case so you can check Slack in style.",
-    affiliateUrl: amzn("TAG Heuer Connected Calibre E4 smartwatch"),
+    affiliateUrl: amzn("TAG Heuer Connected Calibre E4 45mm Smartwatch"),
     tags: ["smartwatch", "luxury", "tech"],
   },
   {

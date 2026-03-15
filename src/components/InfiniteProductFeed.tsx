@@ -4,7 +4,6 @@ import { useState, useEffect, useCallback, useMemo } from "react";
 import { Product } from "@/data/products";
 import { ALL_PRODUCTS as PRODUCTS } from "@/data/all-products";
 import ProductCard from "./ProductCard";
-import AdSlot from "./AdSlot";
 import { Filters } from "./SearchAndFilter";
 
 function shuffleArray<T>(arr: T[]): T[] {
@@ -18,6 +17,16 @@ function shuffleArray<T>(arr: T[]): T[] {
 
 function parsePrice(price: string): number {
   return parseFloat(price.replace(/[^0-9.]/g, "")) || 0;
+}
+
+// Deduplicate by image URL — if two products share the same image, only keep the first
+function deduplicateByImage(products: Product[]): Product[] {
+  const seen = new Set<string>();
+  return products.filter((p) => {
+    if (seen.has(p.image)) return false;
+    seen.add(p.image);
+    return true;
+  });
 }
 
 export default function InfiniteProductFeed({ filters }: { filters: Filters }) {
@@ -49,6 +58,9 @@ export default function InfiniteProductFeed({ filters }: { filters: Filters }) {
       });
     }
 
+    // Deduplicate by image
+    list = deduplicateByImage(list);
+
     // Sort
     if (filters.sort === "price-asc") {
       list = [...list].sort((a, b) => parsePrice(a.price) - parsePrice(b.price));
@@ -65,28 +77,33 @@ export default function InfiniteProductFeed({ filters }: { filters: Filters }) {
 
   const [items, setItems] = useState<Product[]>([]);
   const [page, setPage] = useState(0);
+  const [allLoaded, setAllLoaded] = useState(false);
   const pageSize = 12;
 
   // Reset when filters change
   useEffect(() => {
     setItems(filtered.slice(0, pageSize));
     setPage(1);
+    setAllLoaded(filtered.length <= pageSize);
   }, [filtered]);
 
   const loadMore = useCallback(() => {
-    setItems((prev) => {
-      const start = page * pageSize;
-      const nextBatch: Product[] = [];
-      for (let i = 0; i < pageSize; i++) {
-        nextBatch.push(filtered[(start + i) % filtered.length]);
-      }
-      return [...prev, ...nextBatch];
-    });
+    const start = page * pageSize;
+    if (start >= filtered.length) {
+      setAllLoaded(true);
+      return;
+    }
+    const nextBatch = filtered.slice(start, start + pageSize);
+    setItems((prev) => [...prev, ...nextBatch]);
     setPage((p) => p + 1);
+    if (start + pageSize >= filtered.length) {
+      setAllLoaded(true);
+    }
   }, [page, filtered]);
 
   // Infinite scroll observer
   useEffect(() => {
+    if (allLoaded) return;
     const sentinel = document.getElementById("scroll-sentinel");
     if (!sentinel) return;
 
@@ -101,7 +118,7 @@ export default function InfiniteProductFeed({ filters }: { filters: Filters }) {
 
     observer.observe(sentinel);
     return () => observer.disconnect();
-  }, [loadMore]);
+  }, [loadMore, allLoaded]);
 
   if (filtered.length === 0) {
     return (
@@ -118,24 +135,25 @@ export default function InfiniteProductFeed({ filters }: { filters: Filters }) {
         {filtered.length} item{filtered.length !== 1 ? "s" : ""}
       </p>
       <div className="grid gap-3 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-        {items.map((product, i) => (
-          <div key={`${product.id}-${i}`}>
-            <ProductCard product={product} />
-            {(i + 1) % 8 === 0 && (
-              <div className="mt-3">
-                <AdSlot slot={`feed-${Math.floor(i / 8)}`} className="min-h-[90px]" />
-              </div>
-            )}
-          </div>
+        {items.map((product) => (
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
 
-      <div id="scroll-sentinel" className="flex items-center justify-center py-12">
-        <div className="flex items-center gap-3 text-sm text-muted">
-          <div className="h-5 w-5 animate-spin rounded-full border-2 border-gold border-t-transparent" />
-          Loading more luxury...
+      {!allLoaded && (
+        <div id="scroll-sentinel" className="flex items-center justify-center py-12">
+          <div className="flex items-center gap-3 text-sm text-muted">
+            <div className="h-5 w-5 animate-spin rounded-full border-2 border-gold border-t-transparent" />
+            Loading more luxury...
+          </div>
         </div>
-      </div>
+      )}
+
+      {allLoaded && items.length > 0 && (
+        <div className="py-12 text-center text-sm text-muted">
+          You&apos;ve seen all {filtered.length} items. Your wallet thanks you for stopping.
+        </div>
+      )}
     </div>
   );
 }
