@@ -7,9 +7,9 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
       <div className="mx-auto flex h-12 max-w-7xl items-center justify-between px-3 sm:h-14 sm:px-4">
-        <Link href="/">
+        <a href="/" onClick={() => { window.location.href = "/"; }}>
           <Logo />
-        </Link>
+        </a>
         <div className="flex items-center gap-3">
           <span className="hidden text-xs text-muted sm:inline font-sans">
             Luxury items you didn&apos;t know you needed
