@@ -40,7 +40,7 @@ export default function ProductCard({ product }: { product: Product }) {
         </div>
       </div>
       <div className="p-3 sm:p-4">
-        <h3 className="mb-0.5 text-sm font-bold leading-tight text-foreground group-hover:text-gold transition-colors sm:mb-1 sm:text-base">
+        <h3 className="font-display mb-0.5 text-sm font-bold leading-tight text-foreground group-hover:text-gold transition-colors sm:mb-1 sm:text-base">
           {product.name}
         </h3>
         <p className="mb-2 text-[11px] leading-relaxed text-muted line-clamp-2 sm:mb-3 sm:text-xs">

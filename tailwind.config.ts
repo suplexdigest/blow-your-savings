@@ -22,6 +22,10 @@ const config: Config = {
         border: "#262626",
         muted: "#737373",
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        display: ["var(--font-playfair)", "Georgia", "serif"],
+      },
     },
   },
   plugins: [],
