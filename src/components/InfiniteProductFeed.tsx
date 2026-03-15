@@ -19,12 +19,12 @@ function parsePrice(price: string): number {
   return parseFloat(price.replace(/[^0-9.]/g, "")) || 0;
 }
 
-// Deduplicate by image URL — if two products share the same image, only keep the first
-function deduplicateByImage(products: Product[]): Product[] {
+// Deduplicate by product ID — no duplicate products
+function deduplicateById(products: Product[]): Product[] {
   const seen = new Set<string>();
   return products.filter((p) => {
-    if (seen.has(p.image)) return false;
-    seen.add(p.image);
+    if (seen.has(p.id)) return false;
+    seen.add(p.id);
     return true;
   });
 }
@@ -58,8 +58,8 @@ export default function InfiniteProductFeed({ filters }: { filters: Filters }) {
       });
     }
 
-    // Deduplicate by image
-    list = deduplicateByImage(list);
+    // Deduplicate by ID
+    list = deduplicateById(list);
 
     // Sort
     if (filters.sort === "price-asc") {

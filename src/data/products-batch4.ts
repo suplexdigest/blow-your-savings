@@ -1302,7 +1302,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=600&h=600&fit=crop",
     category: "office",
     description: "18 ports, 98W charging, and Thunderbolt 4. One cable to rule them all. The dock that ends the dongle nightmare.",
-    affiliateUrl: amzn("CalDigit TS4 Thunderbolt 4 dock"),
+    affiliateUrl: amznDirect("B09GK8LBWS"),
     tags: ["dock", "thunderbolt", "hub"],
   },
   {
@@ -1313,7 +1313,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&h=600&fit=crop",
     category: "office",
     description: "Hot-swappable, QMK/VIA compatible, and works on Mac and Windows. The gateway drug to the mechanical keyboard rabbit hole.",
-    affiliateUrl: amzn("Keychron K8 Pro wireless mechanical keyboard"),
+    affiliateUrl: amzn("Keychron K8 Pro QMK VIA Wireless Mechanical Keyboard Hot-Swappable"),
     tags: ["keyboard", "mechanical", "wireless"],
   },
   {
@@ -1324,7 +1324,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&h=600&fit=crop",
     category: "office",
     description: "Wireless, rechargeable, and unlocks your Mac with your fingerprint. Typing on chiclet keys never felt this premium.",
-    affiliateUrl: amzn("Apple Magic Keyboard Touch ID numeric keypad"),
+    affiliateUrl: amzn("Apple Magic Keyboard Touch ID Numeric Keypad Wireless Rechargeable"),
     tags: ["keyboard", "wireless", "apple"],
   },
   {
@@ -1335,7 +1335,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&h=600&fit=crop",
     category: "office",
     description: "Backlit, multi-device, and with spherically dished keys. Smart illumination that lights up when your hands approach. Spooky.",
-    affiliateUrl: amzn("Logitech MX Keys S wireless keyboard"),
+    affiliateUrl: amznDirect("B09LJKYYRC"),
     tags: ["keyboard", "wireless", "backlit"],
   },
   {
@@ -1346,7 +1346,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&h=600&fit=crop",
     category: "office",
     description: "Solid hardwood monitor riser handmade in Portland. Elevates your screen and your desk aesthetics simultaneously.",
-    affiliateUrl: amzn("Grovemade wood desk shelf monitor riser"),
+    affiliateUrl: amzn("Grovemade Wood Desk Shelf Monitor Riser Solid Hardwood"),
     tags: ["desk accessory", "wood", "handmade"],
   },
   {
@@ -1357,7 +1357,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&h=600&fit=crop",
     category: "office",
     description: "Vegetable-tanned leather that develops a patina over time. Your desk wears its age better than you do.",
-    affiliateUrl: amzn("Grovemade leather desk pad"),
+    affiliateUrl: amzn("Grovemade Leather Desk Pad Vegetable Tanned"),
     tags: ["desk accessory", "leather", "patina"],
   },
   {
@@ -1368,7 +1368,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=600&h=600&fit=crop",
     category: "office",
     description: "Precious resin barrel, gold-coated clip, and that white star cap. The pen that makes signing documents feel like signing autographs.",
-    affiliateUrl: amzn("Montblanc Meisterstuck Classique ballpoint pen"),
+    affiliateUrl: amznDirect("B002IT6DBA"),
     tags: ["pen", "luxury", "iconic"],
   },
   {
@@ -1379,7 +1379,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=600&h=600&fit=crop",
     category: "office",
     description: "Makrolon body, 14K gold nib, piston fill. Designed in 1966 and still the benchmark. Bauhaus energy in pen form.",
-    affiliateUrl: amzn("Lamy 2000 fountain pen"),
+    affiliateUrl: amznDirect("B0002T40IM"),
     tags: ["pen", "fountain", "bauhaus"],
   },
   {
@@ -1390,7 +1390,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&h=600&fit=crop",
     category: "office",
     description: "Backlight + front light, wireless controller, and auto-dimming. Illuminates your desk without blinding your screen. Pure genius.",
-    affiliateUrl: amzn("BenQ ScreenBar Halo monitor light"),
+    affiliateUrl: amznDirect("B076VNFZJG"),
     tags: ["lighting", "monitor", "ergonomic"],
   },
   {
@@ -1401,7 +1401,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=600&h=600&fit=crop",
     category: "office",
     description: "4K60 Sony sensor, f/2.0 wide-angle lens. Make your Zoom calls look like a Netflix documentary about someone important.",
-    affiliateUrl: amzn("Elgato Facecam Pro 4K webcam"),
+    affiliateUrl: amznDirect("B0953DM776"),
     tags: ["webcam", "4K", "streaming"],
   },
   {
@@ -1412,7 +1412,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=600&h=600&fit=crop",
     category: "office",
     description: "Four condenser capsules, Blue VO!CE software, and an LED meter. Sound like a podcast host even on a status update call.",
-    affiliateUrl: amzn("Blue Yeti X USB microphone"),
+    affiliateUrl: amznDirect("B00N1YPXW2"),
     tags: ["microphone", "usb", "podcast"],
   },
   {
@@ -1423,7 +1423,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=600&h=600&fit=crop",
     category: "office",
     description: "192 pages of ultra-smooth paper in a cloth-bound cover. For thoughts too important for a Google Doc.",
-    affiliateUrl: amzn("Baron Fig Confidant hardcover notebook"),
+    affiliateUrl: amzn("Baron Fig Confidant Hardcover Notebook Cloth Bound 192 Pages"),
     tags: ["notebook", "paper", "minimal"],
   },
   {
@@ -1434,7 +1434,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&h=600&fit=crop",
     category: "office",
     description: "Quiet clicks, 8K DPI sensor, and MagSpeed scroll. The mouse that made everyone stop buying Apple's flat puck.",
-    affiliateUrl: amzn("Logitech MX Master 3S wireless mouse"),
+    affiliateUrl: amzn("Logitech MX Master 3S Wireless Mouse 8K DPI Quiet Clicks"),
     tags: ["mouse", "wireless", "ergonomic"],
   },
   {
@@ -1445,7 +1445,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&h=600&fit=crop",
     category: "office",
     description: "Modular leather and wood organizer designed for minimal desks. A place for everything and everything in its aesthetic place.",
-    affiliateUrl: amzn("Ugmonk Gather desk organizer"),
+    affiliateUrl: amzn("Ugmonk Gather Minimal Desk Organizer Modular Leather Wood"),
     tags: ["desk accessory", "minimal", "modular"],
   },
   {
@@ -1456,7 +1456,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&h=600&fit=crop",
     category: "office",
     description: "5K, matte display, built-in 4K camera, and Tizen OS. Samsung's answer to the Studio Display — with fewer compromises.",
-    affiliateUrl: amzn("Samsung ViewFinity S9 5K monitor 27"),
+    affiliateUrl: amzn("Samsung ViewFinity S9 5K Monitor 27 Inch Matte Display Built-in Camera"),
     tags: ["monitor", "5K", "matte"],
   },
   {
@@ -1467,7 +1467,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&h=600&fit=crop",
     category: "office",
     description: "Full aluminum body, gasket mount, and QMK/VIA. The sound of typing on this is ASMR you paid $200 for.",
-    affiliateUrl: amzn("Keychron Q1 Pro wireless mechanical keyboard"),
+    affiliateUrl: amzn("Keychron Q1 Pro QMK VIA Wireless Mechanical Keyboard Aluminum Gasket Mount"),
     tags: ["keyboard", "aluminum", "custom"],
   },
   {
@@ -1478,7 +1478,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=600&h=600&fit=crop",
     category: "office",
     description: "13 ports, 85W charging, and dual 4K display support. Everything the CalDigit does at a friendlier price point.",
-    affiliateUrl: amzn("Anker PowerExpand Elite Thunderbolt 4 dock"),
+    affiliateUrl: amzn("Anker PowerExpand Elite 13-in-1 Thunderbolt 4 Dock 85W"),
     tags: ["dock", "thunderbolt", "value"],
   },
   {
@@ -1489,7 +1489,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&h=600&fit=crop",
     category: "office",
     description: "Vegan leather top, magnetic cable holder, and a hidden document sleeve. Your desk mat has pockets now. You're welcome.",
-    affiliateUrl: amzn("Orbitkey desk mat large"),
+    affiliateUrl: amzn("Orbitkey Desk Mat Large Vegan Leather Magnetic Cable Holder"),
     tags: ["desk accessory", "vegan leather", "organized"],
   },
   {
@@ -1500,7 +1500,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=600&h=600&fit=crop",
     category: "office",
     description: "15 LCD keys you can program to do anything. Streamers love it, but it's secretly the best productivity tool for everyone.",
-    affiliateUrl: amzn("Elgato Stream Deck MK2"),
+    affiliateUrl: amzn("Elgato Stream Deck MK.2 15 LCD Keys Customizable Controller"),
     tags: ["controller", "productivity", "customizable"],
   },
 
@@ -1515,7 +1515,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Italian-designed retro toaster in candy colors. Makes toast and makes your kitchen look like a 1950s diner. Both important.",
-    affiliateUrl: amzn("Smeg 2 slice toaster retro style"),
+    affiliateUrl: amznDirect("B01DEFXIRG"),
     tags: ["toaster", "retro", "design"],
   },
   {
@@ -1526,7 +1526,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Seven temperature settings in that iconic retro body. Your kettle is now the most photogenic thing in the kitchen.",
-    affiliateUrl: amzn("Smeg variable temperature kettle retro"),
+    affiliateUrl: amzn("Smeg Variable Temperature Kettle Retro 50s Style 7 Settings"),
     tags: ["kettle", "retro", "temperature control"],
   },
   {
@@ -1537,7 +1537,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "13 functions including air fry, dehydrate, and slow cook. It does everything your full-size oven does but on the counter.",
-    affiliateUrl: amzn("Breville Smart Oven Air Fryer Pro"),
+    affiliateUrl: amznDirect("B01N5UPTZS"),
     tags: ["oven", "air fryer", "versatile"],
   },
   {
@@ -1548,7 +1548,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Pressure cook, air fry, and steam crisp with one sliding lid. Fifteen functions is more personalities than most people have.",
-    affiliateUrl: amzn("Ninja Foodi 15-in-1 SmartLid pressure cooker"),
+    affiliateUrl: amznDirect("B089TPG3TF"),
     tags: ["pressure cooker", "air fryer", "multi-use"],
   },
   {
@@ -1559,7 +1559,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "The appliance that launched a million Facebook groups. Pressure cook, slow cook, sous vide — with a Wi-Fi app because IoT.",
-    affiliateUrl: amzn("Instant Pot Pro Plus 10-in-1 pressure cooker"),
+    affiliateUrl: amznDirect("B08V5GKF1N"),
     tags: ["pressure cooker", "smart", "cult favorite"],
   },
   {
@@ -1570,7 +1570,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Fuzzy logic and induction heating for perfect rice every time. Japanese engineering applied to the most important grain.",
-    affiliateUrl: amzn("Zojirushi induction heating pressure rice cooker"),
+    affiliateUrl: amznDirect("B00007J5U7"),
     tags: ["rice cooker", "japanese", "induction"],
   },
   {
@@ -1581,7 +1581,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Cold spin technology extracts juice without heat. Turn $30 of produce into one glass of juice. It's called wellness.",
-    affiliateUrl: amzn("Breville Juice Fountain Cold Plus juicer"),
+    affiliateUrl: amzn("Breville Juice Fountain Cold Plus Centrifugal Juicer"),
     tags: ["juicer", "cold press", "wellness"],
   },
   {
@@ -1592,7 +1592,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "2.2 HP motor, touchscreen, and self-detect containers. Blends so hard it makes hot soup from raw vegetables. Terrifying.",
-    affiliateUrl: amzn("Vitamix Ascent A3500 blender"),
+    affiliateUrl: amzn("Vitamix Ascent A3500 Blender Touchscreen Self-Detect"),
     tags: ["blender", "professional", "smart"],
   },
   {
@@ -1603,7 +1603,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "720-watt motor with intuitive on/off/pulse. The kitchen workhorse that's been chopping, slicing, and shredding since 1973.",
-    affiliateUrl: amzn("Cuisinart Custom 14 cup food processor"),
+    affiliateUrl: amzn("Cuisinart Custom 14-Cup Food Processor 720 Watt"),
     tags: ["food processor", "classic", "powerful"],
   },
   {
@@ -1614,7 +1614,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1594385208974-2f8bb63e8448?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "The mixer that's been on wedding registries since forever. 59 mixing positions, 10 speeds, and more colors than a paint store.",
-    affiliateUrl: amzn("KitchenAid Artisan 5 quart stand mixer"),
+    affiliateUrl: amzn("KitchenAid Artisan Series 5-Quart Tilt-Head Stand Mixer"),
     tags: ["mixer", "baking", "iconic"],
   },
   {
@@ -1625,7 +1625,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Breville-built with automatic steam wand and latte art pitcher. Pod coffee for people who refuse to compromise on crema.",
-    affiliateUrl: amzn("Nespresso Creatista Plus espresso machine"),
+    affiliateUrl: amznDirect("B09VX4R82Q"),
     tags: ["coffee", "espresso", "automatic"],
   },
   {
@@ -1636,7 +1636,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Keeps your coffee at the exact temperature you set via app. A $150 mug for people who hate lukewarm anything.",
-    affiliateUrl: amzn("Ember Mug 2 temperature control 14 oz"),
+    affiliateUrl: amznDirect("B0C5G76NKN"),
     tags: ["mug", "smart", "coffee"],
   },
   {
@@ -1647,7 +1647,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Variable temperature, Bluetooth, and a pour spout so precise it should have its own Instagram. Kettle as lifestyle.",
-    affiliateUrl: amzn("Fellow Stagg EKG Pro electric kettle"),
+    affiliateUrl: amznDirect("B077JBQZPX"),
     tags: ["kettle", "pour over", "design"],
   },
   {
@@ -1658,7 +1658,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Borosilicate glass and a wood collar. Invented in 1941, still in MoMA's permanent collection. Your coffee maker is art.",
-    affiliateUrl: amzn("Chemex Classic 8 cup pour over coffee maker"),
+    affiliateUrl: amznDirect("B000I1WP7W"),
     tags: ["coffee", "pour over", "design icon"],
   },
   {
@@ -1669,7 +1669,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Japanese-made glass server with a built-in V60 dripper. Clean coffee that reveals every note — and every flaw in your beans.",
-    affiliateUrl: amzn("Hario V60 drip decanter pour over"),
+    affiliateUrl: amzn("Hario V60 Drip Decanter Pour Over Glass Server"),
     tags: ["coffee", "pour over", "japanese"],
   },
   {
@@ -1680,7 +1680,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Double-wall borosilicate glass with a metal filter. The syringe coffee maker for baristas who travel light and brew heavy.",
-    affiliateUrl: amzn("AeroPress Premium coffee maker glass"),
+    affiliateUrl: amznDirect("B0047BIWSK"),
     tags: ["coffee", "portable", "cult favorite"],
   },
   {
@@ -1691,7 +1691,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583394293214-28ade04c0e19?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Enameled cast iron in every color of the rainbow. The pan you'll fight over in the divorce.",
-    affiliateUrl: amzn("Le Creuset Signature iron handle skillet"),
+    affiliateUrl: amznDirect("B00005QFSP"),
     tags: ["skillet", "cast iron", "enameled"],
   },
   {
@@ -1702,7 +1702,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583394293214-28ade04c0e19?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Black matte enamel with self-basting lid spikes. Le Creuset's French rival that chefs actually prefer. We said it.",
-    affiliateUrl: amzn("Staub round cocotte dutch oven 5.5 qt"),
+    affiliateUrl: amzn("Staub Round Cocotte Dutch Oven 5.5 Qt Cast Iron Enameled"),
     tags: ["dutch oven", "cast iron", "french"],
   },
   {
@@ -1713,7 +1713,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583394293214-28ade04c0e19?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Pre-seasoned in Tennessee since 1896. Sear steaks, bake cornbread, and pass it down to grandchildren. $34 for a century of cooking.",
-    affiliateUrl: amzn("Lodge cast iron skillet 12 inch pre-seasoned"),
+    affiliateUrl: amznDirect("B00006JSUA"),
     tags: ["skillet", "cast iron", "value"],
   },
   {
@@ -1724,7 +1724,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583394293214-28ade04c0e19?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "1.5mm copper with stainless lining, made in Normandy. Heats and cools so precisely it's basically a science instrument you cook with.",
-    affiliateUrl: amzn("Mauviel M150S copper saucepan"),
+    affiliateUrl: amzn("Mauviel M'150S 1.5mm Copper Saucepan Stainless Steel Lined"),
     tags: ["saucepan", "copper", "french"],
   },
   {
@@ -1735,7 +1735,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Built-in grinder, assisted tamping, and ThermoJet heating. Pull cafe-quality espresso without a barista's attitude.",
-    affiliateUrl: amzn("Breville Barista Express Impress espresso machine"),
+    affiliateUrl: amzn("Breville Barista Express Impress Espresso Machine Built-in Grinder"),
     tags: ["coffee", "espresso", "grinder"],
   },
   {
@@ -1746,7 +1746,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583394293214-28ade04c0e19?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Enameled cast iron in Flame Orange since 1925. The Dutch oven with a century of braises and a lifetime warranty.",
-    affiliateUrl: amzn("Le Creuset Signature round Dutch oven 7.25 qt"),
+    affiliateUrl: amzn("Le Creuset Signature Round Dutch Oven 7.25 Qt Enameled Cast Iron"),
     tags: ["dutch oven", "cast iron", "iconic"],
   },
   {
@@ -1757,7 +1757,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583394293214-28ade04c0e19?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Forged from a single piece of German steel. The blade that makes home cooks feel like they have a Michelin star.",
-    affiliateUrl: amzn("Zwilling Pro 8 inch chef knife"),
+    affiliateUrl: amzn("Zwilling J.A. Henckels Pro 8-Inch Chef's Knife Forged German Steel"),
     tags: ["knife", "german", "forged"],
   },
   {
@@ -1768,7 +1768,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "41 grind settings from espresso to cold brew. Anti-static technology so grounds go in the cup, not on the counter.",
-    affiliateUrl: amzn("Fellow Opus conical burr coffee grinder"),
+    affiliateUrl: amzn("Fellow Opus Conical Burr Coffee Grinder 41 Settings Anti-Static"),
     tags: ["coffee", "grinder", "versatile"],
   },
   {
@@ -1779,7 +1779,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=600&fit=crop",
     category: "kitchen",
     description: "Lithium-ion battery, no cord, and variable speed trigger. Blend soup in the pot without playing jump rope with a power cable.",
-    affiliateUrl: amzn("KitchenAid cordless hand blender"),
+    affiliateUrl: amzn("KitchenAid Cordless Variable Speed Hand Blender Lithium Ion"),
     tags: ["blender", "cordless", "convenient"],
   },
 
@@ -1794,7 +1794,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=600&fit=crop",
     category: "pets",
     description: "Self-cleaning litter box with app notifications and a waste drawer. Your cat's bathroom is now smarter than yours.",
-    affiliateUrl: amzn("Litter-Robot 4 automatic self-cleaning litter box"),
+    affiliateUrl: amznDirect("B0CH46WD5F"),
     tags: ["cat", "automatic", "smart"],
   },
   {
@@ -1805,7 +1805,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "1080p rotating camera, bark alerts, and remote treat launching. Spy on your dog and bribe them from work.",
-    affiliateUrl: amzn("Furbo 360 dog camera treat tossing"),
+    affiliateUrl: amznDirect("B0BXZ1S3SL"),
     tags: ["dog", "camera", "smart"],
   },
   {
@@ -1816,7 +1816,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "LTE GPS tracker, activity monitor, and escape alerts. Know where your dog is before they know where they're going.",
-    affiliateUrl: amzn("Fi Series 3 GPS smart dog collar"),
+    affiliateUrl: amzn("Fi Series 3 GPS Smart Dog Collar LTE Tracker Activity Monitor"),
     tags: ["dog", "gps", "tracker"],
   },
   {
@@ -1827,7 +1827,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "GPS location, fitness tracking, and health insights for your pet. Basically an Apple Watch for creatures who eat their own fur.",
-    affiliateUrl: amzn("Whistle GO Explore GPS pet tracker health"),
+    affiliateUrl: amzn("Whistle GO Explore GPS Pet Tracker Health Monitor Dog Cat"),
     tags: ["dog", "gps", "health"],
   },
   {
@@ -1838,7 +1838,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=600&fit=crop",
     category: "pets",
     description: "Wi-Fi enabled, app-scheduled meals, and slow-feed mode. Feed your pet on time even when you're stuck in a meeting about meetings.",
-    affiliateUrl: amzn("PetSafe Smart Feed automatic pet feeder"),
+    affiliateUrl: amzn("PetSafe Smart Feed Automatic Dog Cat Feeder WiFi App Scheduled"),
     tags: ["feeder", "automatic", "smart"],
   },
   {
@@ -1849,7 +1849,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=600&fit=crop",
     category: "pets",
     description: "Stainless steel, triple-action filter, and app-controlled LED. A water fountain for cats who drink more than you do.",
-    affiliateUrl: amzn("Catit PIXI Smart stainless steel fountain"),
+    affiliateUrl: amzn("Catit PIXI Smart Stainless Steel Cat Water Fountain App LED"),
     tags: ["cat", "fountain", "smart"],
   },
   {
@@ -1860,7 +1860,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "Collapses flat, puppy divider included, and diamond-shaped mesh for safety. The crate that looks like it was designed by Apple.",
-    affiliateUrl: amzn("Diggs Revol collapsible dog crate"),
+    affiliateUrl: amzn("Diggs Revol Collapsible Dog Crate Puppy Divider Diamond Mesh"),
     tags: ["dog", "crate", "design"],
   },
   {
@@ -1871,7 +1871,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "Made in Montana, BPA-free, and guaranteed tough. The indestructible bone for dogs who treat every toy like a crime scene.",
-    affiliateUrl: amzn("West Paw Zogoflex Hurley bone dog toy"),
+    affiliateUrl: amzn("West Paw Zogoflex Hurley Bone Dog Toy Durable BPA Free Made USA"),
     tags: ["dog", "toy", "durable"],
   },
   {
@@ -1882,7 +1882,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "Red rubber, stuffable, and bouncier than your last relationship. The OG dog toy that vets have recommended since 1976.",
-    affiliateUrl: amzn("KONG Classic dog toy large"),
+    affiliateUrl: amznDirect("B0002AR0I8"),
     tags: ["dog", "toy", "classic"],
   },
   {
@@ -1893,7 +1893,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "Padded chest panel, two leash points, and ID pocket. Adventure-grade gear for the dog who takes walks as seriously as hikes.",
-    affiliateUrl: amzn("Ruffwear Front Range everyday dog harness"),
+    affiliateUrl: amznDirect("B01MY2SP4M"),
     tags: ["dog", "harness", "adventure"],
   },
   {
@@ -1904,7 +1904,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "Recycled fill, bolster sides, and a cover that survives the washer. Your dog sleeps on a $169 couch and you paid for it willingly.",
-    affiliateUrl: amzn("Orvis ComfortFill-Eco couch dog bed"),
+    affiliateUrl: amzn("Orvis ComfortFill-Eco Couch Dog Bed Recycled Fill Washable"),
     tags: ["dog", "bed", "eco"],
   },
   {
@@ -1915,7 +1915,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "Pressure-relieving memory foam and bolsters from the mattress people. Your dog now sleeps better than most humans.",
-    affiliateUrl: amzn("Casper dog bed medium memory foam"),
+    affiliateUrl: amzn("Casper Dog Bed Medium Memory Foam Bolsters Washable Cover"),
     tags: ["dog", "bed", "memory foam"],
   },
   {
@@ -1926,7 +1926,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "Aluminum frame, closing panel, and flexible flap. Give your pet independence and yourself freedom from doorman duty.",
-    affiliateUrl: amzn("PetSafe Freedom aluminum pet door"),
+    affiliateUrl: amzn("PetSafe Freedom Aluminum Pet Door Closing Panel Flexible Flap"),
     tags: ["dog", "door", "aluminum"],
   },
   {
@@ -1937,7 +1937,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "Reduces shedding up to 90%. Pull out enough fur to build a second dog and finally reclaim your couch.",
-    affiliateUrl: amzn("FURminator deShedding tool large dogs"),
+    affiliateUrl: amzn("FURminator deShedding Tool Large Dogs Long Hair Undercoat"),
     tags: ["dog", "grooming", "deshedding"],
   },
   {
@@ -1948,7 +1948,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=600&fit=crop",
     category: "pets",
     description: "Sheltered foam panels and a strong handle to pull your soggy adventure buddy out of the lake. Safety meets style.",
-    affiliateUrl: amzn("Ruffwear Float Coat dog life jacket"),
+    affiliateUrl: amzn("Ruffwear Float Coat Dog Life Jacket Buoyant Handle"),
     tags: ["dog", "water", "safety"],
   },
   {
@@ -1959,7 +1959,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=600&fit=crop",
     category: "pets",
     description: "Tubes filled with treats that cats have to fish out. Mental stimulation for creatures that stare at walls for fun.",
-    affiliateUrl: amzn("Catit Senses 2.0 Digger interactive cat toy"),
+    affiliateUrl: amzn("Catit Senses 2.0 Digger Interactive Cat Toy Treat Puzzle"),
     tags: ["cat", "toy", "interactive"],
   },
   {
@@ -1970,7 +1970,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&h=600&fit=crop",
     category: "pets",
     description: "1080p video, night vision, and flingable treats. Watch your cat knock things off the counter in HD from anywhere.",
-    affiliateUrl: amzn("Petcube Bites 2 Lite pet camera treat dispenser"),
+    affiliateUrl: amzn("Petcube Bites 2 Lite Pet Camera Treat Dispenser 1080p Night Vision"),
     tags: ["cat", "camera", "treats"],
   },
   {
