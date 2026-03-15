@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0a0a0a"/>
+  <text x="256" y="200" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size="120" fill="#d4a853">BYS</text>
+  <text x="256" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="42" fill="#f5f5f5">BLOW YOUR</text>
+  <text x="256" y="390" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="42" fill="#d4a853">SAVINGS</text>
+</svg>

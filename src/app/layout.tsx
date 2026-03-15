@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +13,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#d4a853",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
   title: {
     default: "BlowYourSavings — Luxury Items You Didn't Know You Needed",
@@ -19,6 +27,7 @@ export const metadata: Metadata = {
   },
   description:
     "The ultimate scroll of high-end luxury items. Watches, supercars, tech, fashion, and more — curated for people with expensive taste and zero self-control.",
+  manifest: "/manifest.json",
   openGraph: {
     title: "BlowYourSavings — Luxury Items You Didn't Know You Needed",
     description: "Endless luxury. Endless scrolling. Endless temptation.",
@@ -31,6 +40,11 @@ export const metadata: Metadata = {
     description: "Endless luxury. Endless scrolling. Endless temptation.",
   },
   robots: { index: true, follow: true },
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
+    "mobile-web-app-capable": "yes",
+  },
 };
 
 export default function RootLayout({
@@ -40,10 +54,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
         {children}
+        <ServiceWorkerRegistration />
       </body>
     </html>
   );
