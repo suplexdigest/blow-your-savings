@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect, useCallback, useMemo } from "react";
-import { PRODUCTS, Product } from "@/data/products";
+import { Product } from "@/data/products";
+import { ALL_PRODUCTS as PRODUCTS } from "@/data/all-products";
 import ProductCard from "./ProductCard";
 import AdSlot from "./AdSlot";
 import { Filters } from "./SearchAndFilter";

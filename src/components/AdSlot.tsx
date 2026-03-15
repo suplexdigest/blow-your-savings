@@ -1,6 +1,6 @@
 "use client";
 
-import { AMAZON_TAG } from "@/data/products";
+const AMAZON_TAG = "hookandhull20-20";
 
 const PROMO_LINKS = [
   { text: "Top Deals on Luxury Watches", search: "luxury watches men" },

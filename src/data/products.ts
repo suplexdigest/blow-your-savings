@@ -33,6 +33,13 @@ export const CATEGORIES: Category[] = [
   { slug: "audio", name: "Audio", tagline: "Sound so good it hurts", icon: "headphones" },
   { slug: "outdoors", name: "Outdoors & Adventure", tagline: "Rich people touch grass too", icon: "mountain" },
   { slug: "spirits", name: "Spirits & Wine", tagline: "Sip like royalty", icon: "wine" },
+  { slug: "jewelry", name: "Jewelry", tagline: "Shine brighter than your future", icon: "sparkles" },
+  { slug: "grooming", name: "Grooming", tagline: "Look expensive, smell expensive", icon: "sparkles" },
+  { slug: "fitness", name: "Fitness", tagline: "Sweat in style", icon: "mountain" },
+  { slug: "travel", name: "Travel", tagline: "Pack like a billionaire", icon: "sparkles" },
+  { slug: "office", name: "Office", tagline: "Work from your throne", icon: "cpu" },
+  { slug: "kitchen", name: "Kitchen", tagline: "Cook like a Michelin chef", icon: "home" },
+  { slug: "pets", name: "Pets", tagline: "Spoil them rotten", icon: "sparkles" },
   { slug: "toys", name: "Toys & Collectibles", tagline: "Because adulting is optional", icon: "gamepad" },
 ];
 

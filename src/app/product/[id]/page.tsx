@@ -1,4 +1,4 @@
-import { PRODUCTS } from "@/data/products";
+import { ALL_PRODUCTS as PRODUCTS } from "@/data/all-products";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
