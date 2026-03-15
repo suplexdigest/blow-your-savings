@@ -153,7 +153,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1695048132832-b41e2aedb0a8?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "49mm titanium tank on your wrist. Dive computer, dual-frequency GPS, and a siren for when you inevitably get lost hiking.",
-    affiliateUrl: amzn("Apple Watch Ultra 2"),
+    affiliateUrl: amznDirect("B0CHX3PBRX"),
     tags: ["smartwatch", "titanium", "adventure"],
   },
   {
@@ -164,7 +164,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Solid 14K gold Cuban links. The chain that says 'I made it' louder than any business card ever could.",
-    affiliateUrl: amzn("14K solid gold Cuban link chain 22 inch"),
+    affiliateUrl: amzn("14K Solid Gold Cuban Link Chain 22 Inch Jewelry Unlimited"),
     tags: ["chain", "gold", "statement"],
   },
   {
@@ -175,7 +175,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "One carat total weight, 14K white gold. The understated flex that works at a boardroom and a bar.",
-    affiliateUrl: amzn("1 carat diamond stud earrings 14K white gold"),
+    affiliateUrl: amzn("Pompeii3 1 Carat Diamond Stud Earrings 14K White Gold"),
     tags: ["earrings", "diamonds", "classic"],
   },
   {
@@ -186,7 +186,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "18K yellow gold twisted cable ring. Wear it on any finger — it's your net worth in ring form.",
-    affiliateUrl: amzn("David Yurman sculpted cable ring 18K gold"),
+    affiliateUrl: amzn("David Yurman Sculpted Cable Ring 18K Yellow Gold"),
     tags: ["ring", "gold", "iconic"],
   },
   {
@@ -197,7 +197,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "18K rose gold wire bracelet. Minimalism meets luxury in that unmistakable T shape. Arm candy, elevated.",
-    affiliateUrl: amzn("Tiffany T wire bracelet rose gold"),
+    affiliateUrl: amzn("Tiffany & Co T Wire Bracelet 18K Rose Gold"),
     tags: ["bracelet", "rose gold", "minimal"],
   },
   {
