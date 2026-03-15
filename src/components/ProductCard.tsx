@@ -1,16 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Product } from "@/data/products";
 
 export default function ProductCard({ product }: { product: Product }) {
   const [imgError, setImgError] = useState(false);
 
   return (
-    <a
-      href={product.affiliateUrl}
-      target="_blank"
-      rel="noopener noreferrer nofollow sponsored"
+    <Link
+      href={`/product/${product.id}`}
       className="group block overflow-hidden rounded-xl border border-border bg-surface transition-all duration-300 hover:border-gold/40 hover:shadow-lg hover:shadow-gold/5 sm:rounded-2xl"
     >
       <div className="relative aspect-square overflow-hidden bg-zinc-900">
@@ -63,6 +62,6 @@ export default function ProductCard({ product }: { product: Product }) {
           </span>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
