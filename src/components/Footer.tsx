@@ -58,7 +58,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-border pt-6 text-center text-xs text-muted">
+        <p className="mt-6 text-center font-display text-[8px] italic tracking-[0.3em] text-border/60 select-none">
+          because you got it like that
+        </p>
+        <div className="mt-4 border-t border-border pt-6 text-center text-xs text-muted">
           <p>
             &copy; {new Date().getFullYear()} BlowYourSavings.com. All product names, logos, and
             brands are property of their respective owners.

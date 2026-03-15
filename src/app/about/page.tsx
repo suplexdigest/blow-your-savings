@@ -52,6 +52,9 @@ export default function AboutPage() {
               </a>
             </p>
           </section>
+          <p className="pt-6 font-display text-[8px] italic tracking-[0.3em] text-border/40 select-none">
+            because you got it like that
+          </p>
           <div className="pt-4">
             <Link href="/" className="text-sm font-semibold text-gold hover:underline">
               &larr; Back to browsing

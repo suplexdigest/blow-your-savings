@@ -141,17 +141,25 @@ export default function InfiniteProductFeed({ filters }: { filters: Filters }) {
       </div>
 
       {!allLoaded && (
-        <div id="scroll-sentinel" className="flex items-center justify-center py-12">
+        <div id="scroll-sentinel" className="flex flex-col items-center justify-center py-12">
           <div className="flex items-center gap-3 text-sm text-muted">
             <div className="h-5 w-5 animate-spin rounded-full border-2 border-gold border-t-transparent" />
             Loading more luxury...
           </div>
+          <p className="mt-3 font-display text-[7px] italic tracking-[0.35em] text-border/30 select-none">
+            ...because you got it like that
+          </p>
         </div>
       )}
 
       {allLoaded && items.length > 0 && (
-        <div className="py-12 text-center text-sm text-muted">
-          You&apos;ve seen all {filtered.length} items. Your wallet thanks you for stopping.
+        <div className="py-12 text-center">
+          <p className="text-sm text-muted">
+            You&apos;ve seen all {filtered.length} items. Your wallet thanks you for stopping.
+          </p>
+          <p className="mt-2 font-display text-[8px] italic tracking-[0.3em] text-border/40 select-none">
+            because you got it like that
+          </p>
         </div>
       )}
     </div>

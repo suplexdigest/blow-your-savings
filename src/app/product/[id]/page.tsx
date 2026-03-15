@@ -103,6 +103,9 @@ export default async function ProductPage({
               As an Amazon Associate, we earn from qualifying purchases.
               Price and availability subject to change.
             </p>
+            <p className="mt-4 text-center font-display text-[8px] italic tracking-[0.3em] text-border/50 select-none">
+              because you got it like that
+            </p>
 
             <AdSlot slot="product-sidebar" className="mt-6" />
           </div>

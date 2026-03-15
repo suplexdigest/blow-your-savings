@@ -208,7 +208,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "A circle of cubic zirconia that turns your Moments bracelet into a tiny disco ball. Collect them all — Pandora dares you.",
-    affiliateUrl: amzn("Pandora Sparkling Pave circle charm"),
+    affiliateUrl: amzn("Pandora Sparkling Pavé Circle Charm Sterling Silver CZ"),
     tags: ["charm", "crystal", "collectible"],
   },
   {
@@ -219,7 +219,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Rhodium-plated crystal tennis bracelet. All the sparkle of diamonds at a fraction of the therapy bill.",
-    affiliateUrl: amzn("Swarovski Tennis Deluxe bracelet"),
+    affiliateUrl: amzn("Swarovski Tennis Deluxe Bracelet Rhodium Plated White Crystal"),
     tags: ["bracelet", "crystal", "evening"],
   },
   {
@@ -230,7 +230,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Rose gold vermeil with a semi-precious stone. Stack five of them and pretend you're a bohemian heiress.",
-    affiliateUrl: amzn("Monica Vinader Siren stacking ring"),
+    affiliateUrl: amzn("Monica Vinader Siren Stacking Ring Rose Gold Vermeil"),
     tags: ["ring", "stacking", "boho"],
   },
   {
@@ -241,7 +241,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1630019852942-f89202989a59?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Lightweight gold drop earrings that look expensive but leave your wallet breathing. Kendra gets it.",
-    affiliateUrl: amzn("Kendra Scott Sophee drop earrings gold"),
+    affiliateUrl: amzn("Kendra Scott Sophee Drop Earrings Gold Metal"),
     tags: ["earrings", "lightweight", "everyday"],
   },
   {
@@ -252,7 +252,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1599459183200-59c3fd67e6f7?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Sterling silver with 18K gold dot motif. Hand-hammered in Bali, worn in Brooklyn. Cultural exchange at its finest.",
-    affiliateUrl: amzn("John Hardy Dot hammered pendant necklace"),
+    affiliateUrl: amzn("John Hardy Dot Hammered Pendant Necklace Sterling Silver 18K Gold"),
     tags: ["necklace", "artisan", "mixed metal"],
   },
   {
@@ -263,7 +263,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "A strand of perfectly matched Akoya pearls. Old money energy you can put on your wrist in thirty seconds.",
-    affiliateUrl: amzn("Mikimoto Akoya cultured pearl bracelet"),
+    affiliateUrl: amzn("Mikimoto Akoya Cultured Pearl Bracelet 18K White Gold"),
     tags: ["bracelet", "pearls", "luxury"],
   },
   {
@@ -274,7 +274,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "18K rose gold with pave diamonds. Named after the city of Romeo and Juliet, but with a happier ending for your hand.",
-    affiliateUrl: amzn("Roberto Coin Love in Verona diamond ring"),
+    affiliateUrl: amzn("Roberto Coin Love in Verona Diamond Ring 18K Rose Gold"),
     tags: ["ring", "diamonds", "romantic"],
   },
   {
@@ -285,7 +285,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Turn your Apple Watch into real jewelry. Black ceramic beads with sterling silver. Tech meets taste.",
-    affiliateUrl: amzn("Lagos Smart Caviar Apple Watch bracelet"),
+    affiliateUrl: amzn("Lagos Smart Caviar Black Ceramic Apple Watch Bracelet Sterling Silver"),
     tags: ["smartwatch", "bracelet", "ceramic"],
   },
   {
@@ -296,7 +296,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Solid 14K gold ring shaped like a croissant. Because the only thing better than carbs is gold carbs.",
-    affiliateUrl: amzn("Mejuri Croissant Dome ring 14K gold"),
+    affiliateUrl: amzn("Mejuri Croissant Dôme Ring 14K Solid Gold"),
     tags: ["ring", "gold", "trendy"],
   },
   {
@@ -307,7 +307,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "5mm solid 14K gold rope chain. Heavy enough to feel like success, long enough to swing with swagger.",
-    affiliateUrl: amzn("14K solid gold rope chain 24 inch 5mm"),
+    affiliateUrl: amzn("Nuragold 14K Solid Gold Rope Chain 24 Inch 5mm"),
     tags: ["chain", "gold", "statement"],
   },
   {
@@ -318,7 +318,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Sterling silver bean pendant. Looks weird, costs a lot, somehow perfect. Peak Tiffany energy.",
-    affiliateUrl: amzn("Tiffany Elsa Peretti bean pendant sterling silver"),
+    affiliateUrl: amzn("Tiffany & Co Elsa Peretti Bean Design Pendant Sterling Silver"),
     tags: ["necklace", "iconic", "minimal"],
   },
   {
@@ -329,7 +329,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Rhodium-plated with a single brilliant crystal. The engagement ring for people who are engaged to themselves.",
-    affiliateUrl: amzn("Swarovski Attract round ring crystal"),
+    affiliateUrl: amzn("Swarovski Attract Round Ring Rhodium Plated White Crystal"),
     tags: ["ring", "crystal", "everyday"],
   },
   {
@@ -340,7 +340,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&h=600&fit=crop",
     category: "jewelry",
     description: "Three carats of round brilliant diamonds in 14K white gold. Named after tennis but the only sport it plays is flexing.",
-    affiliateUrl: amzn("3 carat diamond tennis bracelet 14K white gold"),
+    affiliateUrl: amzn("Houston Diamond District 3 Carat Diamond Tennis Bracelet 14K White Gold"),
     tags: ["bracelet", "diamonds", "classic"],
   },
 
@@ -355,7 +355,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Curls, waves, smooth, and dry with zero extreme heat. The Coanda effect — basically sorcery for your hair.",
-    affiliateUrl: amzn("Dyson Airwrap multi-styler complete long"),
+    affiliateUrl: amznDirect("B0C7J5T3CZ"),
     tags: ["hair", "styling", "tech"],
   },
   {
@@ -366,7 +366,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Three barrel sizes, one smart wand. Beach waves on Monday, tight curls on Friday — commitment issues, encouraged.",
-    affiliateUrl: amzn("T3 Twirl Trio interchangeable curling iron"),
+    affiliateUrl: amzn("T3 Twirl Trio Interchangeable Curling Iron Set"),
     tags: ["hair", "styling", "versatile"],
   },
   {
@@ -377,7 +377,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Predictive technology that adapts heat 250 times per second. Your hair has never been this smart.",
-    affiliateUrl: amzn("ghd Platinum Plus styler flat iron"),
+    affiliateUrl: amzn("ghd Platinum+ Styler Flat Iron Hair Straightener"),
     tags: ["hair", "straightener", "smart"],
   },
   {
@@ -388,7 +388,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Shampoo that costs more than dinner. Bio-restorative complex that smells like a five-star hotel lobby.",
-    affiliateUrl: amzn("Oribe Gold Lust shampoo"),
+    affiliateUrl: amzn("Oribe Gold Lust Repair & Restore Shampoo 8.5 oz"),
     tags: ["hair", "luxury", "repair"],
   },
   {
@@ -399,7 +399,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Mandarin rind, rosemary, and cedar atlas in an amber bottle. Your bathroom shelf's personality upgrade.",
-    affiliateUrl: amzn("Aesop Resurrection Aromatique hand balm"),
+    affiliateUrl: amzn("Aesop Resurrection Aromatique Hand Balm 75ml"),
     tags: ["skincare", "hands", "botanical"],
   },
   {
@@ -410,7 +410,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
     category: "grooming",
     description: "The Miracle Broth. Sea kelp fermented for months. Your face gets a spa day that costs more than most people's car payment.",
-    affiliateUrl: amzn("La Mer Creme de la Mer moisturizing cream"),
+    affiliateUrl: amzn("La Mer Creme de la Mer Moisturizing Cream 2 oz"),
     tags: ["skincare", "luxury", "moisturizer"],
   },
   {
@@ -421,7 +421,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
     category: "grooming",
     description: "90% Pitera essence discovered at a sake brewery. The secret behind glass-skin is literally fermented rice water.",
-    affiliateUrl: amzn("SK-II Facial Treatment Essence"),
+    affiliateUrl: amzn("SK-II Facial Treatment Essence Pitera 7.7 oz"),
     tags: ["skincare", "essence", "japanese"],
   },
   {
@@ -432,7 +432,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1594035910387-fea081dab589?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Oud, sandalwood, and vetiver. The cologne that makes everyone within sniffing distance want to know your name.",
-    affiliateUrl: amzn("Tom Ford Oud Wood eau de parfum"),
+    affiliateUrl: amzn("Tom Ford Oud Wood Eau de Parfum 3.4 oz"),
     tags: ["fragrance", "cologne", "luxury"],
   },
   {
@@ -443,7 +443,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1594035910387-fea081dab589?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Pineapple, birch, and ambergris. The fragrance that made grown men join online forums to debate batch numbers.",
-    affiliateUrl: amzn("Creed Aventus eau de parfum"),
+    affiliateUrl: amznDirect("B00P5S6R6K"),
     tags: ["fragrance", "cologne", "iconic"],
   },
   {
@@ -454,7 +454,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1594035910387-fea081dab589?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Sandalwood, cardamom, and leather. The unofficial scent of every cool Airbnb in Brooklyn and Silver Lake.",
-    affiliateUrl: amzn("Le Labo Santal 33 eau de parfum"),
+    affiliateUrl: amzn("Le Labo Santal 33 Eau de Parfum 3.4 oz 100ml"),
     tags: ["fragrance", "unisex", "cult"],
   },
   {
@@ -465,7 +465,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1594035910387-fea081dab589?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Bergamot, lemon, pine needles, and vanilla. Smells like a romantic campfire you'd never actually attend.",
-    affiliateUrl: amzn("Byredo Gypsy Water eau de parfum"),
+    affiliateUrl: amzn("Byredo Gypsy Water Eau de Parfum 3.3 oz 100ml"),
     tags: ["fragrance", "unisex", "niche"],
   },
   {
@@ -476,7 +476,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1602607912066-aea4e247e4ee?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Bulgarian roses and blackcurrant leaves. A candle so fancy it makes your entire home smell like a Parisian apartment.",
-    affiliateUrl: amzn("Diptyque Baies candle"),
+    affiliateUrl: amzn("Diptyque Baies Berries Scented Candle 6.5 oz"),
     tags: ["candle", "home fragrance", "luxury"],
   },
   {
@@ -487,7 +487,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1594035910387-fea081dab589?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Smells like an expensive seaside vacation. Layer it with anything — Jo Malone invented fragrance combining.",
-    affiliateUrl: amzn("Jo Malone Wood Sage Sea Salt cologne"),
+    affiliateUrl: amzn("Jo Malone London Wood Sage & Sea Salt Cologne 3.4 oz"),
     tags: ["fragrance", "layering", "fresh"],
   },
   {
@@ -498,7 +498,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&h=600&fit=crop",
     category: "grooming",
     description: "NanoTech precision blades and AI-powered sensors. A shaver smarter than your first car.",
-    affiliateUrl: amzn("Philips Norelco S9000 Prestige electric shaver"),
+    affiliateUrl: amznDirect("B0BTD34QSY"),
     tags: ["shaving", "electric", "premium"],
   },
   {
@@ -509,7 +509,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Five shaving elements and a cleaning station that feels like having a tiny butler for your face.",
-    affiliateUrl: amzn("Braun Series 9 Pro Plus electric shaver"),
+    affiliateUrl: amznDirect("B09BSTLXHY"),
     tags: ["shaving", "electric", "german"],
   },
   {
@@ -520,7 +520,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Squalane-powered 24-hour hydration. The gateway drug to a skincare routine that takes over your bathroom.",
-    affiliateUrl: amzn("Kiehls Ultra Facial Cream moisturizer"),
+    affiliateUrl: amzn("Kiehl's Ultra Facial Cream Moisturizer 4.2 oz"),
     tags: ["skincare", "moisturizer", "everyday"],
   },
   {
@@ -531,7 +531,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Signal peptides and growth factors in a fun purple tub. Clean skincare that takes itself seriously so you don't have to.",
-    affiliateUrl: amzn("Drunk Elephant Protini Polypeptide moisturizer"),
+    affiliateUrl: amznDirect("B01MSSDEPK"),
     tags: ["skincare", "clean", "peptides"],
   },
   {
@@ -542,7 +542,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=600&fit=crop",
     category: "grooming",
     description: "A hair dryer with a V9 digital motor spinning at 110,000 RPM. Engineered like a jet engine, used to dry bangs.",
-    affiliateUrl: amzn("Dyson Supersonic hair dryer"),
+    affiliateUrl: amznDirect("B0C7J4V5QZ"),
     tags: ["hair", "tech", "fast"],
   },
   {
@@ -553,7 +553,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Ceramides, hyaluronic acid, and dermatologist cred. The People's Champion of skincare that punches way above its price.",
-    affiliateUrl: amzn("CeraVe Hydrating Facial Cleanser"),
+    affiliateUrl: amznDirect("B00TTD9BRC"),
     tags: ["skincare", "cleanser", "value"],
   },
   {
@@ -564,7 +564,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1594035910387-fea081dab589?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Tobacco leaf, vanilla, cocoa, and dried fruits. You'll smell like a billionaire's private library in winter.",
-    affiliateUrl: amzn("Tom Ford Tobacco Vanille eau de parfum"),
+    affiliateUrl: amzn("Tom Ford Tobacco Vanille Eau de Parfum 3.4 oz"),
     tags: ["fragrance", "warm", "iconic"],
   },
   {
@@ -575,7 +575,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1602607912066-aea4e247e4ee?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Green fig, white cedar, and fig leaves. Close your eyes and pretend you're in a Greek garden instead of your studio apartment.",
-    affiliateUrl: amzn("Diptyque Philosykos fig candle"),
+    affiliateUrl: amzn("Diptyque Philosykos Fig Tree Scented Candle 6.5 oz"),
     tags: ["candle", "home fragrance", "botanical"],
   },
   {
@@ -586,7 +586,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&h=600&fit=crop",
     category: "grooming",
     description: "German-engineered blades, weighted chrome handle, and a price that won't give you razor burn on your wallet.",
-    affiliateUrl: amzn("Harrys Winston shave set razor"),
+    affiliateUrl: amzn("Harry's Winston Shave Set Razor Chrome Handle"),
     tags: ["shaving", "value", "starter"],
   },
   {
@@ -597,7 +597,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Invisible dry shampoo meets volumizing spray. The 'I woke up like this' in a gold can.",
-    affiliateUrl: amzn("Oribe Dry Texturizing Spray"),
+    affiliateUrl: amzn("Oribe Dry Texturizing Spray 8.5 oz"),
     tags: ["hair", "styling", "cult favorite"],
   },
   {
@@ -608,7 +608,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Exfoliating hand wash with pumice. The $40 soap that turns your kitchen sink into a design statement.",
-    affiliateUrl: amzn("Aesop Reverence Aromatique Hand Wash"),
+    affiliateUrl: amzn("Aesop Reverence Aromatique Hand Wash 500ml"),
     tags: ["skincare", "hands", "design"],
   },
   {
@@ -619,7 +619,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1594035910387-fea081dab589?w=600&h=600&fit=crop",
     category: "grooming",
     description: "Created for AnOther Magazine. Musks and ambroxan that smell like you but better. Way, way better.",
-    affiliateUrl: amzn("Le Labo AnOther 13 eau de parfum"),
+    affiliateUrl: amzn("Le Labo AnOther 13 Eau de Parfum 3.4 oz 100ml"),
     tags: ["fragrance", "unisex", "modern"],
   },
 
@@ -634,7 +634,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1591291621164-2c6367723315?w=600&h=600&fit=crop",
     category: "fitness",
     description: "24-inch rotating HD screen, Apple GymKit, and instructors who guilt you into showing up. The cult has great cardio.",
-    affiliateUrl: amzn("Peloton Bike Plus"),
+    affiliateUrl: amzn("Peloton Bike+ Plus Indoor Exercise Bike"),
     tags: ["cycling", "connected", "cardio"],
   },
   {
@@ -645,7 +645,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&h=600&fit=crop",
     category: "fitness",
     description: "32-inch screen, slat belt, and enough speed settings to outrun your existential dread. Runs smooth and quiet.",
-    affiliateUrl: amzn("Peloton Tread treadmill"),
+    affiliateUrl: amzn("Peloton Tread Treadmill 32 Inch Screen Slat Belt"),
     tags: ["running", "connected", "cardio"],
   },
   {
@@ -656,7 +656,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=600&fit=crop",
     category: "fitness",
     description: "200 lbs of digital weight in something the size of a TV. AI adjusts resistance mid-rep. Your wall is now your gym.",
-    affiliateUrl: amzn("Tonal smart home gym system"),
+    affiliateUrl: amzn("Tonal Smart Home Gym System Wall Mounted Digital Weight Machine"),
     tags: ["strength", "smart", "compact"],
   },
   {
@@ -667,7 +667,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&h=600&fit=crop",
     category: "fitness",
     description: "15 sets of weights in one. Dial from 5 to 52.5 lbs and stop hoarding dumbbells like a gym equipment dragon.",
-    affiliateUrl: amzn("Bowflex SelectTech 552 adjustable dumbbells"),
+    affiliateUrl: amznDirect("B001ARYU58"),
     tags: ["dumbbells", "adjustable", "space-saving"],
   },
   {
@@ -678,7 +678,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&h=600&fit=crop",
     category: "fitness",
     description: "5-50 lbs in a compact block shape. Expandable to 90 lbs for when your ego catches up with your gains.",
-    affiliateUrl: amzn("PowerBlock Elite EXP adjustable dumbbells"),
+    affiliateUrl: amznDirect("B006RJ4UWK"),
     tags: ["dumbbells", "adjustable", "expandable"],
   },
   {
@@ -689,7 +689,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Made in Columbus, Ohio. 190K PSI tensile strength steel with Cerakote finish. The barbell CrossFit built its religion on.",
-    affiliateUrl: amzn("Rogue Ohio Bar Cerakote barbell"),
+    affiliateUrl: amzn("Rogue Fitness Ohio Bar Cerakote 20kg Olympic Barbell"),
     tags: ["barbell", "olympic", "american made"],
   },
   {
@@ -700,7 +700,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=600&fit=crop",
     category: "fitness",
     description: "1,000 lb capacity, 3-post design, and a pad so grippy you won't slide even during ugly reps. Garage gym essential.",
-    affiliateUrl: amzn("Rep Fitness FB-5000 competition flat bench"),
+    affiliateUrl: amzn("Rep Fitness FB-5000 Competition Flat Bench 1000 lb Rated"),
     tags: ["bench", "strength", "heavy duty"],
   },
   {
@@ -711,7 +711,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?w=600&h=600&fit=crop",
     category: "fitness",
     description: "The gold standard rower since forever. Air resistance flywheel, PM5 monitor, and the only cardio machine that uses every muscle.",
-    affiliateUrl: amzn("Concept2 Model D RowErg rower PM5"),
+    affiliateUrl: amznDirect("B0B14DQHYS"),
     tags: ["rowing", "cardio", "full body"],
   },
   {
@@ -722,7 +722,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=600&h=600&fit=crop",
     category: "fitness",
     description: "22-inch touchscreen, -3% to 15% incline, and iFIT trails worldwide. Run through the Alps without leaving your basement.",
-    affiliateUrl: amzn("NordicTrack Commercial 2450 treadmill"),
+    affiliateUrl: amznDirect("B09FDWQ2X6"),
     tags: ["running", "connected", "incline"],
   },
   {
@@ -733,7 +733,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1573461160327-b450ce3d8e7f?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Percussive therapy with a built-in screen, guided routines, and near-silent motor. Assault your muscles professionally.",
-    affiliateUrl: amzn("Theragun PRO Plus massage gun"),
+    affiliateUrl: amznDirect("B0CDQ49NY1"),
     tags: ["recovery", "massage", "percussion"],
   },
   {
@@ -744,7 +744,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1573461160327-b450ce3d8e7f?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Bluetooth-connected massage gun with pressure sensor technology. Knows exactly how tense you are — emotionally, that's on you.",
-    affiliateUrl: amzn("Hyperice Hypervolt 2 Pro massage gun"),
+    affiliateUrl: amzn("Hyperice Hypervolt 2 Pro Percussion Massage Gun Bluetooth"),
     tags: ["recovery", "massage", "bluetooth"],
   },
   {
@@ -755,7 +755,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&h=600&fit=crop",
     category: "fitness",
     description: "No screen, all data. Tracks strain, recovery, and sleep so you can optimize being a human. Subscription not included.",
-    affiliateUrl: amzn("WHOOP 4.0 fitness band"),
+    affiliateUrl: amznDirect("B0BQVLTSX8"),
     tags: ["wearable", "recovery", "data"],
   },
   {
@@ -766,7 +766,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=600&fit=crop",
     category: "fitness",
     description: "A titanium ring that tracks your sleep, heart rate, and temperature. Jewelry that judges your lifestyle choices.",
-    affiliateUrl: amzn("Oura Ring Gen 3 health tracker"),
+    affiliateUrl: amznDirect("B0CS36SVPY"),
     tags: ["wearable", "sleep", "ring"],
   },
   {
@@ -777,7 +777,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&h=600&fit=crop",
     category: "fitness",
     description: "AMOLED display, 14-day battery, and nap tracking. A fitness watch for people who take their rest days as seriously as leg day.",
-    affiliateUrl: amzn("Garmin Venu 3 smartwatch"),
+    affiliateUrl: amzn("Garmin Venu 3 GPS AMOLED Smartwatch Health Fitness"),
     tags: ["smartwatch", "gps", "health"],
   },
   {
@@ -788,7 +788,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Natural rubber, antimicrobial, and reversible. Two surfaces because your yoga practice has range.",
-    affiliateUrl: amzn("Lululemon Reversible Mat 5mm yoga"),
+    affiliateUrl: amzn("Lululemon The Reversible Mat 5mm Yoga Natural Rubber"),
     tags: ["yoga", "mat", "premium"],
   },
   {
@@ -799,7 +799,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Lifetime guarantee, dense cushioning, and closed-cell surface. The yoga mat that outlasts every new year's resolution.",
-    affiliateUrl: amzn("Manduka PRO yoga mat 6mm"),
+    affiliateUrl: amzn("Manduka PRO Yoga Mat 6mm Lifetime Guarantee Dense Cushioning"),
     tags: ["yoga", "mat", "lifetime"],
   },
   {
@@ -810,7 +810,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Two straps, infinite exercises. Anchor it to anything and use your bodyweight to build a physique. Navy SEALs approved.",
-    affiliateUrl: amzn("TRX PRO4 suspension trainer system"),
+    affiliateUrl: amznDirect("B08FLJFFPF"),
     tags: ["bodyweight", "portable", "versatile"],
   },
   {
@@ -821,7 +821,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Single-cast iron, textured grip, flat base. The cannonball with a handle that Pavel Tsatsouline warned you about.",
-    affiliateUrl: amzn("Kettlebell Kings powder coat kettlebell 24kg"),
+    affiliateUrl: amzn("Kettlebell Kings Powder Coat Kettlebell 24kg Cast Iron"),
     tags: ["kettlebell", "strength", "functional"],
   },
   {
@@ -832,7 +832,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1591291621164-2c6367723315?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Fan-driven air bike that gets harder the harder you go. The only piece of equipment that punishes ambition.",
-    affiliateUrl: amzn("Rogue Echo Bike air bike"),
+    affiliateUrl: amzn("Rogue Fitness Echo Bike Air Resistance Fan Bike"),
     tags: ["cycling", "hiit", "brutal"],
   },
   {
@@ -843,7 +843,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1591291621164-2c6367723315?w=600&h=600&fit=crop",
     category: "fitness",
     description: "The bike that made CrossFitters cry on camera. Chain drive, sealed cartridge bearings, and unlimited suffering potential.",
-    affiliateUrl: amzn("Assault Fitness AssaultBike Pro"),
+    affiliateUrl: amzn("Assault Fitness AssaultBike Pro Air Bike Chain Drive"),
     tags: ["cycling", "hiit", "crossfit"],
   },
   {
@@ -854,7 +854,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1591291621164-2c6367723315?w=600&h=600&fit=crop",
     category: "fitness",
     description: "22-inch swivel screen, -10% to 20% incline, and automatic trainer control. Your bike tilts itself. The future is lazy and fit.",
-    affiliateUrl: amzn("NordicTrack Commercial S22i studio cycle"),
+    affiliateUrl: amzn("NordicTrack Commercial S22i Studio Cycle 22 Inch Screen iFIT"),
     tags: ["cycling", "connected", "incline"],
   },
   {
@@ -865,7 +865,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1573461160327-b450ce3d8e7f?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Pneumatic compression boots that squeeze your legs back to life. Recovery for people who treat soreness like a personal insult.",
-    affiliateUrl: amzn("Hyperice Normatec 3 Legs compression"),
+    affiliateUrl: amzn("Hyperice Normatec 3 Legs Pneumatic Compression Recovery"),
     tags: ["recovery", "compression", "legs"],
   },
   {
@@ -876,7 +876,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&h=600&fit=crop",
     category: "fitness",
     description: "AMOLED display, multi-band GPS, and training readiness score. The watch that knows you should rest before you do.",
-    affiliateUrl: amzn("Garmin Forerunner 965"),
+    affiliateUrl: amzn("Garmin Forerunner 965 AMOLED GPS Running Smartwatch"),
     tags: ["smartwatch", "running", "gps"],
   },
   {
@@ -887,7 +887,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=600&fit=crop",
     category: "fitness",
     description: "3x3\" 11-gauge steel, Westside hole spacing, and enough accessory options to build a small gym inside a gym.",
-    affiliateUrl: amzn("Rogue RML-490C power rack"),
+    affiliateUrl: amzn("Rogue Fitness RML-490C Monster Lite Power Rack 3x3"),
     tags: ["rack", "strength", "garage gym"],
   },
   {
@@ -898,7 +898,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Flat, incline, decline — seven positions total. 1,000 lb rated and built like it has something to prove.",
-    affiliateUrl: amzn("Rep Fitness AB-3000 adjustable bench"),
+    affiliateUrl: amzn("Rep Fitness AB-3000 2.0 FID Adjustable Weight Bench"),
     tags: ["bench", "adjustable", "heavy duty"],
   },
   {
@@ -909,7 +909,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1573461160327-b450ce3d8e7f?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Multi-density foam that finds knots you didn't know existed. Cheap therapy that only costs you pain.",
-    affiliateUrl: amzn("TriggerPoint GRID foam roller"),
+    affiliateUrl: amzn("TriggerPoint GRID Foam Roller Multi-Density"),
     tags: ["recovery", "mobility", "value"],
   },
   {
@@ -920,7 +920,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Electromagnetic drag, 22-inch screen, and live rows on real water. The Peloton of rowing — cultish energy included.",
-    affiliateUrl: amzn("Hydrow rowing machine"),
+    affiliateUrl: amzn("Hydrow Rower Connected Rowing Machine 22 Inch Screen"),
     tags: ["rowing", "connected", "premium"],
   },
   {
@@ -931,7 +931,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Flat, stable, and built for lifting, rope climbs, and box jumps. The official shoe of people who say 'WOD' unironically.",
-    affiliateUrl: amzn("Nike Metcon 9 training shoes"),
+    affiliateUrl: amzn("Nike Metcon 9 Training Shoes Cross Training"),
     tags: ["shoes", "training", "crossfit"],
   },
   {
@@ -942,7 +942,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&h=600&fit=crop",
     category: "fitness",
     description: "Double-wall vacuum insulation keeps water cold for hours. The water bottle equivalent of driving a truck to the grocery store.",
-    affiliateUrl: amzn("YETI Rambler 26 oz water bottle"),
+    affiliateUrl: amzn("YETI Rambler 26 oz Bottle Vacuum Insulated Stainless Steel"),
     tags: ["hydration", "insulated", "durable"],
   },
 
@@ -957,7 +957,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=600&h=600&fit=crop",
     category: "travel",
     description: "German-engineered aluminum with those iconic grooves. Every dent tells a story — usually about baggage handlers.",
-    affiliateUrl: amzn("Rimowa Classic Cabin aluminum suitcase"),
+    affiliateUrl: amznDirect("B0B2PPYH1X"),
     tags: ["luggage", "aluminum", "iconic"],
   },
   {
@@ -968,7 +968,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=600&h=600&fit=crop",
     category: "travel",
     description: "Polycarbonate shell, built-in USB charger, and a compression system that enables over-packing. DTC luggage done right.",
-    affiliateUrl: amzn("Away Bigger Carry-On luggage"),
+    affiliateUrl: amzn("Away The Bigger Carry-On Luggage Polycarbonate USB Charger"),
     tags: ["luggage", "carry-on", "smart"],
   },
   {
@@ -979,7 +979,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
     category: "travel",
     description: "Ballistic nylon that could probably stop bullets. More pockets than you'll ever use and a silhouette that says 'business class.'",
-    affiliateUrl: amzn("Tumi Alpha 3 brief pack backpack"),
+    affiliateUrl: amznDirect("B08LMFJQMZ"),
     tags: ["backpack", "business", "ballistic nylon"],
   },
   {
@@ -990,7 +990,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=600&h=600&fit=crop",
     category: "travel",
     description: "Lightweight polycarbonate, double spinner wheels, and TSA lock. The reliable friend who always shows up on the carousel.",
-    affiliateUrl: amzn("Samsonite Freeform Hardside Spinner 24"),
+    affiliateUrl: amzn("Samsonite Freeform Hardside Expandable Spinner 24 Inch Luggage"),
     tags: ["luggage", "lightweight", "reliable"],
   },
   {
@@ -1001,7 +1001,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
     category: "travel",
     description: "Expands from 35L to 45L, opens like a suitcase, fits as a carry-on. Designed by photographers, loved by everyone.",
-    affiliateUrl: amzn("Peak Design Travel Backpack 45L"),
+    affiliateUrl: amznDirect("B0BN3YVSL5"),
     tags: ["backpack", "expandable", "carry-on"],
   },
   {
@@ -1012,7 +1012,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
     category: "travel",
     description: "Full perimeter zip, shoe compartment, and magnetic water bottle pocket. Born on Kickstarter, grown up on red-eyes.",
-    affiliateUrl: amzn("Nomatic Travel Pack 30L backpack"),
+    affiliateUrl: amzn("Nomatic Travel Pack 30L Backpack Full Perimeter Zip"),
     tags: ["backpack", "organized", "minimal"],
   },
   {
@@ -1023,7 +1023,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1592910147752-5e7ddb682b35?w=600&h=600&fit=crop",
     category: "travel",
     description: "Precision Finding powered by a billion iPhones. Toss one in every bag and never lose anything except your mind.",
-    affiliateUrl: amzn("Apple AirTag 4 pack"),
+    affiliateUrl: amznDirect("B0D54JZTHY"),
     tags: ["tracker", "bluetooth", "essential"],
   },
   {
@@ -1034,7 +1034,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1592910147752-5e7ddb682b35?w=600&h=600&fit=crop",
     category: "travel",
     description: "400-foot Bluetooth range and a speaker loud enough to find keys in the couch abyss. Works with Android and iOS.",
-    affiliateUrl: amzn("Tile Pro Bluetooth tracker 2 pack"),
+    affiliateUrl: amzn("Tile Pro 2-Pack Bluetooth Tracker 400ft Range"),
     tags: ["tracker", "bluetooth", "cross-platform"],
   },
   {
@@ -1045,7 +1045,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=600&h=600&fit=crop",
     category: "travel",
     description: "Works in 150+ countries with USB-A and USB-C ports. The tiny brick that prevents the 'wrong outlet' panic at every hotel.",
-    affiliateUrl: amzn("EPICKA universal travel power adapter USB-C"),
+    affiliateUrl: amzn("EPICKA Universal Travel Power Adapter USB-C USB-A International"),
     tags: ["adapter", "essential", "universal"],
   },
   {
@@ -1056,7 +1056,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=600&h=600&fit=crop",
     category: "travel",
     description: "Noise-masking earbuds designed specifically for sleep. Block out hotel HVAC, snoring partners, and existential dread.",
-    affiliateUrl: amzn("Bose Sleepbuds III"),
+    affiliateUrl: amznDirect("B08F3B5CVN"),
     tags: ["sleep", "noise masking", "earbuds"],
   },
   {
@@ -1067,7 +1067,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=600&h=600&fit=crop",
     category: "travel",
     description: "Memory foam, adjustable clasp, and a raised side support. Sleep in economy like you're in business — from the neck up.",
-    affiliateUrl: amzn("Cabeau Evolution S3 travel pillow"),
+    affiliateUrl: amzn("Cabeau Evolution S3 Travel Pillow Memory Foam Neck Support"),
     tags: ["pillow", "comfort", "flight"],
   },
   {
@@ -1078,7 +1078,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
     category: "travel",
     description: "Lightweight mesh packing cubes that turn suitcase chaos into organized bliss. You'll never go back to the old way.",
-    affiliateUrl: amzn("Eagle Creek Pack-It Reveal packing cube set"),
+    affiliateUrl: amzn("Eagle Creek Pack-It Reveal Cube Set Packing Cubes Lightweight Mesh"),
     tags: ["organization", "packing", "essential"],
   },
   {
@@ -1089,7 +1089,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&h=600&fit=crop",
     category: "travel",
     description: "32GB, wireless charging, auto-adjusting light. Carry a thousand books without paying for an extra checked bag.",
-    affiliateUrl: amzn("Kindle Paperwhite Signature Edition"),
+    affiliateUrl: amznDirect("B09SWW583J"),
     tags: ["reading", "e-reader", "wireless charging"],
   },
   {
@@ -1100,7 +1100,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=600&h=600&fit=crop",
     category: "travel",
     description: "Best-in-class ANC in the smallest Sony earbuds ever. Cancel flights, layovers, and chatty seatmates in hi-res audio.",
-    affiliateUrl: amzn("Sony WF-1000XM5 wireless earbuds"),
+    affiliateUrl: amznDirect("B0C8QP4666"),
     tags: ["earbuds", "anc", "hi-res"],
   },
   {
@@ -1111,7 +1111,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1627123424574-724758594e93?w=600&h=600&fit=crop",
     category: "travel",
     description: "Holds passport, boarding pass, cards, and cash in premium leather. RFID protection for the digitally paranoid traveler.",
-    affiliateUrl: amzn("Bellroy Travel Wallet RFID leather"),
+    affiliateUrl: amzn("Bellroy Travel Wallet RFID Premium Leather Passport Holder"),
     tags: ["wallet", "passport", "leather"],
   },
   {
@@ -1122,7 +1122,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1627123424574-724758594e93?w=600&h=600&fit=crop",
     category: "travel",
     description: "Slim leather passport holder with a micro pen. For people who think a passport deserves a better home than a junk drawer.",
-    affiliateUrl: amzn("Bellroy passport sleeve leather"),
+    affiliateUrl: amzn("Bellroy Passport Sleeve Premium Leather Micro Pen"),
     tags: ["passport", "leather", "slim"],
   },
   {
@@ -1133,7 +1133,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
     category: "travel",
     description: "An aluminum crossbody bag with Rimowa grooves. Carry your passport, phone, and superiority complex in German engineering.",
-    affiliateUrl: amzn("Rimowa Personal aluminum crossbody bag"),
+    affiliateUrl: amzn("Rimowa Personal Aluminum Cross-Body Bag Grooved"),
     tags: ["crossbody", "aluminum", "luxury"],
   },
   {
@@ -1144,7 +1144,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
     category: "travel",
     description: "Folds into a tiny pouch, unfolds into a full tote. For when you inevitably buy too much stuff on vacation.",
-    affiliateUrl: amzn("Tumi Voyageur Just In Case tote"),
+    affiliateUrl: amzn("Tumi Voyageur Just In Case Tote Packable Nylon"),
     tags: ["tote", "packable", "nylon"],
   },
   {
@@ -1155,7 +1155,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1621972750749-0fbb1abb7736?w=600&h=600&fit=crop",
     category: "travel",
     description: "Built-in USB-C cable and foldable plug. Charges itself and your phone in one tiny package. Travel anxiety, managed.",
-    affiliateUrl: amzn("Anker Nano Power Bank 10000mAh USB-C"),
+    affiliateUrl: amznDirect("B0B2NJ4TY8"),
     tags: ["power bank", "charging", "compact"],
   },
   {
@@ -1166,7 +1166,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=600&h=600&fit=crop",
     category: "travel",
     description: "Expands by 1.75 inches for souvenir overflow. Polycarbonate shell, 360 spinner wheels, and an interior that's basically a closet.",
-    affiliateUrl: amzn("Away Large Flex checked luggage"),
+    affiliateUrl: amzn("Away The Large Flex Checked Luggage Expandable Polycarbonate"),
     tags: ["luggage", "checked", "expandable"],
   },
   {
@@ -1177,7 +1177,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=600&h=600&fit=crop",
     category: "travel",
     description: "Memory foam wrapped in stretchy fabric that hugs your neck like it cares. Compact, comfy, and only slightly weird looking.",
-    affiliateUrl: amzn("Ostrichpillow Go neck pillow memory foam"),
+    affiliateUrl: amzn("Ostrichpillow Go Neck Pillow Memory Foam Travel Compact"),
     tags: ["pillow", "memory foam", "compact"],
   },
   {
@@ -1188,7 +1188,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=600&h=600&fit=crop",
     category: "travel",
     description: "Polycarbonate shell, scratch-resistant texture, and a price that won't require a second job. Budget-luxury travel.",
-    affiliateUrl: amzn("Samsonite Omni 2 Hardside carry-on 20"),
+    affiliateUrl: amzn("Samsonite Omni 2 Hardside Expandable Spinner 20 Inch Carry-On"),
     tags: ["luggage", "carry-on", "value"],
   },
   {
@@ -1199,7 +1199,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
     category: "travel",
     description: "Tear-away zipper, recycled nylon, and designed to fit Peak Design bags perfectly. Marie Kondo for your backpack.",
-    affiliateUrl: amzn("Peak Design Packing Cube medium"),
+    affiliateUrl: amzn("Peak Design Packing Cube Medium Recycled Nylon"),
     tags: ["organization", "packing", "recycled"],
   },
   {
@@ -1210,7 +1210,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
     category: "travel",
     description: "Water-resistant, multiple compartments, and a hook that turns any hotel door into a vanity. Cheap, organized, effective.",
-    affiliateUrl: amzn("Gonex hanging toiletry bag travel"),
+    affiliateUrl: amzn("Gonex Hanging Toiletry Bag Travel Water Resistant Organizer"),
     tags: ["toiletry", "organization", "value"],
   },
   {
@@ -1221,7 +1221,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=600&h=600&fit=crop",
     category: "travel",
     description: "Immersive audio with spatial sound and world-class ANC. Make any airport lounge feel like a private listening room.",
-    affiliateUrl: amzn("Bose QuietComfort Ultra earbuds"),
+    affiliateUrl: amzn("Bose QuietComfort Ultra Earbuds Spatial Audio ANC"),
     tags: ["earbuds", "anc", "spatial audio"],
   },
 
@@ -1236,7 +1236,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1589363349192-e61afb97e58d?w=600&h=600&fit=crop",
     category: "office",
     description: "PostureFit SL, 8Z Pellicle mesh, and 12-year warranty. The throne of Silicon Valley and home offices with ambition.",
-    affiliateUrl: amzn("Herman Miller Aeron ergonomic office chair"),
+    affiliateUrl: amznDirect("B01DGI7QR8"),
     tags: ["chair", "ergonomic", "iconic"],
   },
   {
@@ -1247,7 +1247,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1589363349192-e61afb97e58d?w=600&h=600&fit=crop",
     category: "office",
     description: "LiveBack technology that flexes with your spine. The chair Herman Miller owners pretend doesn't exist.",
-    affiliateUrl: amzn("Steelcase Leap V2 ergonomic office chair"),
+    affiliateUrl: amznDirect("B006H1QYBA"),
     tags: ["chair", "ergonomic", "flexible"],
   },
   {
@@ -1258,7 +1258,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&h=600&fit=crop",
     category: "office",
     description: "Electric sit-stand desk with programmable memory presets. Stand for 20 minutes, feel virtuous, sit back down.",
-    affiliateUrl: amzn("Uplift V2 standing desk 60x30"),
+    affiliateUrl: amzn("Uplift V2 Standing Desk 60x30 Electric Sit Stand"),
     tags: ["desk", "standing", "electric"],
   },
   {
@@ -1269,7 +1269,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&h=600&fit=crop",
     category: "office",
     description: "Dual motor, 355 lb capacity, and anti-collision tech. Stands up so you can sit down — and vice versa.",
-    affiliateUrl: amzn("FlexiSpot E7 Pro standing desk"),
+    affiliateUrl: amzn("FlexiSpot E7 Pro Standing Desk Dual Motor 355 lb Capacity"),
     tags: ["desk", "standing", "dual motor"],
   },
   {
@@ -1280,7 +1280,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&h=600&fit=crop",
     category: "office",
     description: "27-inch 5K Retina, A13 chip for Center Stage, six-speaker sound. A monitor that costs more than most people's computers.",
-    affiliateUrl: amzn("Apple Studio Display 27 inch 5K"),
+    affiliateUrl: amznDirect("B09V3HYPT6"),
     tags: ["monitor", "5K", "apple"],
   },
   {
@@ -1291,7 +1291,7 @@ export const PRODUCTS_BATCH4: Product[] = [
     image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&h=600&fit=crop",
     category: "office",
     description: "5120x2880 resolution, Thunderbolt 3, and P3 color gamut. The Apple Studio Display alternative that doesn't require a kidney.",
-    affiliateUrl: amzn("LG UltraFine 5K display 27"),
+    affiliateUrl: amzn("LG UltraFine 5K Display 27 Inch Thunderbolt 3 P3 Color"),
     tags: ["monitor", "5K", "thunderbolt"],
   },
   {

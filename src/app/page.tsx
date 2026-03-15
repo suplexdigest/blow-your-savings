@@ -30,6 +30,9 @@ export default function HomePage() {
           <p className="mt-1 text-xs text-muted sm:text-base font-sans">
             Curated for expensive taste and zero self-control.
           </p>
+          <p className="mt-3 font-display text-[9px] italic tracking-[0.25em] text-border select-none sm:text-[10px]">
+            because you got it like that
+          </p>
         </div>
       </div>
 
