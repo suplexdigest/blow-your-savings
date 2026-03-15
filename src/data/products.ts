@@ -19,6 +19,10 @@ export type Product = {
 
 export const AMAZON_TAG = "hookandhull20-20";
 
+export function amznDirect(asin: string): string {
+  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
+}
+
 function amzn(keywords: string): string {
   return `https://www.amazon.com/s?k=${encodeURIComponent(keywords)}&tag=${AMAZON_TAG}`;
 }
@@ -27,12 +31,12 @@ export const CATEGORIES: Category[] = [
   { slug: "all", name: "All", tagline: "Everything luxurious", icon: "sparkles" },
   { slug: "watches", name: "Watches", tagline: "Timepieces that make time jealous", icon: "watch" },
   { slug: "tech", name: "Tech & Gadgets", tagline: "Bleeding-edge toys for grown-ups", icon: "cpu" },
-  { slug: "cars", name: "Supercars", tagline: "Machines that turn heads at 200mph", icon: "car" },
+  { slug: "cars", name: "Car Gear", tagline: "For people who love their ride", icon: "car" },
   { slug: "fashion", name: "Fashion", tagline: "Dress like your bank account has no limit", icon: "shirt" },
   { slug: "home", name: "Home & Design", tagline: "Make your neighbors weep", icon: "home" },
   { slug: "audio", name: "Audio", tagline: "Sound so good it hurts", icon: "headphones" },
   { slug: "outdoors", name: "Outdoors & Adventure", tagline: "Rich people touch grass too", icon: "mountain" },
-  { slug: "spirits", name: "Spirits & Wine", tagline: "Sip like royalty", icon: "wine" },
+  { slug: "spirits", name: "Bar & Drinkware", tagline: "Sip like royalty", icon: "wine" },
   { slug: "jewelry", name: "Jewelry", tagline: "Shine brighter than your future", icon: "sparkles" },
   { slug: "grooming", name: "Grooming", tagline: "Look expensive, smell expensive", icon: "sparkles" },
   { slug: "fitness", name: "Fitness", tagline: "Sweat in style", icon: "mountain" },
@@ -99,7 +103,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&h=600&fit=crop",
     category: "watches",
     description: "The first watch worn on the Moon. Hand-wound, hesalite crystal, NASA-certified. An absolute legend.",
-    affiliateUrl: amzn("Omega Speedmaster Moonwatch"),
+    affiliateUrl: amznDirect("B09V3HZDM2"),
     tags: ["space", "heritage", "accessible"],
   },
   {
@@ -268,7 +272,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&h=600&fit=crop",
     category: "tech",
     description: "128GB unified memory. 8TB SSD. Liquid Retina XDR display. The most powerful laptop ever created, and it barely gets warm.",
-    affiliateUrl: amzn("Apple MacBook Pro 16 M4 Max"),
+    affiliateUrl: amznDirect("B0DSJNR1W4"),
     tags: ["productivity", "creative", "power"],
   },
   {
@@ -279,7 +283,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=600&fit=crop",
     category: "tech",
     description: "50.1MP full-frame, 30fps burst, 8K video, real-time eye AF for humans, animals, and birds. The camera that does everything.",
-    affiliateUrl: amzn("Sony Alpha 1 mirrorless camera"),
+    affiliateUrl: amznDirect("B08QBMD6YV"),
     tags: ["photography", "video", "professional"],
   },
   {
@@ -301,7 +305,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=600&fit=crop",
     category: "tech",
     description: "Full-frame 8K cinema drone. Dual-operator control, Waypoint Pro, and image quality that makes Hollywood jealous.",
-    affiliateUrl: amzn("DJI Inspire 3 drone"),
+    affiliateUrl: amznDirect("B0C5MDKNPW"),
     tags: ["drone", "cinema", "professional"],
   },
   {
@@ -312,7 +316,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=600&h=600&fit=crop",
     category: "tech",
     description: "Spatial computing is here. Micro-OLED displays, eye tracking, hand gestures. The future strapped to your face.",
-    affiliateUrl: amzn("Apple Vision Pro"),
+    affiliateUrl: amznDirect("B0DGJHXM8M"),
     tags: ["vr", "spatial", "future"],
   },
   {
@@ -323,7 +327,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1640955014216-75201056c829?w=600&h=600&fit=crop",
     category: "tech",
     description: "Your entire Steam library in your hands. HDR OLED display, longer battery life, and enough power to run AAA titles on the go.",
-    affiliateUrl: amzn("Steam Deck OLED"),
+    affiliateUrl: amznDirect("B0DFDJKY3Y"),
     tags: ["gaming", "portable", "value"],
   },
   {
@@ -694,7 +698,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1544923246-77307dd270b5?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Rated to -30°C. Built for Antarctic researchers, adopted by people who wait 4 minutes for an Uber.",
-    affiliateUrl: amzn("Canada Goose Expedition Parka"),
+    affiliateUrl: amznDirect("B00FYMLNBO"),
     tags: ["outerwear", "winter", "iconic"],
   },
   {
@@ -852,7 +856,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600&h=600&fit=crop",
     category: "home",
     description: "Designed in 1956 and still the most iconic chair ever made. Molded plywood, premium leather, and a seat that hugs you back.",
-    affiliateUrl: amzn("Herman Miller Eames Lounge Chair"),
+    affiliateUrl: amznDirect("B01DG6OUMC"),
     tags: ["design-icon", "seating", "mid-century"],
   },
   {
@@ -863,7 +867,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=600&fit=crop",
     category: "home",
     description: "Purifies a 1,076 sq ft room. Destroys formaldehyde molecules. So quiet you'll forget it's running. So expensive you won't.",
-    affiliateUrl: amzn("Dyson Purifier Big Quiet Formaldehyde"),
+    affiliateUrl: amznDirect("B0CMMLB5Z5"),
     tags: ["air-quality", "smart-home", "design"],
   },
   {
@@ -874,7 +878,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "home",
     description: "The espresso machine used by world champion baristas, shrunk to fit your kitchen. Dual boiler. PID temperature control. Latte art competitions start at home.",
-    affiliateUrl: amzn("La Marzocco Linea Micra espresso machine"),
+    affiliateUrl: amznDirect("B0C5KQ3C9Q"),
     tags: ["coffee", "italian", "pro-grade"],
   },
   {
@@ -896,7 +900,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=600&fit=crop",
     category: "home",
     description: "6 attachments, smart app integration, and enough percussion force to turn granite into sand. Your muscles will thank you.",
-    affiliateUrl: amzn("Theragun PRO Plus massage gun"),
+    affiliateUrl: amznDirect("B0CDQ49NY1"),
     tags: ["wellness", "recovery", "smart"],
   },
   {
@@ -1076,7 +1080,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1625245488600-f03fef636a3c?w=600&h=600&fit=crop",
     category: "audio",
     description: "USB-C, adaptive audio, and ANC so good the world disappears. Aluminum cups, stainless steel frame, and that Apple tax.",
-    affiliateUrl: amzn("Apple AirPods Max USB-C"),
+    affiliateUrl: amznDirect("B0DGJ9B6PF"),
     tags: ["headphones", "anc", "wireless"],
   },
   {
@@ -1087,7 +1091,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1545127398-14699f92334b?w=600&h=600&fit=crop",
     category: "audio",
     description: "Open-back, beryllium drivers, and audiophile-grade sound that makes you hear things in songs you've listened to 1,000 times.",
-    affiliateUrl: amzn("Focal Utopia headphones"),
+    affiliateUrl: amznDirect("B09Z2MH4YM"),
     tags: ["audiophile", "open-back", "reference"],
   },
   {
@@ -1098,7 +1102,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&h=600&fit=crop",
     category: "audio",
     description: "Dolby Atmos, 14 drivers, Trueplay room calibration. One soundbar to replace your entire surround system.",
-    affiliateUrl: amzn("Sonos Arc Ultra soundbar"),
+    affiliateUrl: amznDirect("B0DHZ88XH4"),
     tags: ["soundbar", "atmos", "home-theater"],
   },
   {
@@ -1120,7 +1124,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1539375665275-f9de415ef9ac?w=600&h=600&fit=crop",
     category: "audio",
     description: "The turntable that built DJ culture. Direct drive, coreless motor, and build quality that will outlast you.",
-    affiliateUrl: amzn("Technics SL-1200GR2 turntable"),
+    affiliateUrl: amznDirect("B0C9BY6NR1"),
     tags: ["vinyl", "turntable", "legendary"],
   },
   {
@@ -1245,7 +1249,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "Bear-proof, wheeled, and keeps ice for days. The cooler that costs more than most people's camping trip.",
-    affiliateUrl: amzn("YETI Tundra Haul cooler"),
+    affiliateUrl: amznDirect("B07FHMSQJF"),
     tags: ["cooler", "camping", "indestructible"],
   },
   {
@@ -1267,7 +1271,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1510017803350-acf090956b72?w=600&h=600&fit=crop",
     category: "outdoors",
     description: "AMOLED display, solar charging, topo maps, and every sport mode known to humanity. The watch for people who actually go outside.",
-    affiliateUrl: amzn("Garmin Fenix 8 Solar watch"),
+    affiliateUrl: amznDirect("B0D6MR2C4S"),
     tags: ["smartwatch", "gps", "adventure"],
   },
   {
@@ -1627,7 +1631,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=600&h=600&fit=crop",
     category: "toys",
     description: "7,541 pieces. 33 inches long. The largest LEGO set ever made. Clear your weekend, your dining table, and possibly your relationship.",
-    affiliateUrl: amzn("LEGO Star Wars Millennium Falcon 75192"),
+    affiliateUrl: amznDirect("B075SDMMMV"),
     tags: ["lego", "star-wars", "display"],
   },
   {
@@ -1638,7 +1642,7 @@ export const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&h=600&fit=crop",
     category: "toys",
     description: "8K gaming, ray tracing, and load times so fast you can't read the tips. The console for people who think the PS5 wasn't enough.",
-    affiliateUrl: amzn("PlayStation 5 Pro console"),
+    affiliateUrl: amznDirect("B0DG5SMZYJ"),
     tags: ["gaming", "console", "8k"],
   },
   {

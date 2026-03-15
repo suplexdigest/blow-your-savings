@@ -5,6 +5,10 @@ function amzn(keywords: string): string {
   return `https://www.amazon.com/s?k=${encodeURIComponent(keywords)}&tag=${AMAZON_TAG}`;
 }
 
+function amznDirect(asin: string): string {
+  return `https://www.amazon.com/dp/${asin}?tag=${AMAZON_TAG}`;
+}
+
 export const PRODUCTS_BATCH2: Product[] = [
   // ============================================================
   // WATCHES (40 products)
@@ -17,7 +21,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600&h=600&fit=crop",
     category: "watches",
     description: "The watch that made integrated bracelets cool again without requiring a second mortgage. 80 hours of power reserve for when you forget to wear it all weekend.",
-    affiliateUrl: amzn("Tissot PRX Powermatic 80"),
+    affiliateUrl: amznDirect("B09B1NNTXN"),
     tags: ["automatic", "dress", "value"],
   },
   {
@@ -28,7 +32,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=600&h=600&fit=crop",
     category: "watches",
     description: "A dial so mesmerizing it was literally inspired by a cocktail. Makes 5 o'clock feel like art appreciation hour.",
-    affiliateUrl: amzn("Seiko Presage Cocktail Time SRPB43"),
+    affiliateUrl: amznDirect("B07BFNP26D"),
     tags: ["automatic", "dress", "Japanese"],
   },
   {
@@ -39,7 +43,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1509941943102-10c232535736?w=600&h=600&fit=crop",
     category: "watches",
     description: "Born on the battlefield, refined for the boardroom. Hand-wound simplicity with 80 hours of power reserve. The military watch that went to finishing school.",
-    affiliateUrl: amzn("Hamilton Khaki Field Mechanical 38mm"),
+    affiliateUrl: amznDirect("B000EQ0BLE"),
     tags: ["military", "manual-wind", "heritage"],
   },
   {
@@ -50,7 +54,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=600&h=600&fit=crop",
     category: "watches",
     description: "Track two time zones like the jet-setter you aspire to be. Silicon balance spring because Longines doesn't do anything halfway.",
-    affiliateUrl: amzn("Longines Spirit Zulu Time GMT"),
+    affiliateUrl: amznDirect("B08HN4CNYB"),
     tags: ["GMT", "pilot", "COSC"],
   },
   {
@@ -61,7 +65,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=600&h=600&fit=crop",
     category: "watches",
     description: "Swiss watchmaking at a price that won't make your accountant weep. The gateway drug to haute horlogerie.",
-    affiliateUrl: amzn("Frederique Constant Classics Index Automatic"),
+    affiliateUrl: amzn("Frederique Constant Classics Index Automatic FC-303"),
     tags: ["dress", "Swiss", "affordable-luxury"],
   },
   {
@@ -72,7 +76,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=600&h=600&fit=crop",
     category: "watches",
     description: "Bauhaus minimalism on your wrist. So clean and elegant it makes every other watch in your box look like it's trying too hard.",
-    affiliateUrl: amzn("Nomos Tangente 38 watch"),
+    affiliateUrl: amzn("Nomos Glashutte Tangente 38 ref 164"),
     tags: ["Bauhaus", "German", "minimalist"],
   },
   {
@@ -83,7 +87,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=600&h=600&fit=crop",
     category: "watches",
     description: "300m water resistance for people who mostly dive into spreadsheets. The ceramic bezel is scratch-proof, unlike your dignity after karaoke night.",
-    affiliateUrl: amzn("Oris Aquis Date 41.5mm"),
+    affiliateUrl: amznDirect("B07L5Z8YCK"),
     tags: ["diver", "Swiss", "ceramic"],
   },
   {
@@ -94,7 +98,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1606744824163-985d376605aa?w=600&h=600&fit=crop",
     category: "watches",
     description: "Square case, round dial, infinite cool. Inspired by cockpit instruments for people whose most dangerous flight is economy class.",
-    affiliateUrl: amzn("Bell Ross BR 03-92 Diver Blue"),
+    affiliateUrl: amzn("Bell & Ross BR 03-92 Diver Blue BR0392-D-BU-ST/SRB"),
     tags: ["aviation", "square", "diver"],
   },
   {
@@ -105,7 +109,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=600&h=600&fit=crop",
     category: "watches",
     description: "Lucent Steel is literally a proprietary alloy. When regular stainless steel isn't fancy enough for your molecules.",
-    affiliateUrl: amzn("Chopard Alpine Eagle 41mm"),
+    affiliateUrl: amzn("Chopard Alpine Eagle 41mm 298600-3001"),
     tags: ["luxury", "sports", "proprietary-steel"],
   },
   {
@@ -116,7 +120,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&h=600&fit=crop",
     category: "watches",
     description: "Dodecagonal bezel because 12 sides are better than none. The French Riviera lifestyle at a price that only slightly hurts.",
-    affiliateUrl: amzn("Baume Mercier Riviera Automatic 42mm"),
+    affiliateUrl: amzn("Baume & Mercier Riviera Automatic 42mm M0A10620"),
     tags: ["sports-luxury", "integrated-bracelet", "French"],
   },
   {
@@ -127,7 +131,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=600&h=600&fit=crop",
     category: "watches",
     description: "Named after the founder's love of music and independent spirit. A Swiss chronograph for people who appreciate the finer things but also check their bank balance.",
-    affiliateUrl: amzn("Raymond Weil Freelancer Chronograph"),
+    affiliateUrl: amzn("Raymond Weil Freelancer Chronograph 7741-ST-20021"),
     tags: ["chronograph", "Swiss", "music-inspired"],
   },
   {
@@ -138,7 +142,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=600&h=600&fit=crop",
     category: "watches",
     description: "Vintage diver vibes with modern guts. High-tech ceramic bezel insert because Rado puts space-age materials on everything.",
-    affiliateUrl: amzn("Rado Captain Cook Automatic 42mm"),
+    affiliateUrl: amzn("Rado Captain Cook Automatic 42mm R32105203"),
     tags: ["diver", "vintage", "ceramic"],
   },
   {
@@ -149,7 +153,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?w=600&h=600&fit=crop",
     category: "watches",
     description: "Swiss-made diver with 80-hour power reserve at under a grand. The watch snobs' secret that nobody wants you to know about.",
-    affiliateUrl: amzn("Mido Ocean Star 200 Tribute"),
+    affiliateUrl: amzn("Mido Ocean Star 200 Tribute M026.830.11.041.00"),
     tags: ["diver", "value", "Swiss"],
   },
   {
@@ -160,7 +164,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&h=600&fit=crop",
     category: "watches",
     description: "An open heart dial that lets you peek at the movement like a window into mechanical obsession. Japanese craftsmanship at a price that makes Swiss brands nervous.",
-    affiliateUrl: amzn("Orient Star Classic Semi Skeleton"),
+    affiliateUrl: amznDirect("B074LXJJZZ"),
     tags: ["open-heart", "Japanese", "dress"],
   },
   {
@@ -171,7 +175,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1614946801559-062a376c1400?w=600&h=600&fit=crop",
     category: "watches",
     description: "The watch that actually went to the moon (well, its ancestor did). High-frequency quartz movement for the space nerd who demands accuracy.",
-    affiliateUrl: amzn("Bulova Lunar Pilot Chronograph 96B251"),
+    affiliateUrl: amznDirect("B01AJE27HE"),
     tags: ["space", "chronograph", "quartz"],
   },
   {
@@ -182,7 +186,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=600&h=600&fit=crop",
     category: "watches",
     description: "ISO-certified diver that costs less than a nice dinner. Absolutely punches above its weight class like a honey badger in a boxing ring.",
-    affiliateUrl: amzn("Citizen Promaster Diver Automatic NY0040"),
+    affiliateUrl: amznDirect("B000EQS1JW"),
     tags: ["diver", "ISO-certified", "value"],
   },
   {
@@ -193,7 +197,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1517945269813-91b93de77ec3?w=600&h=600&fit=crop",
     category: "watches",
     description: "A titanium G-Shock that costs more than most Swiss watches. For people who want indestructibility with a side of luxury.",
-    affiliateUrl: amzn("Casio G-Shock MR-G MRGB2000"),
+    affiliateUrl: amznDirect("B07K8BNJM1"),
     tags: ["titanium", "tough", "connected"],
   },
   {
@@ -204,7 +208,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1639037687665-4e0a2e082f76?w=600&h=600&fit=crop",
     category: "watches",
     description: "Twin rotating globes show both hemispheres simultaneously. For the explorer whose biggest adventure is the duty-free shop.",
-    affiliateUrl: amzn("Montblanc 1858 Geosphere"),
+    affiliateUrl: amzn("Montblanc 1858 Geosphere 119286"),
     tags: ["worldtimer", "explorer", "manufacture"],
   },
   {
@@ -215,7 +219,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=600&h=600&fit=crop",
     category: "watches",
     description: "Six-arm star bezel and integrated bracelet that screams luxury sports watch. The affordable gateway to the integrated bracelet addiction.",
-    affiliateUrl: amzn("Maurice Lacroix Aikon Automatic 42mm"),
+    affiliateUrl: amzn("Maurice Lacroix Aikon Automatic 42mm AI6008-SS002-330-1"),
     tags: ["sports", "integrated-bracelet", "Swiss"],
   },
   {
@@ -226,7 +230,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?w=600&h=600&fit=crop",
     category: "watches",
     description: "German precision from the other watchmaking capital you never heard of. The Panorama Date is so crisp it makes calendars jealous.",
-    affiliateUrl: amzn("Glashutte Original Senator Excellence"),
+    affiliateUrl: amzn("Glashutte Original Senator Excellence Panorama Date"),
     tags: ["German", "haute-horlogerie", "panorama-date"],
   },
   {
@@ -237,7 +241,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1619134778706-7015533a6150?w=600&h=600&fit=crop",
     category: "watches",
     description: "Designed by an actual Bauhaus artist. So minimalist it makes your Apple Watch look like a carnival ride.",
-    affiliateUrl: amzn("Junghans Max Bill Automatic"),
+    affiliateUrl: amzn("Junghans Max Bill Automatic 027/3500.04"),
     tags: ["Bauhaus", "minimalist", "German"],
   },
   {
@@ -248,7 +252,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1632790990720-4883afe44317?w=600&h=600&fit=crop",
     category: "watches",
     description: "German tool watch that's allergic to nonsense. No frills, no fuss, just perfection. The pilot's watch that refuses to show off.",
-    affiliateUrl: amzn("Sinn 556 I watch"),
+    affiliateUrl: amzn("Sinn 556 I automatic watch 556.010"),
     tags: ["pilot", "tool-watch", "German"],
   },
   {
@@ -259,7 +263,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1560707303-4e980ce876ad?w=600&h=600&fit=crop",
     category: "watches",
     description: "Swiss diver with ETA movement and 80h power reserve. The price-to-quality ratio is so good it should be illegal.",
-    affiliateUrl: amzn("Certina DS Action Diver Powermatic 80"),
+    affiliateUrl: amzn("Certina DS Action Diver Powermatic 80 C032.407.11.051.00"),
     tags: ["diver", "value", "Swiss"],
   },
   {
@@ -270,7 +274,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1595520407624-66b24da5c944?w=600&h=600&fit=crop",
     category: "watches",
     description: "Aviation heritage with Geneva roots. Big crown for gloved hands, though the only cockpit you'll see is business class.",
-    affiliateUrl: amzn("Alpina Startimer Pilot Automatic"),
+    affiliateUrl: amzn("Alpina Startimer Pilot Automatic AL-525"),
     tags: ["pilot", "aviation", "Swiss"],
   },
   {
@@ -281,7 +285,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1510017803434-a899b5f6bc5c?w=600&h=600&fit=crop",
     category: "watches",
     description: "A smartwatch with a titanium body and sapphire lens that costs more than most mechanical watches. For trailblazers who want their VO2 max in style.",
-    affiliateUrl: amzn("Garmin MARQ Adventurer Gen 2"),
+    affiliateUrl: amzn("Garmin MARQ Adventurer Gen 2 010-02648-31"),
     tags: ["smartwatch", "adventure", "titanium"],
   },
   {
@@ -292,7 +296,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=600&h=600&fit=crop",
     category: "watches",
     description: "300m water resistance and a ceramic bezel. The watch you wear to look like you own a yacht, even if you own a kayak.",
-    affiliateUrl: amzn("TAG Heuer Aquaracer Professional 300"),
+    affiliateUrl: amzn("TAG Heuer Aquaracer Professional 300 WBP201A.BA0632"),
     tags: ["diver", "ceramic", "Swiss"],
   },
   {
@@ -303,7 +307,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1627037558426-c2d07beda3af?w=600&h=600&fit=crop",
     category: "watches",
     description: "Rolex's cooler younger sibling that doesn't need daddy's money. In-house movement, vintage vibes, and a waitlist that actually moves.",
-    affiliateUrl: amzn("Tudor Black Bay 58"),
+    affiliateUrl: amzn("Tudor Black Bay 58 M79030N-0001"),
     tags: ["diver", "heritage", "in-house"],
   },
   {
@@ -314,7 +318,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1629182098024-db205f35330f?w=600&h=600&fit=crop",
     category: "watches",
     description: "El Primero movement ticking at 36,000 vibrations per hour. Measures to 1/10th of a second because your life is that precisely scheduled.",
-    affiliateUrl: amzn("Zenith Chronomaster Sport El Primero"),
+    affiliateUrl: amzn("Zenith Chronomaster Sport El Primero 03.3100.3600"),
     tags: ["chronograph", "high-frequency", "manufacture"],
   },
   {
@@ -325,7 +329,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=600&h=600&fit=crop",
     category: "watches",
     description: "Dive watch with fighter jet energy. 300m depth rating for the person who considers a hot tub an extreme sport.",
-    affiliateUrl: amzn("Breitling Superocean Automatic 42"),
+    affiliateUrl: amzn("Breitling Superocean Automatic 42 A17375E71C1A1"),
     tags: ["diver", "sporty", "COSC"],
   },
   {
@@ -336,7 +340,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1620625515032-6ed0c1790c75?w=600&h=600&fit=crop",
     category: "watches",
     description: "Spring Drive glide motion is basically witchcraft. The second hand sweeps so smoothly it makes Swiss watches look like they're hiccuping.",
-    affiliateUrl: amzn("Grand Seiko SBGA413 Spring Drive"),
+    affiliateUrl: amzn("Grand Seiko SBGA413 Spring Drive Heritage Collection"),
     tags: ["Spring-Drive", "Japanese", "finishing"],
   },
   {
@@ -347,7 +351,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1434056886845-dbe89f0b9571?w=600&h=600&fit=crop",
     category: "watches",
     description: "A GMT watch for under $400 that actually tracks two time zones. The bang-for-buck king that makes watch forums lose their collective minds.",
-    affiliateUrl: amzn("Seiko 5 Sports Field GMT SSK023"),
+    affiliateUrl: amznDirect("B08K39K7JG"),
     tags: ["GMT", "value", "automatic"],
   },
   {
@@ -358,7 +362,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=600&h=600&fit=crop",
     category: "watches",
     description: "Swiss diver with Airman heritage at a price that makes you do a double take. The watch forum darling that overdelivers every time.",
-    affiliateUrl: amzn("Glycine Combat Sub 42"),
+    affiliateUrl: amzn("Glycine Combat Sub 42 GL0185 automatic dive watch"),
     tags: ["diver", "Swiss", "value"],
   },
   {
@@ -369,7 +373,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1594576722512-582bcd46fba3?w=600&h=600&fit=crop",
     category: "watches",
     description: "Silicon hairspring at this price is highway robbery in your favor. The everyday Swiss watch that punches way, way above its weight.",
-    affiliateUrl: amzn("Tissot Gentleman Powermatic 80 Silicium"),
+    affiliateUrl: amzn("Tissot Gentleman Powermatic 80 Silicium T127.407.11.041.00"),
     tags: ["dress", "silicon", "daily-wear"],
   },
   {
@@ -380,7 +384,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1533139143976-30918502365b?w=600&h=600&fit=crop",
     category: "watches",
     description: "Issued to actual military divers who do actual military diving. Tritium tubes glow for 25 years, which is longer than most relationships.",
-    affiliateUrl: amzn("Marathon GSAR Automatic Dive Watch"),
+    affiliateUrl: amzn("Marathon GSAR Automatic Dive Watch WW194006"),
     tags: ["military", "diver", "tritium"],
   },
   {
@@ -391,7 +395,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1495856458515-0637185db551?w=600&h=600&fit=crop",
     category: "watches",
     description: "French microbrand with vintage diver DNA. The double-domed sapphire crystal has more curves than a country road.",
-    affiliateUrl: amzn("Baltic Aquascaphe Classic watch"),
+    affiliateUrl: amzn("Baltic Aquascaphe Classic automatic dive watch"),
     tags: ["microbrand", "diver", "French"],
   },
   {
@@ -402,7 +406,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1612796436536-6745847b80d0?w=600&h=600&fit=crop",
     category: "watches",
     description: "Open heart dial lets you stare into the soul of the movement. Swiss made, Hollywood approved, and priced for mere mortals.",
-    affiliateUrl: amzn("Hamilton Jazzmaster Open Heart Auto 42mm"),
+    affiliateUrl: amzn("Hamilton Jazzmaster Open Heart Auto 42mm H32705131"),
     tags: ["open-heart", "dress", "Swiss"],
   },
   {
@@ -413,7 +417,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=600&h=600&fit=crop",
     category: "watches",
     description: "James Bond's daily driver and the watch that survived actual ocean depths. Co-Axial escapement for the discerning desk diver.",
-    affiliateUrl: amzn("Omega Seamaster Diver 300M"),
+    affiliateUrl: amzn("Omega Seamaster Diver 300M Co-Axial 210.30.42.20.03.001"),
     tags: ["diver", "Bond", "co-axial"],
   },
   {
@@ -424,7 +428,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1618220179428-22790b461013?w=600&h=600&fit=crop",
     category: "watches",
     description: "The original pilot's watch from 1904. Square case that somehow works on every wrist. Quick-switch bracelet system because Cartier thinks of everything.",
-    affiliateUrl: amzn("Cartier Santos de Cartier Medium"),
+    affiliateUrl: amzn("Cartier Santos de Cartier Medium WSSA0029"),
     tags: ["pilot", "icon", "quick-switch"],
   },
   {
@@ -435,7 +439,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1639037687665-4e0a2e082f76?w=600&h=600&fit=crop",
     category: "watches",
     description: "Clean dial, applied indices, and a movement visible through the caseback. The dress watch that silently announces you've made it.",
-    affiliateUrl: amzn("IWC Portugieser Automatic 40"),
+    affiliateUrl: amzn("IWC Portugieser Automatic 40 IW358304"),
     tags: ["dress", "manufacture", "classic"],
   },
   {
@@ -446,7 +450,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?w=600&h=600&fit=crop",
     category: "watches",
     description: "Crown-protecting bridge device and a dial you can read from space. Italian design, Swiss movement, and a wrist presence that demands attention.",
-    affiliateUrl: amzn("Panerai Luminor Marina 44mm"),
+    affiliateUrl: amzn("Panerai Luminor Marina 44mm PAM01312"),
     tags: ["Italian", "diver", "bold"],
   },
 
@@ -461,7 +465,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600&h=600&fit=crop",
     category: "tech",
     description: "Titanium frame, 200MP camera, and an S Pen because Samsung still believes in writing things down. The Android phone that makes iPhones nervous.",
-    affiliateUrl: amzn("Samsung Galaxy S25 Ultra 512GB"),
+    affiliateUrl: amznDirect("B0DS4FT9YV"),
     tags: ["smartphone", "Android", "flagship"],
   },
   {
@@ -472,7 +476,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=600&h=600&fit=crop",
     category: "tech",
     description: "Titanium design, 48MP camera system, and A18 Pro chip. The phone that convinces you to upgrade every year despite promising you wouldn't.",
-    affiliateUrl: amzn("Apple iPhone 16 Pro Max 512GB"),
+    affiliateUrl: amznDirect("B0DGH7F4KQ"),
     tags: ["smartphone", "iOS", "flagship"],
   },
   {
@@ -483,7 +487,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&h=600&fit=crop",
     category: "tech",
     description: "Thinner than a pencil with an OLED display that makes colors illegal. The tablet that's more powerful than most people's laptops.",
-    affiliateUrl: amzn("Apple iPad Pro M4 13 inch 512GB"),
+    affiliateUrl: amznDirect("B0D3J7GPRX"),
     tags: ["tablet", "creative", "M4"],
   },
   {
@@ -494,7 +498,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?w=600&h=600&fit=crop",
     category: "tech",
     description: "Edge-to-edge display with invisible haptic trackpad. So thin and gorgeous you'll forget it's a Windows machine.",
-    affiliateUrl: amzn("Dell XPS 16 9640 laptop"),
+    affiliateUrl: amznDirect("B0D14DKQHB"),
     tags: ["laptop", "ultrabook", "creative"],
   },
   {
@@ -505,7 +509,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=600&h=600&fit=crop",
     category: "tech",
     description: "Desktop-class RTX 4090 in a laptop that costs as much as a used car. 18 inches of pure gaming excess that runs hot enough to heat your apartment.",
-    affiliateUrl: amzn("Razer Blade 18 RTX 4090 laptop"),
+    affiliateUrl: amznDirect("B0CQ31DYBQ"),
     tags: ["gaming-laptop", "RTX-4090", "premium"],
   },
   {
@@ -516,7 +520,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=600&h=600&fit=crop",
     category: "tech",
     description: "RGB everything, 240Hz display, and enough GPU power to render your regrets in real-time. The gaming laptop that doubles as a space heater.",
-    affiliateUrl: amzn("ASUS ROG Strix G18 RTX 4080"),
+    affiliateUrl: amzn("ASUS ROG Strix G18 2024 RTX 4080 G814JV"),
     tags: ["gaming-laptop", "RGB", "high-refresh"],
   },
   {
@@ -527,7 +531,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=600&h=600&fit=crop",
     category: "tech",
     description: "Perfect blacks, infinite contrast, and a processor that upscales potato-quality streams into something watchable. The TV that ruins all other TVs for you.",
-    affiliateUrl: amzn("LG C4 65 inch OLED evo 4K TV"),
+    affiliateUrl: amznDirect("B0CVSBXBKY"),
     tags: ["TV", "OLED", "gaming"],
   },
   {
@@ -538,7 +542,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=600&fit=crop",
     category: "tech",
     description: "A TV that pretends to be art when you're not watching it. Comes with a customizable bezel so it matches your pretentious gallery wall.",
-    affiliateUrl: amzn("Samsung The Frame 65 inch QLED 4K TV 2024"),
+    affiliateUrl: amznDirect("B0C68DFNV8"),
     tags: ["TV", "art", "design"],
   },
   {
@@ -549,7 +553,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&h=600&fit=crop",
     category: "tech",
     description: "Dolby Atmos from a single bar that makes sound bounce off your ceiling. Your neighbors will hear every explosion whether they want to or not.",
-    affiliateUrl: amzn("Bose Smart Soundbar 900 Dolby Atmos"),
+    affiliateUrl: amzn("Bose Smart Soundbar 900 Dolby Atmos 863350-1100"),
     tags: ["soundbar", "Atmos", "premium-audio"],
   },
   {
@@ -560,7 +564,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&h=600&fit=crop",
     category: "tech",
     description: "3D motion detection and head-to-toe HD video. See exactly who's at your door so you can pretend you're not home more effectively.",
-    affiliateUrl: amzn("Ring Video Doorbell Pro 2"),
+    affiliateUrl: amzn("Ring Video Doorbell Pro 2 hardwired B086Q54K53"),
     tags: ["smart-home", "security", "video"],
   },
   {
@@ -571,7 +575,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1567925086983-a3448d0ea5ca?w=600&h=600&fit=crop",
     category: "tech",
     description: "Learns your schedule and adjusts temperature automatically. The thermostat that's smarter than most of your coworkers.",
-    affiliateUrl: amzn("Google Nest Learning Thermostat 4th Gen"),
+    affiliateUrl: amzn("Google Nest Learning Thermostat 4th Gen 2024"),
     tags: ["smart-home", "energy", "AI"],
   },
   {
@@ -582,7 +586,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=600&h=600&fit=crop",
     category: "tech",
     description: "A vacuum with a laser that reveals invisible dust like a crime scene investigation. You'll never look at your 'clean' floors the same way.",
-    affiliateUrl: amzn("Dyson V15 Detect Absolute vacuum"),
+    affiliateUrl: amzn("Dyson V15 Detect Absolute cordless vacuum cleaner"),
     tags: ["vacuum", "laser", "cordless"],
   },
   {
@@ -593,7 +597,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1603618090554-0fbcf5c3c16e?w=600&h=600&fit=crop",
     category: "tech",
     description: "Navigates your home, avoids pet accidents, and empties itself. Does more housework than most roommates and never eats your leftovers.",
-    affiliateUrl: amzn("iRobot Roomba j9+ self emptying robot vacuum"),
+    affiliateUrl: amznDirect("B0C415HQPX"),
     tags: ["robot-vacuum", "smart-home", "self-emptying"],
   },
   {
@@ -604,7 +608,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1616711906333-23cf6e14e76b?w=600&h=600&fit=crop",
     category: "tech",
     description: "49 inches of curved OLED ultrawide that wraps around you like a cockpit. Two monitors in one, because alt-tabbing is for peasants.",
-    affiliateUrl: amzn("Samsung Odyssey OLED G9 49 inch curved monitor"),
+    affiliateUrl: amznDirect("B0CHPS7JQH"),
     tags: ["monitor", "ultrawide", "OLED"],
   },
   {
@@ -615,7 +619,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=600&h=600&fit=crop",
     category: "tech",
     description: "Optical switches, per-key RGB, and an iCUE dial for controlling literally everything. The keyboard that costs more than some people's entire setup.",
-    affiliateUrl: amzn("Corsair K100 RGB optical mechanical keyboard"),
+    affiliateUrl: amznDirect("B09JRJLL1G"),
     tags: ["keyboard", "gaming", "RGB"],
   },
   {
@@ -626,7 +630,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=600&h=600&fit=crop",
     category: "tech",
     description: "Electromagnetic scroll wheel and 8K DPI sensor. The productivity mouse that makes your hand feel like it's being cradled by angels.",
-    affiliateUrl: amzn("Logitech MX Master 3S wireless mouse"),
+    affiliateUrl: amznDirect("B09HM94VDS"),
     tags: ["mouse", "productivity", "ergonomic"],
   },
   {
@@ -637,7 +641,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&h=600&fit=crop",
     category: "tech",
     description: "LCD keys, dials, and a touch strip for controlling your stream like a NASA mission control operator. Content creation hardware for people who take their hobby too seriously.",
-    affiliateUrl: amzn("Elgato Stream Deck Plus"),
+    affiliateUrl: amznDirect("B0BZM86K6Z"),
     tags: ["streaming", "content-creation", "macro-pad"],
   },
   {
@@ -648,7 +652,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&h=600&fit=crop",
     category: "tech",
     description: "2048Wh of portable power that can run your fridge during a blackout. The battery backup that's larger than your commitment issues.",
-    affiliateUrl: amzn("Anker SOLIX F2000 portable power station"),
+    affiliateUrl: amzn("Anker SOLIX F2000 2048Wh portable power station"),
     tags: ["power-station", "portable", "emergency"],
   },
   {
@@ -659,7 +663,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=600&h=600&fit=crop",
     category: "tech",
     description: "Solar-powered independence from the grid with 2042Wh capacity. For the off-grid enthusiast who still needs to charge their iPhone.",
-    affiliateUrl: amzn("Jackery Explorer 2000 Plus solar generator"),
+    affiliateUrl: amzn("Jackery Explorer 2000 Plus portable power station solar generator"),
     tags: ["solar", "generator", "off-grid"],
   },
   {
@@ -670,7 +674,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=600&h=600&fit=crop",
     category: "tech",
     description: "4-bay NAS with AMD Ryzen that turns you into your own private cloud. Store everything locally because trusting Big Tech with your data is so 2015.",
-    affiliateUrl: amzn("Synology DiskStation DS923+ NAS"),
+    affiliateUrl: amzn("Synology DiskStation DS923+ 4-Bay NAS AMD Ryzen"),
     tags: ["NAS", "storage", "self-hosted"],
   },
   {
@@ -681,7 +685,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&h=600&fit=crop",
     category: "tech",
     description: "Gasket-mounted, CNC aluminum, hot-swappable switches. The keyboard rabbit hole that'll cost you your social life and your savings.",
-    affiliateUrl: amzn("Keychron Q1 Pro QMK wireless mechanical keyboard"),
+    affiliateUrl: amznDirect("B0BXBRGKDX"),
     tags: ["mechanical-keyboard", "custom", "wireless"],
   },
   {
@@ -692,7 +696,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1632825750846-48e624bb02c4?w=600&h=600&fit=crop",
     category: "tech",
     description: "Spatial computing for your face. Watch movies on a virtual 100-foot screen while looking like a ski goggle model from the future.",
-    affiliateUrl: amzn("Apple Vision Pro 256GB"),
+    affiliateUrl: amzn("Apple Vision Pro 256GB spatial computer"),
     tags: ["spatial-computing", "VR", "Apple"],
   },
   {
@@ -703,7 +707,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=600&h=600&fit=crop",
     category: "tech",
     description: "Mixed reality without the Apple tax. Full-color passthrough and a library of games that'll make you forget about real life.",
-    affiliateUrl: amzn("Meta Quest 3 512GB VR headset"),
+    affiliateUrl: amznDirect("B0C8VKH1ZH"),
     tags: ["VR", "mixed-reality", "gaming"],
   },
   {
@@ -714,7 +718,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=600&fit=crop",
     category: "tech",
     description: "61MP full-frame sensor with AI-based autofocus. Takes photos so sharp they'll expose every flaw you didn't know you had.",
-    affiliateUrl: amzn("Sony Alpha a7R V mirrorless camera body"),
+    affiliateUrl: amzn("Sony Alpha a7R V ILCE-7RM5 mirrorless camera body"),
     tags: ["camera", "mirrorless", "full-frame"],
   },
   {
@@ -725,7 +729,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=600&h=600&fit=crop",
     category: "tech",
     description: "Dual cameras, 46-minute flight time, and obstacle sensing in all directions. Aerial photography for people who want Instagram followers, not FAA violations.",
-    affiliateUrl: amzn("DJI Air 3 Fly More Combo drone"),
+    affiliateUrl: amzn("DJI Air 3 Fly More Combo with RC 2 drone"),
     tags: ["drone", "aerial", "photography"],
   },
   {
@@ -736,7 +740,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1591488320449-011701bb6704?w=600&h=600&fit=crop",
     category: "tech",
     description: "24GB of VRAM and 16,384 CUDA cores. The GPU that's bigger than your head and draws more power than a small country.",
-    affiliateUrl: amzn("NVIDIA GeForce RTX 4090 Founders Edition"),
+    affiliateUrl: amzn("NVIDIA GeForce RTX 4090 Founders Edition 24GB GDDR6X"),
     tags: ["GPU", "gaming", "AI"],
   },
   {
@@ -747,7 +751,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=600&h=600&fit=crop",
     category: "tech",
     description: "M4 Max chip with 48GB unified memory. The laptop that renders 8K video while laughing at your electricity bill.",
-    affiliateUrl: amzn("Apple MacBook Pro 16 inch M4 Max 48GB"),
+    affiliateUrl: amzn("Apple MacBook Pro 16 inch M4 Max 48GB 1TB 2024"),
     tags: ["laptop", "Apple-Silicon", "creative"],
   },
   {
@@ -758,7 +762,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1640955014216-75201056c829?w=600&h=600&fit=crop",
     category: "tech",
     description: "Your entire PC game library in your hands with an HDR OLED screen. The portable gaming device that makes your Switch feel like a toy.",
-    affiliateUrl: amzn("Steam Deck OLED 1TB"),
+    affiliateUrl: amzn("Valve Steam Deck OLED 1TB handheld gaming console"),
     tags: ["handheld", "gaming", "OLED"],
   },
   {
@@ -769,7 +773,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&h=600&fit=crop",
     category: "tech",
     description: "Spatial audio that makes sound come from directions you didn't know existed. Looks like a modern art sculpture that happens to produce incredible music.",
-    affiliateUrl: amzn("Sonos Era 300 spatial audio speaker"),
+    affiliateUrl: amzn("Sonos Era 300 spatial audio smart speaker"),
     tags: ["speaker", "spatial-audio", "smart"],
   },
   {
@@ -780,7 +784,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600&h=600&fit=crop",
     category: "tech",
     description: "Titanium case, dual-frequency GPS, and 10ATM water resistance. Samsung's answer to the Apple Watch Ultra, and the answer is 'hold my beer.'",
-    affiliateUrl: amzn("Samsung Galaxy Watch Ultra"),
+    affiliateUrl: amzn("Samsung Galaxy Watch Ultra titanium 47mm SM-L705"),
     tags: ["smartwatch", "fitness", "rugged"],
   },
   {
@@ -791,7 +795,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&h=600&fit=crop",
     category: "tech",
     description: "The modular laptop where you can swap literally everything. For people who believe in right-to-repair and aren't afraid of a screwdriver.",
-    affiliateUrl: amzn("Framework Laptop 16 DIY Edition"),
+    affiliateUrl: amzn("Framework Laptop 16 DIY Edition AMD Ryzen 7040"),
     tags: ["modular", "repairable", "laptop"],
   },
   {
@@ -802,7 +806,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&h=600&fit=crop",
     category: "tech",
     description: "Enterprise-grade networking for your home because consumer routers are beneath you. Run your own network like an IT department of one.",
-    affiliateUrl: amzn("Ubiquiti UniFi Dream Machine Pro"),
+    affiliateUrl: amzn("Ubiquiti UniFi Dream Machine Pro UDM-PRO"),
     tags: ["networking", "enterprise", "router"],
   },
   {
@@ -813,7 +817,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?w=600&h=600&fit=crop",
     category: "tech",
     description: "E-ink tablet that feels like writing on actual paper. For people who want to go paperless but can't give up the pen-on-paper experience.",
-    affiliateUrl: amzn("reMarkable 2 paper tablet"),
+    affiliateUrl: amznDirect("B08HDL3LLH"),
     tags: ["e-ink", "productivity", "writing"],
   },
   {
@@ -824,7 +828,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=600&h=600&fit=crop",
     category: "tech",
     description: "7,450 MB/s read speeds in a stick smaller than a pack of gum. 4TB of storage that loads games faster than you can blink.",
-    affiliateUrl: amzn("Samsung 990 PRO 4TB NVMe SSD"),
+    affiliateUrl: amzn("Samsung 990 PRO 4TB NVMe M.2 SSD MZ-V9P4T0B/AM"),
     tags: ["SSD", "storage", "fast"],
   },
   {
@@ -835,7 +839,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1596079890744-c1a0462d0975?w=600&h=600&fit=crop",
     category: "tech",
     description: "Magnetic armrests, 4-way lumbar support, and neo hybrid leatherette. The gaming chair that treats your spine with the respect it deserves.",
-    affiliateUrl: amzn("Secretlab Titan Evo 2024 gaming chair"),
+    affiliateUrl: amzn("Secretlab Titan Evo 2024 gaming chair NEO hybrid leatherette"),
     tags: ["gaming-chair", "ergonomic", "premium"],
   },
   {
@@ -846,7 +850,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&h=600&fit=crop",
     category: "tech",
     description: "Tiny magnetic webcam that makes you look professional instead of like a hostage in bad lighting. 48MP sensor in something the size of a thumb drive.",
-    affiliateUrl: amzn("Opal Tadpole webcam laptop"),
+    affiliateUrl: amzn("Opal Tadpole webcam 48MP magnetic laptop"),
     tags: ["webcam", "work-from-home", "compact"],
   },
   {
@@ -857,7 +861,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1625245488600-f03fef636a3c?w=600&h=600&fit=crop",
     category: "tech",
     description: "Headphones that cost more than some laptops. Adaptive EQ, spatial audio, and a premium weight that constantly reminds you they're on your head.",
-    affiliateUrl: amzn("Apple AirPods Max USB-C"),
+    affiliateUrl: amzn("Apple AirPods Max USB-C wireless headphones 2024"),
     tags: ["headphones", "ANC", "spatial-audio"],
   },
   {
@@ -868,7 +872,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&h=600&fit=crop",
     category: "tech",
     description: "240W across 4 ports with a built-in display showing real-time wattage. Charge everything at once like the power-hungry gadget hoarder you are.",
-    affiliateUrl: amzn("Anker Prime 240W desktop charger"),
+    affiliateUrl: amzn("Anker Prime 240W GaN desktop charger 4 port A2687"),
     tags: ["charger", "USB-C", "GaN"],
   },
 
@@ -883,7 +887,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Smart glasses that actually look like regular glasses. Livestream, take calls, and capture photos without looking like a cyberpunk extra.",
-    affiliateUrl: amzn("Ray-Ban Meta Wayfarer smart glasses"),
+    affiliateUrl: amznDirect("B0CGXM3VNQ"),
     tags: ["smart-glasses", "wearable", "iconic"],
   },
   {
@@ -894,7 +898,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Steve McQueen's sunglasses of choice. Meflecto patented flex system and Italian craftsmanship that's been making faces look better since 1917.",
-    affiliateUrl: amzn("Persol PO0649 Original sunglasses"),
+    affiliateUrl: amzn("Persol PO0649 Original sunglasses 54mm Havana"),
     tags: ["sunglasses", "Italian", "classic"],
   },
   {
@@ -905,7 +909,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=600&h=600&fit=crop",
     category: "fashion",
     description: "The dress shoe that's been worn by US Presidents and boardroom warriors since 1922. Goodyear welt construction means you'll resole these, not replace them.",
-    affiliateUrl: amzn("Allen Edmonds Park Avenue cap toe oxford"),
+    affiliateUrl: amzn("Allen Edmonds Park Avenue Cap-Toe Oxford 5615"),
     tags: ["dress-shoes", "American", "heritage"],
   },
   {
@@ -916,7 +920,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Dress shoe on top, sneaker on the bottom. For when your boss says business casual and you take the 'casual' part very seriously.",
-    affiliateUrl: amzn("Cole Haan ZeroGrand Stitchlite Oxford"),
+    affiliateUrl: amzn("Cole Haan ZeroGrand Stitchlite Wingtip Oxford mens"),
     tags: ["hybrid", "comfort", "office"],
   },
   {
@@ -927,7 +931,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Inspired by Japanese bullet trains and dripping in gold. Full-length Air unit with maximum flex potential for maximum street presence.",
-    affiliateUrl: amzn("Nike Air Max 97 Gold"),
+    affiliateUrl: amznDirect("B0795V56XG"),
     tags: ["sneakers", "iconic", "gold"],
   },
   {
@@ -938,7 +942,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=600&h=600&fit=crop",
     category: "fashion",
     description: "The shoe that got Michael Jordan fined and launched a billion-dollar sneaker culture. Every colorway is a personality statement.",
-    affiliateUrl: amzn("Air Jordan 1 Retro High OG"),
+    affiliateUrl: amzn("Nike Air Jordan 1 Retro High OG mens basketball shoe"),
     tags: ["sneakers", "iconic", "basketball"],
   },
   {
@@ -949,7 +953,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1539185441755-769473a23570?w=600&h=600&fit=crop",
     category: "fashion",
     description: "The dad shoe that became a fashion statement. Made in the USA with ENCAP midsole technology. Steve Jobs approved, hype beast endorsed.",
-    affiliateUrl: amzn("New Balance 990v6 Made in USA"),
+    affiliateUrl: amznDirect("B0CLHT8C3V"),
     tags: ["sneakers", "heritage", "comfort"],
   },
   {
@@ -960,7 +964,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=600&h=600&fit=crop",
     category: "fashion",
     description: "30% lighter Boost midsole that feels like running on clouds. The shoe that blurred the line between performance running and everyday flexing.",
-    affiliateUrl: amzn("Adidas Ultraboost Light running shoes"),
+    affiliateUrl: amznDirect("B09KNDQ7FW"),
     tags: ["running", "Boost", "lifestyle"],
   },
   {
@@ -971,7 +975,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=600&fit=crop",
     category: "fashion",
     description: "A puffer vest that costs a mortgage payment. Goose down insulation and a logo patch that screams 'I winter in Aspen, darling.'",
-    affiliateUrl: amzn("Moncler Gui down vest"),
+    affiliateUrl: amzn("Moncler Gui down vest mens lightweight gilet"),
     tags: ["outerwear", "luxury", "down"],
   },
   {
@@ -982,7 +986,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1544923246-77307dd270f9?w=600&h=600&fit=crop",
     category: "fashion",
     description: "The puffer jacket that conquered both Himalayan base camps and Brooklyn coffee shops. 700-fill goose down for warmth; logo for clout.",
-    affiliateUrl: amzn("North Face 1996 Retro Nuptse 700 down jacket"),
+    affiliateUrl: amznDirect("B09TZL3MTK"),
     tags: ["puffer", "iconic", "streetwear"],
   },
   {
@@ -993,7 +997,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Gore-Tex Pro shell that laughs at rain, snow, and sleet. The jacket tech bros wear to look outdoorsy on their walk from the parking garage to the office.",
-    affiliateUrl: amzn("Arcteryx Beta LT Gore-Tex jacket"),
+    affiliateUrl: amzn("Arc'teryx Beta LT Gore-Tex jacket mens 26844"),
     tags: ["shell", "Gore-Tex", "technical"],
   },
   {
@@ -1004,7 +1008,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Anti-Ball Crushing technology. Yes, that's what ABC actually stands for. The athleisure pant that replaced jeans for an entire generation.",
-    affiliateUrl: amzn("Lululemon ABC jogger mens"),
+    affiliateUrl: amzn("Lululemon ABC Jogger Warpstreme 30 inch mens"),
     tags: ["athleisure", "comfort", "versatile"],
   },
   {
@@ -1015,7 +1019,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&h=600&fit=crop",
     category: "fashion",
     description: "So comfortable you'll forget you're wearing pants. DreamKnit fabric that transitions from couch to coffee shop without judgment.",
-    affiliateUrl: amzn("Vuori Ponto Performance jogger"),
+    affiliateUrl: amzn("Vuori Ponto Performance Jogger DreamKnit mens"),
     tags: ["athleisure", "lounge", "sustainable"],
   },
   {
@@ -1026,7 +1030,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Performance fabric disguised as dress pants. GoldFusion anti-odor technology for when your commute involves more sweating than sitting.",
-    affiliateUrl: amzn("Rhone Commuter Pant Slim"),
+    affiliateUrl: amzn("Rhone Commuter Pant Slim GoldFusion mens"),
     tags: ["performance", "office", "stretch"],
   },
   {
@@ -1037,7 +1041,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Made from recycled beechwood fibers that get softer with every wash. The $52 t-shirt that makes you question everything you know about cotton.",
-    affiliateUrl: amzn("Marine Layer Signature Crew tee"),
+    affiliateUrl: amzn("Marine Layer Signature Crew Tee mens beechwood"),
     tags: ["basics", "sustainable", "soft"],
   },
   {
@@ -1048,7 +1052,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=600&h=600&fit=crop",
     category: "fashion",
     description: "The peacoat that GQ named best in its class. Italian wool-cashmere blend with leather-wrapped anchor buttons. Southern charm meets European elegance.",
-    affiliateUrl: amzn("Billy Reid Bond Peacoat"),
+    affiliateUrl: amzn("Billy Reid Bond Peacoat wool cashmere mens"),
     tags: ["outerwear", "wool", "designer"],
   },
   {
@@ -1059,7 +1063,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Italian cashmere so soft it makes regular wool feel like sandpaper. The sweater upgrade your wardrobe has been begging for.",
-    affiliateUrl: amzn("Todd Snyder Italian cashmere crewneck sweater"),
+    affiliateUrl: amzn("Todd Snyder Italian Cashmere Crewneck Sweater mens"),
     tags: ["cashmere", "Italian", "elevated-basics"],
   },
   {
@@ -1070,7 +1074,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1548883354-94bcfe321cbb?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Waxed cotton that's been keeping British royals dry since 1894. Develops a patina over time that tells your story better than any Instagram caption.",
-    affiliateUrl: amzn("Barbour Bedale wax jacket"),
+    affiliateUrl: amzn("Barbour Bedale Wax Jacket MWX0018 mens"),
     tags: ["heritage", "waxed-cotton", "British"],
   },
   {
@@ -1081,7 +1085,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Bridle leather and twill that gets better with age like a fine whiskey. Guaranteed for life because Filson doesn't believe in planned obsolescence.",
-    affiliateUrl: amzn("Filson Rugged Twill Original briefcase"),
+    affiliateUrl: amzn("Filson Rugged Twill Original Briefcase 70256 tan"),
     tags: ["bag", "heritage", "BIFL"],
   },
   {
@@ -1092,7 +1096,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Ballistic nylon that could probably stop a bullet. More organizational pockets than you have things to organize. The executive's daily carry.",
-    affiliateUrl: amzn("Tumi Alpha 3 expandable organizer laptop briefcase"),
+    affiliateUrl: amznDirect("B08LMFJQMZ"),
     tags: ["briefcase", "travel", "business"],
   },
   {
@@ -1103,7 +1107,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Aluminum luggage that dents beautifully and costs more than your flight. Every scratch tells the story of an airport baggage handler's rage.",
-    affiliateUrl: amzn("Rimowa Original Cabin aluminum suitcase"),
+    affiliateUrl: amznDirect("B0B2PPYH1X"),
     tags: ["luggage", "aluminum", "luxury-travel"],
   },
   {
@@ -1114,7 +1118,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1581553680321-4fffae59fccd?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Built-in USB charger and compression pads for overpacking. The Instagram-famous suitcase that launched a direct-to-consumer luggage revolution.",
-    affiliateUrl: amzn("Away Bigger Carry-On suitcase"),
+    affiliateUrl: amzn("Away The Bigger Carry-On suitcase hardside spinner luggage"),
     tags: ["luggage", "smart", "DTC"],
   },
   {
@@ -1125,7 +1129,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Italian leather sneakers with gold serial numbers stamped on the heel. The minimalist shoe that somehow costs more than most boots.",
-    affiliateUrl: amzn("Common Projects Original Achilles Low sneaker"),
+    affiliateUrl: amzn("Common Projects Original Achilles Low white Italian leather sneaker"),
     tags: ["sneakers", "minimalist", "Italian"],
   },
   {
@@ -1136,7 +1140,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Named after the Hollywood legend, crafted in Italy. The round frames that make you look intellectual even if your last book was a menu.",
-    affiliateUrl: amzn("Oliver Peoples Gregory Peck round sunglasses"),
+    affiliateUrl: amzn("Oliver Peoples Gregory Peck OV5186 round sunglasses"),
     tags: ["sunglasses", "Hollywood", "Italian"],
   },
   {
@@ -1147,7 +1151,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1544923246-77307dd270f9?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Rated for -30C and worn by actual polar researchers. The parka that says 'I'm prepared for an ice age' while walking to Starbucks.",
-    affiliateUrl: amzn("Canada Goose Expedition Parka"),
+    affiliateUrl: amzn("Canada Goose Expedition Parka Heritage 4660M mens"),
     tags: ["parka", "extreme-cold", "Canadian"],
   },
   {
@@ -1158,7 +1162,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1559551409-dadc959f76b8?w=600&h=600&fit=crop",
     category: "fashion",
     description: "60g PrimaLoft insulation from 100% recycled materials. Saves the planet while keeping you warm, which is peak guilt-free consumption.",
-    affiliateUrl: amzn("Patagonia Nano Puff insulated jacket"),
+    affiliateUrl: amzn("Patagonia Nano Puff Insulated Jacket 84212 mens"),
     tags: ["sustainable", "insulated", "packable"],
   },
   {
@@ -1169,7 +1173,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Amber Harness leather, triple-stitched, and Goodyear welted. The boot that looks better after 10 years of abuse than most shoes do new.",
-    affiliateUrl: amzn("Red Wing Iron Ranger 8111 boots"),
+    affiliateUrl: amznDirect("B001IOGMG8"),
     tags: ["boots", "heritage", "American"],
   },
   {
@@ -1180,7 +1184,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Non-iron Supima cotton that comes out of the dryer ready for the boardroom. Brooks Brothers has been making shirts since before your company existed.",
-    affiliateUrl: amzn("Brooks Brothers Regent Fit Non-Iron dress shirt"),
+    affiliateUrl: amzn("Brooks Brothers Regent Fit Non-Iron Supima Cotton dress shirt"),
     tags: ["dress-shirt", "non-iron", "classic"],
   },
   {
@@ -1191,7 +1195,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&h=600&fit=crop",
     category: "fashion",
     description: "The chinos that launched an entire DTC menswear category. Proprietary fit with just enough stretch to survive a post-lunch food coma.",
-    affiliateUrl: amzn("Bonobos Stretch Washed Chinos"),
+    affiliateUrl: amzn("Bonobos Stretch Washed Chinos mens straight fit"),
     tags: ["chinos", "stretch", "DTC"],
   },
   {
@@ -1202,7 +1206,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Maximum cushion maximalist shoes that look like you're walking on pillows. Your knees will thank you; your fashion sense may have questions.",
-    affiliateUrl: amzn("Hoka Bondi 8 running shoes"),
+    affiliateUrl: amznDirect("B0BFJ9V1RZ"),
     tags: ["running", "cushion", "comfort"],
   },
   {
@@ -1213,7 +1217,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Made from eucalyptus tree fiber and sugarcane. The sneaker Silicon Valley adopted as its unofficial uniform. Comfortable and carbon-neutral.",
-    affiliateUrl: amzn("Allbirds Tree Runner shoes"),
+    affiliateUrl: amzn("Allbirds Tree Runner eucalyptus fiber sustainable sneaker"),
     tags: ["sustainable", "comfort", "minimalist"],
   },
   {
@@ -1224,7 +1228,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Cable-knit cashmere that's been the uniform of East Coast old money since forever. Pairs perfectly with a yacht you may or may not own.",
-    affiliateUrl: amzn("Ralph Lauren cable knit cashmere sweater"),
+    affiliateUrl: amzn("Ralph Lauren Cable-Knit Cashmere Sweater mens crewneck"),
     tags: ["cashmere", "preppy", "classic"],
   },
   {
@@ -1235,7 +1239,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Optical frames with the signature T-hinge detail. Make people think you read Proust in the original French, even if you mostly read Reddit.",
-    affiliateUrl: amzn("Tom Ford FT5401 optical glasses frames"),
+    affiliateUrl: amzn("Tom Ford FT5401 optical eyeglass frames"),
     tags: ["eyewear", "designer", "Italian"],
   },
   {
@@ -1246,7 +1250,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&h=600&fit=crop",
     category: "fashion",
     description: "31 versions in and still the stability running shoe king. FF Blast+ cushioning that makes long runs feel like medium runs.",
-    affiliateUrl: amzn("ASICS Gel-Kayano 31 running shoes"),
+    affiliateUrl: amzn("ASICS Gel-Kayano 31 stability running shoes mens"),
     tags: ["running", "stability", "heritage"],
   },
   {
@@ -1257,7 +1261,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1627123424574-724758594e93?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Slim leather wallet with a hidden compartment for emergency cash. For people who believe a bulging back pocket is a fashion crime.",
-    affiliateUrl: amzn("Bellroy Hide Seek premium leather wallet"),
+    affiliateUrl: amzn("Bellroy Hide & Seek premium leather wallet RFID"),
     tags: ["wallet", "slim", "leather"],
   },
   {
@@ -1267,8 +1271,8 @@ export const PRODUCTS_BATCH2: Product[] = [
     price: "$160",
     image: "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=600&h=600&fit=crop",
     category: "fashion",
-    description: "The clog that went from hippie commune to high fashion. Suede upper, cork-latex footbed, and a waitlist that rivals Hermès.",
-    affiliateUrl: amzn("Birkenstock Boston Soft Footbed suede clog"),
+    description: "The clog that went from hippie commune to high fashion. Suede upper, cork-latex footbed, and a waitlist that rivals Hermes.",
+    affiliateUrl: amzn("Birkenstock Boston Soft Footbed suede clog 0560771"),
     tags: ["clogs", "comfort", "trending"],
   },
   {
@@ -1279,7 +1283,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Swiss-engineered CloudTec cushioning that makes every step feel bouncy. The running shoe that looks like it was designed in a wind tunnel.",
-    affiliateUrl: amzn("On Cloudmonster 2 running shoes"),
+    affiliateUrl: amzn("On Cloudmonster 2 running shoes mens CloudTec"),
     tags: ["running", "Swiss", "CloudTec"],
   },
   {
@@ -1290,7 +1294,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=600&fit=crop",
     category: "fashion",
     description: "Techwear at its most extreme. Gore-Tex Pro with gravity pockets and escape zips. For when you want to look like a character from a cyberpunk anime.",
-    affiliateUrl: amzn("Acronym Gore-Tex Pro jacket"),
+    affiliateUrl: amzn("Acronym J1A-GTPL 3L Gore-Tex Pro Interops jacket"),
     tags: ["techwear", "Gore-Tex", "avant-garde"],
   },
 
@@ -1305,7 +1309,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600&h=600&fit=crop",
     category: "home",
     description: "Built-in grinder, assisted tamping, and a steam wand that'll make your barista jealous. Your morning coffee just became a $6 savings and a 20-minute ritual.",
-    affiliateUrl: amzn("Breville Barista Express Impress espresso machine"),
+    affiliateUrl: amznDirect("B00CH9QWOU"),
     tags: ["espresso", "grinder", "barista"],
   },
   {
@@ -1316,7 +1320,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1570942872213-1242607a35eb?w=600&h=600&fit=crop",
     category: "home",
     description: "Centrifusion technology spins capsules at 7,000 RPM for a perfect cup. One-touch coffee for people who want luxury without the learning curve.",
-    affiliateUrl: amzn("Nespresso Vertuo Next premium coffee machine"),
+    affiliateUrl: amznDirect("B084GY58S6"),
     tags: ["coffee", "capsule", "convenient"],
   },
   {
@@ -1327,7 +1331,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "home",
     description: "64mm professional flat burrs in a countertop grinder that looks like modern art. Single-dose grinding for the coffee obsessive who weighs beans to the tenth of a gram.",
-    affiliateUrl: amzn("Fellow Ode Brew Grinder Gen 2"),
+    affiliateUrl: amznDirect("B0B1DKTV1L"),
     tags: ["coffee-grinder", "specialty", "design"],
   },
   {
@@ -1338,7 +1342,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1594385208974-2f8bb07b7293?w=600&h=600&fit=crop",
     category: "home",
     description: "The iconic stand mixer that comes in 50+ colors because matching your kitchen aesthetic is apparently non-negotiable. Planetary mixing action for perfect dough every time.",
-    affiliateUrl: amzn("KitchenAid Artisan 5 quart stand mixer"),
+    affiliateUrl: amznDirect("B00005UP2P"),
     tags: ["mixer", "baking", "iconic"],
   },
   {
@@ -1349,7 +1353,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=600&fit=crop",
     category: "home",
     description: "Blends so aggressively it can make hot soup from raw ingredients through friction alone. The blender that starts at 'smoothie' and ends at 'what else can I blend?'",
-    affiliateUrl: amzn("Vitamix Ascent A3500 blender"),
+    affiliateUrl: amznDirect("B085F48VLX"),
     tags: ["blender", "professional", "versatile"],
   },
   {
@@ -1360,7 +1364,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1585442073325-eb7ba2a8a7c3?w=600&h=600&fit=crop",
     category: "home",
     description: "French enameled cast iron that'll outlive your grandchildren. Comes in colors so beautiful you'll want to display it, not cook in it. You should cook in it.",
-    affiliateUrl: amzn("Le Creuset Signature Dutch Oven 5.5 quart"),
+    affiliateUrl: amznDirect("B00004S56M"),
     tags: ["Dutch-oven", "French", "heirloom"],
   },
   {
@@ -1371,7 +1375,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1585442073325-eb7ba2a8a7c3?w=600&h=600&fit=crop",
     category: "home",
     description: "Black matte enamel interior that develops a natural patina over time. Le Creuset's edgier French cousin that chefs actually prefer.",
-    affiliateUrl: amzn("Staub Round Cocotte 5.5 quart"),
+    affiliateUrl: amznDirect("B000JVEOBG"),
     tags: ["cocotte", "French", "chef-favorite"],
   },
   {
@@ -1382,7 +1386,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop",
     category: "home",
     description: "Five alternating layers of stainless steel and aluminum. Made in Pennsylvania by people who take cookware personally. The set that makes everything else feel like toys.",
-    affiliateUrl: amzn("All-Clad D5 stainless steel 10 piece cookware set"),
+    affiliateUrl: amznDirect("B004QZAACW"),
     tags: ["cookware", "American", "professional"],
   },
   {
@@ -1393,7 +1397,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=600&fit=crop",
     category: "home",
     description: "Ice-hardened Friodur blade with a tapered bolster. 290 years of German knife-making packed into one razor-sharp chef's knife that makes onions cry faster.",
-    affiliateUrl: amzn("Zwilling Pro 8 inch chef knife"),
+    affiliateUrl: amznDirect("B000MSOMKK"),
     tags: ["knife", "German", "chef"],
   },
   {
@@ -1404,7 +1408,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1593618998160-e34014e67546?w=600&h=600&fit=crop",
     category: "home",
     description: "Precision-forged from a single piece of high-carbon stainless steel. The knife that makes you feel like a Michelin-star chef even when you're just cutting carrots.",
-    affiliateUrl: amzn("Wusthof Classic 8 inch chef knife"),
+    affiliateUrl: amzn("Wusthof Classic 8 inch Chef Knife 4582-7/20"),
     tags: ["knife", "German", "forged"],
   },
   {
@@ -1415,7 +1419,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=600&fit=crop",
     category: "home",
     description: "NASA-developed memory foam that conforms to your body like a hug from science. You'll spend 8 hours a night on this; might as well make them luxurious.",
-    affiliateUrl: amzn("Tempur-Pedic TEMPUR-Adapt medium hybrid mattress queen"),
+    affiliateUrl: amznDirect("B0BY9CW4WH"),
     tags: ["mattress", "memory-foam", "NASA"],
   },
   {
@@ -1426,7 +1430,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=600&fit=crop",
     category: "home",
     description: "GelFlex Grid that adapts to your body and keeps you cool. The mattress with the weird raw-egg test commercials that actually delivers on comfort.",
-    affiliateUrl: amzn("Purple mattress queen"),
+    affiliateUrl: amzn("Purple Original mattress queen GelFlex Grid"),
     tags: ["mattress", "gel-grid", "cooling"],
   },
   {
@@ -1437,7 +1441,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=600&fit=crop",
     category: "home",
     description: "The mattress-in-a-box that disrupted an entire industry. Zoned support and AirScape foam for people who research mattresses like it's a doctoral thesis.",
-    affiliateUrl: amzn("Casper Original hybrid mattress queen"),
+    affiliateUrl: amzn("Casper Original Hybrid mattress queen AirScape foam"),
     tags: ["mattress", "DTC", "hybrid"],
   },
   {
@@ -1448,7 +1452,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1522338242992-e1a54571a9f7?w=600&h=600&fit=crop",
     category: "home",
     description: "Uses the Coanda effect to style hair with air, not extreme heat. The hair tool that launched a thousand TikTok tutorials and salon-quality results at home.",
-    affiliateUrl: amzn("Dyson Airwrap multi-styler complete"),
+    affiliateUrl: amznDirect("B0C7J5T3CZ"),
     tags: ["hair", "styling", "Coanda"],
   },
   {
@@ -1459,7 +1463,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1522338242992-e1a54571a9f7?w=600&h=600&fit=crop",
     category: "home",
     description: "Intelligent heat control 40 times per second to prevent extreme heat damage. A hair dryer with more engineering than most cars.",
-    affiliateUrl: amzn("Dyson Supersonic hair dryer"),
+    affiliateUrl: amznDirect("B0C7J4V5QZ"),
     tags: ["hair-dryer", "smart", "premium"],
   },
   {
@@ -1470,7 +1474,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&h=600&fit=crop",
     category: "home",
     description: "AI-powered person detection and 2400-lumen floodlight. Watches your yard so you don't have to, and blinds intruders as a bonus.",
-    affiliateUrl: amzn("Google Nest Cam with Floodlight outdoor"),
+    affiliateUrl: amznDirect("B09V3KHXS8"),
     tags: ["security", "camera", "smart-home"],
   },
   {
@@ -1481,7 +1485,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&h=600&fit=crop",
     category: "home",
     description: "DIY home security with a built-in eero Wi-Fi 6 router. Protects your home AND fixes your dead zones. Two birds, one very smart stone.",
-    affiliateUrl: amzn("Ring Alarm Pro 14 piece kit"),
+    affiliateUrl: amznDirect("B07ZDTXJ93"),
     tags: ["security", "alarm", "WiFi"],
   },
   {
@@ -1492,7 +1496,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&h=600&fit=crop",
     category: "home",
     description: "Compact speaker with room-filling sound that defies physics. No microphone for the privacy-conscious, because Sonos respects your paranoia.",
-    affiliateUrl: amzn("Sonos One SL wireless speaker"),
+    affiliateUrl: amznDirect("B074XLBMG1"),
     tags: ["speaker", "wireless", "multi-room"],
   },
   {
@@ -1503,7 +1507,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=600&fit=crop",
     category: "home",
     description: "16 million colors of smart lighting. Turn your living room into a nightclub, a sunset, or a productivity cave with a tap of your phone.",
-    affiliateUrl: amzn("Philips Hue White Color Ambiance starter kit"),
+    affiliateUrl: amznDirect("B09BKBX69T"),
     tags: ["smart-lighting", "color", "Zigbee"],
   },
   {
@@ -1514,7 +1518,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=600&fit=crop",
     category: "home",
     description: "The smart switch electricians actually recommend. Works with everything, never loses connection, and doesn't need a neutral wire. Boring but brilliant.",
-    affiliateUrl: amzn("Lutron Caseta wireless deluxe smart dimmer kit"),
+    affiliateUrl: amzn("Lutron Caseta Wireless Deluxe Smart Dimmer Kit P-BDG-PKG2W"),
     tags: ["smart-switch", "dimmer", "reliable"],
   },
   {
@@ -1525,7 +1529,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1603618090554-0fbcf5c3c16e?w=600&h=600&fit=crop",
     category: "home",
     description: "Precision jet spray and systematic mopping that pairs with your Roomba. Because vacuuming was only half the battle in the war against dirty floors.",
-    affiliateUrl: amzn("iRobot Braava Jet m6 robot mop"),
+    affiliateUrl: amzn("iRobot Braava Jet m6 6110 robot mop"),
     tags: ["robot-mop", "smart-home", "cleaning"],
   },
   {
@@ -1536,7 +1540,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1603618090554-0fbcf5c3c16e?w=600&h=600&fit=crop",
     category: "home",
     description: "Vacuums, mops, empties itself, washes its own mop pads, and hot-air dries them. Does everything except fold your laundry. Give it time.",
-    affiliateUrl: amzn("Ecovacs Deebot X2 Omni robot vacuum mop"),
+    affiliateUrl: amzn("Ecovacs Deebot X2 Omni robot vacuum mop self-emptying"),
     tags: ["robot-vacuum", "mop", "all-in-one"],
   },
   {
@@ -1547,7 +1551,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1603618090554-0fbcf5c3c16e?w=600&h=600&fit=crop",
     category: "home",
     description: "AI-powered object avoidance and self-emptying base. Like a Roomba but with better obstacle detection for dodging your kid's LEGO minefield.",
-    affiliateUrl: amzn("Shark AI Ultra robot vacuum and mop"),
+    affiliateUrl: amzn("Shark AI Ultra 2-in-1 robot vacuum mop self-emptying AV2611AE"),
     tags: ["robot-vacuum", "AI", "self-emptying"],
   },
   {
@@ -1558,7 +1562,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1529690840038-f15b63b5be78?w=600&h=600&fit=crop",
     category: "home",
     description: "Smart grilling with Weber Connect built in. Four burners, 844 square inches of cooking space, and the grill that makes your neighbor reconsider their life choices.",
-    affiliateUrl: amzn("Weber Genesis SPX-435 smart gas grill"),
+    affiliateUrl: amznDirect("B09WCGLVLF"),
     tags: ["grill", "smart", "gas"],
   },
   {
@@ -1569,7 +1573,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=600&fit=crop",
     category: "home",
     description: "Reaches 950F in 20 minutes and cooks a Neapolitan pizza in 60 seconds. You'll never order Domino's again, and your dinner parties just got a serious upgrade.",
-    affiliateUrl: amzn("Ooni Koda 16 gas pizza oven"),
+    affiliateUrl: amznDirect("B0BXFY6NS7"),
     tags: ["pizza-oven", "outdoor-cooking", "Neapolitan"],
   },
   {
@@ -1580,7 +1584,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1529690840038-f15b63b5be78?w=600&h=600&fit=crop",
     category: "home",
     description: "WiFIRE connected pellet grill with Super Smoke mode. Control your brisket from your phone while pretending to pay attention in meetings.",
-    affiliateUrl: amzn("Traeger Ironwood XL wood pellet grill"),
+    affiliateUrl: amzn("Traeger Ironwood XL wood pellet grill WiFIRE TFB65BLE"),
     tags: ["smoker", "pellet-grill", "WiFi"],
   },
   {
@@ -1591,7 +1595,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1529690840038-f15b63b5be78?w=600&h=600&fit=crop",
     category: "home",
     description: "Ceramic kamado grill that grills, smokes, bakes, and roasts. The cult-favorite cooker that inspires a loyalty usually reserved for sports teams.",
-    affiliateUrl: amzn("Large Big Green Egg ceramic grill"),
+    affiliateUrl: amznDirect("B001DKSW5M"),
     tags: ["kamado", "ceramic", "versatile"],
   },
   {
@@ -1602,7 +1606,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1475519122489-6d72fcca487f?w=600&h=600&fit=crop",
     category: "home",
     description: "360-degree airflow design that burns wood so efficiently it's virtually smokeless. Finally enjoy a campfire without playing 'musical chairs' to dodge the smoke.",
-    affiliateUrl: amzn("Solo Stove Bonfire 2.0 smokeless fire pit"),
+    affiliateUrl: amznDirect("B01FQ2TY6O"),
     tags: ["fire-pit", "smokeless", "outdoor"],
   },
   {
@@ -1613,7 +1617,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop",
     category: "home",
     description: "13 cooking functions including air fry, dehydrate, and slow cook. The countertop oven that makes your actual oven feel insecure about its relevance.",
-    affiliateUrl: amzn("Breville Smart Oven Air Fryer Pro"),
+    affiliateUrl: amznDirect("B01N5UPTZS"),
     tags: ["toaster-oven", "air-fryer", "versatile"],
   },
   {
@@ -1624,7 +1628,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=600&fit=crop",
     category: "home",
     description: "Handmade in the Netherlands with a copper heating element that brews at the perfect temperature. The drip coffee maker that coffee snobs reluctantly admit is perfect.",
-    affiliateUrl: amzn("Technivorm Moccamaster KBGV Select coffee brewer"),
+    affiliateUrl: amzn("Technivorm Moccamaster KBGV Select 53947 coffee brewer"),
     tags: ["drip-coffee", "Dutch", "SCA-certified"],
   },
   {
@@ -1635,7 +1639,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&h=600&fit=crop",
     category: "home",
     description: "Japanese steam toaster that makes bread taste like it just came out of a bakery. Yes, it's a $329 toaster. Yes, it's worth every penny.",
-    affiliateUrl: amzn("Balmuda The Toaster Pro"),
+    affiliateUrl: amzn("Balmuda The Toaster Pro steam toaster K05A"),
     tags: ["toaster", "Japanese", "steam"],
   },
   {
@@ -1646,7 +1650,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&h=600&fit=crop",
     category: "home",
     description: "Purifies a large room while being whisper quiet. Destroys formaldehyde at a molecular level because Dyson takes air quality very, very personally.",
-    affiliateUrl: amzn("Dyson Purifier Big Quiet Formaldehyde"),
+    affiliateUrl: amzn("Dyson Purifier Big Quiet Formaldehyde BP04"),
     tags: ["air-purifier", "HEPA", "quiet"],
   },
   {
@@ -1657,7 +1661,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600&h=600&fit=crop",
     category: "home",
     description: "Keeps your coffee at exactly your preferred temperature for 80 minutes. Because lukewarm coffee is a crime against humanity.",
-    affiliateUrl: amzn("Ember Temperature Control Smart Mug 2"),
+    affiliateUrl: amzn("Ember Temperature Control Smart Mug 2 14oz CM191400US"),
     tags: ["mug", "smart", "temperature"],
   },
   {
@@ -1668,7 +1672,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=600&fit=crop",
     category: "home",
     description: "Percussion therapy meets biometric sensors. Sounds like a jackhammer, feels like a deep tissue massage, and your sore muscles will write thank-you notes.",
-    affiliateUrl: amzn("Theragun PRO Plus massage gun"),
+    affiliateUrl: amzn("Therabody Theragun PRO Plus 6th generation massage gun"),
     tags: ["massage", "recovery", "percussive"],
   },
   {
@@ -1679,7 +1683,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1603618090554-0fbcf5c3c16e?w=600&h=600&fit=crop",
     category: "home",
     description: "Vacuums and mops in one pass with a retractable mop pad that lifts on carpet. The robot butler you always wanted, minus the British accent.",
-    affiliateUrl: amzn("iRobot Roomba Combo j9+ robot vacuum mop"),
+    affiliateUrl: amznDirect("B0C415HQPX"),
     tags: ["robot-vacuum", "mop", "premium"],
   },
   {
@@ -1690,7 +1694,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&h=600&fit=crop",
     category: "home",
     description: "Covers 1,560 sq ft and has a real-time air quality indicator. Cleans your air so well you'll start judging outdoor air quality like a snob.",
-    affiliateUrl: amzn("Coway Airmega 400 smart air purifier"),
+    affiliateUrl: amzn("Coway Airmega 400 smart air purifier AP-2015E"),
     tags: ["air-purifier", "large-room", "smart"],
   },
   {
@@ -1701,7 +1705,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1570222094114-d054a817e56b?w=600&h=600&fit=crop",
     category: "home",
     description: "Turn anything into ice cream, sorbet, or milkshakes. The TikTok-famous gadget that turned everyone into an amateur gelato artisan overnight.",
-    affiliateUrl: amzn("Ninja CREAMi Deluxe 11 in 1"),
+    affiliateUrl: amzn("Ninja CREAMi Deluxe 11-in-1 NC501 ice cream maker"),
     tags: ["ice-cream", "versatile", "viral"],
   },
   {
@@ -1712,7 +1716,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&h=600&fit=crop",
     category: "home",
     description: "Bear-proof, wheeled, and keeps ice for days. The cooler that costs more than most people's camping trip but outlasts all of them combined.",
-    affiliateUrl: amzn("YETI Tundra 65 hard cooler"),
+    affiliateUrl: amzn("YETI Tundra 65 hard cooler bear-proof"),
     tags: ["cooler", "indestructible", "outdoor"],
   },
   {
@@ -1723,7 +1727,7 @@ export const PRODUCTS_BATCH2: Product[] = [
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop",
     category: "home",
     description: "Heats water 25% faster than the original and cooks with app-guided precision. Restaurant-quality steak from someone whose cooking peaked at ramen.",
-    affiliateUrl: amzn("Breville Joule Turbo sous vide"),
+    affiliateUrl: amzn("Breville Joule Turbo sous vide CSV750"),
     tags: ["sous-vide", "precision", "app-controlled"],
   },
 ];
