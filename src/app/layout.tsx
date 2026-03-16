@@ -57,6 +57,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <head>
         <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+        <meta name="impact-site-verification" content="b040c1af-8029-4fad-8a2d-bd73af866536" />
       </head>
       <body
         className={`${playfair.variable} ${inter.variable} font-sans antialiased`}
