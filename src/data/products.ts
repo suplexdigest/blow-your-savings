@@ -32,9 +32,12 @@ export const CATEGORIES: Category[] = [
   { slug: "tech", name: "Tech & Gadgets", tagline: "Bleeding-edge toys for grown-ups", icon: "cpu" },
   { slug: "audio", name: "Audio", tagline: "Sound so good it hurts", icon: "headphones" },
   { slug: "kitchen", name: "Kitchen", tagline: "Cook like a Michelin chef", icon: "home" },
-  { slug: "toys", name: "Toys & Gaming", tagline: "Because adulting is optional", icon: "gamepad" },
-  { slug: "office", name: "Office", tagline: "Work from your throne", icon: "cpu" },
   { slug: "watches", name: "Watches", tagline: "Timepieces that make time jealous", icon: "watch" },
+  { slug: "office", name: "Office", tagline: "Work from your throne", icon: "cpu" },
+  { slug: "toys", name: "Toys & Gaming", tagline: "Because adulting is optional", icon: "gamepad" },
+  { slug: "fashion", name: "Fashion", tagline: "Dress like your bank account has no limit", icon: "shirt" },
+  { slug: "grooming", name: "Grooming", tagline: "Look expensive, smell expensive", icon: "sparkles" },
+  { slug: "fitness", name: "Fitness", tagline: "Sweat in style", icon: "mountain" },
   { slug: "pets", name: "Pets", tagline: "Spoil them rotten", icon: "sparkles" },
 ];
 
