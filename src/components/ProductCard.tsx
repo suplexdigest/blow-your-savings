@@ -36,7 +36,7 @@ export default function ProductCard({ product }: { product: Product }) {
           </p>
         </div>
         <div className="absolute right-2 top-2 rounded-full bg-black/70 px-2 py-0.5 text-xs font-bold text-gold backdrop-blur sm:right-3 sm:top-3 sm:px-3 sm:py-1 sm:text-sm">
-          See Price
+          {product.price}
         </div>
       </div>
       <div className="p-3 sm:p-4">
