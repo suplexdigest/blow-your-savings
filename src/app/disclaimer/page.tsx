@@ -21,8 +21,9 @@ export default function DisclaimerPage() {
             <h2 className="mb-2 text-lg font-bold text-foreground">Affiliate Disclosure</h2>
             <p>
               BlowYourSavings.com is a participant in various affiliate advertising programs,
-              including the Amazon Services LLC Associates Program, designed to provide a means for
-              sites to earn advertising fees by advertising and linking to retailers. When you click
+              including the Amazon Services LLC Associates Program and the eBay Partner Network,
+              designed to provide a means for sites to earn advertising fees by advertising and
+              linking to retailers. When you click
               on product links and make a purchase, we may receive a small commission at no
               additional cost to you.
             </p>
